@@ -4,22 +4,15 @@
 		<h1 class="page-title">About</h1>
 
 		<p class="about-me">
-			Ventuno è un sito open source creato per raccogliere le migliori risorse Bitcoin in italiano.
-			<br> 
-			È costruito e gestito da volontari. 
-			<br>
-			Nato come fork di <a href="https://bitcoin-only.com/" target="_blank">www.bitcoin-only.com</a>
-			
+			Ventuno è un sito open-source creato per raccogliere le migliori risorse Bitcoin in italiano. <br> 
+			È costruito e gestito da volontari. <br>
+			Nato come fork di <a href="https://bitcoin-only.com/" target="_blank">www.bitcoin-only.com</a>	
  		</p>
 		<h3> Open Source </h3>	
-			Il termine open source si riferisce a qualcosa che le persone possono modificare e condividere perché il suo progetto è pubblicamente accessibile.
-			<br>
-			Il termine è nato nel contesto dello sviluppo di software, per indicare un approccio specifico alla creazione di programmi informatici. 
-			<br>
-			Oggi, tuttavia, "open source" designa un insieme più ampio di valori, quello che noi chiamiamo "il modo open source". 
-			<br>
-			I progetti, i prodotti o le iniziative open source abbracciano e celebrano i principi di scambio aperto, partecipazione collaborativa, prototipazione rapida, trasparenza, meritocrazia e sviluppo orientato alla comunità.
-		
+			<p> Il termine open source si riferisce a qualcosa che le persone possono modificare e condividere perché il suo progetto è pubblicamente accessibile.<br>
+				Il termine è nato nel contesto dello sviluppo di software, per indicare un approccio specifico alla creazione di programmi informatici. <br>
+				Oggi, tuttavia, "open source" designa un insieme più ampio di valori, quello che noi chiamiamo "il modo open source". <br>
+				I progetti, i prodotti o le iniziative open source abbracciano e celebrano i principi di scambio aperto, partecipazione collaborativa, prototipazione rapida, trasparenza, meritocrazia e sviluppo orientato alla comunità. </p>
 		<div class="quote-wrapper">
 			<div class="inner">
 				<div class="quote">"Sono solo uno strumento nella vostra ricerca di conoscenza. Il mio scopo è quello di aiutarvi, ma vi chiedo di fare le vostre ricerche."</div>

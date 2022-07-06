@@ -5,17 +5,17 @@
 
 		<div class="getting-started-section">
 
-			<h3>Getting Started</h3>
+			<h3>Come iniziare</h3>
 
 			<ul>
-				<li>Desktop: <a href="https://www.sparrowwallet.com/" target="_blank">Sparrow Wallet</a> connected to <a href="https://bitcoincore.org/" target="_blank">Bitcoin Core</a></li>
-				<li>Android: <a href="https://samouraiwallet.com/" target="_blank">Samourai Wallet</a></li>
+				<li>Desktop: <a href="https://www.sparrowwallet.com/" target="_blank">Sparrow Wallet</a> connesso a <a href="https://bitcoincore.org/" target="_blank">Bitcoin Core</a></li>
+				<li>Mobile: <a href="https://bluewallet.io/" target="_blank">Blue Wallet</a></li>
 				<li>Lightning: <a href="https://muun.com/" target="_blank">Muun Wallet</a></li>
 			</ul>
 
 		</div>
 
-		<p>It is very important that you learn how to back up your mnemonic seed and that if you use a passphrase, you back that up too. Read <a href="https://bitcoin-intro.com/en/backup" target="_blank">this document</a> to learn more about backing up your wallet and check out the <nuxt-link to="/privacy">privacy page</nuxt-link>.</p>
+		<p>È molto importante che impariate a fare il backup del vostro seed mnemonico (12 o 24 parole) e che, se usate una passphrase, facciate il backup anche di quella. Leggere <a href="https://bitcoin-intro.com/en/backup" target="_blank">this document</a> to learn more about backing up your wallet and check out the <nuxt-link to="/privacy">privacy page</nuxt-link>.</p>
 		<p>See <a href="https://veriphi.io/en/blog/software-wallet-analysis" target="_blank">this report</a> for a comparison of the features of many of the wallets listed below.</p>
 
 		<h3>Recommended Wallets</h3>
