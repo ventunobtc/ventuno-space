@@ -9,7 +9,7 @@
 
 			<ul>
 				<li>Per un'introduzione non tecnica, leggete "Il Bitcoin Standard" di Saifedean Ammous (<a href="https://www.amazon.com/Bitcoin-Standard-Decentralized-Alternative-Central/dp/1119473861" target="_blank">EN</a> | <a href="https://shop.usemlab.com/home/85-the-bitcoin-standard-edizione-italiana.html" target="_blank">IT</a>) </li>
-				<li>Per un'introduzione non tecnica, leggete "Mastering Bitcoin" di Andreas M. Antonopoulos (<a href="https://www.amazon.it/Mastering-Bitcoin-Traduzione-italiana-blockchain-ebook/dp/B07WHDK5K9/" target="_blank">Amazon</a> | <a href="https://github.com/bitcoinbook/bitcoinbook" target="_blank">GitHub</a>)</li>
+				<li>Per un'introduzione tecnica, leggete "Mastering Bitcoin" di Andreas M. Antonopoulos (<a href="https://www.amazon.it/Mastering-Bitcoin-Traduzione-italiana-blockchain-ebook/dp/B07WHDK5K9/" target="_blank">Amazon</a> | <a href="https://github.com/bitcoinbook/bitcoinbook" target="_blank">GitHub</a>)</li>
 				<li>Per altre informazioni tecniche "Programming Bitcoin" di Jimmy Song (<a href="https://www.amazon.com/Programming-Bitcoin-Learn-Program-Scratch/dp/1492031496" target="_blank">Amazon</a> | <a href="https://github.com/jimmysong/programmingbitcoin" target="_blank">GitHub</a>)</li>
 			</ul>
 
