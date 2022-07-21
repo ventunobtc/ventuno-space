@@ -140,11 +140,7 @@ export default {
 				},			
 			],
 		meetups: [
-				{
-					region: 'Lombardia',
-					city: 'Milano',
-					group: 'https://www.meetup.com/bitcoinmilano/',
-				},
+				
 				{
 					region: 'Emilia Romagna',
 					city: 'Reggio Emilia',
@@ -156,9 +152,18 @@ export default {
 					group: 'https://www.meetup.com/it-IT/Bitcoin-Bologna/',
 				},
 				{
+					region: 'Lombardia',
+					city: 'Milano',
+					group: 'https://www.meetup.com/bitcoinmilano/',
+				},
+				{
 					region: 'Piemonte',
 					city: 'Torino',
 					group: 'https://www.meetup.com/it-IT/Meetup-Bitcoin-Torino/',
+				},
+				{	region: 'Toscana',
+					city: 'Pisa',
+					group: 'https://www.meetup.com/Pisa-Bitcoin-Meetup',
 				},
 				{
 					region: 'Veneto',
@@ -169,11 +174,7 @@ export default {
 					region: 'Veneto',
 					city: 'Verona',
 					group: 'https://www.meetup.com/it-IT/Bitcoin-Verona/',
-				},
-					region: 'Toscana',
-					city: 'Pisa',
-					group: 'https://www.meetup.com/Pisa-Bitcoin-Meetup',
-				},	
+				}	
 			]
 		}
 	}
