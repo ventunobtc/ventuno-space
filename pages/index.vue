@@ -1,6 +1,6 @@
 <template>
 	<div id="home-page">
-		<h1 class="welcome">Benvenuti su Ventuno, una collezione delle migliori risorse su Bitcoin, in lingua italiana. 🇮🇹</h1>
+		<h1 class="welcome">Benvenuti su Ventuno,<br> una collezione delle migliori risorse Bitcoin, <br> in lingua italiana. 🇮🇹</h1>
 		<div class="subtitle">Impara di più approfondendo ogni categoria.</div>
 
 		<div class="categories">

@@ -124,14 +124,14 @@ export default {
 					group: 'https://t.me/satoshispritzmilano',
 				},
 				{
-					region: 'Piemonte',
-					city: 'Torino',
-					group: 'https://t.me/satoshispritztorino',
-				},
-				{
 					region: 'Lazio',
 					city: 'Roma',
 					group: 'https://t.me/satoshispritzroma',
+				},
+				{
+					region: 'Piemonte',
+					city: 'Torino',
+					group: 'https://t.me/satoshispritztorino',
 				},
 				{
 					region: 'Veneto',
