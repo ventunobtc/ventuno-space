@@ -15,15 +15,16 @@
 
 		</div>
 
-		<p>È molto importante che impariate a fare il backup del vostro seed mnemonico (12 o 24 parole) e che, se usate una passphrase, facciate il backup anche di quella. Leggere <a href="https://bitcoin-intro.com/en/backup" target="_blank">this document</a> to learn more about backing up your wallet and check out the <nuxt-link to="/privacy">privacy page</nuxt-link>.</p>
-		<p>See <a href="https://veriphi.io/en/blog/software-wallet-analysis" target="_blank">this report</a> for a comparison of the features of many of the wallets listed below.</p>
+		<p>È molto importante che impariate a fare il backup del vostro seed mnemonico (12 o 24 parole) e che, se usate una passphrase, facciate il backup anche di quella. <br>
+		  Leggete <a href="https://bitcoin-intro.com/en/backup" target="_blank">questo documento</a> per saperne di più sul backup del vostro wallet e consultate la pagina sulla <nuxt-link to="/privacy">privacy</nuxt-link>.</p>
+		<p>Qui <a href="https://veriphi.io/en/blog/software-wallet-analysis" target="_blank">un confronto</a> delle caratteristiche di molti dei wallet elencati di seguito.</p>
 
-		<h3>Recommended Wallets</h3>
+		<h3>Wallets raccomandati</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
+					<div class="tbl-title">Progetto</div>
 					<div class="tbl-title">Desktop</div>
 					<div class="tbl-title">iOS</div>
 					<div class="tbl-title">Android</div>
@@ -79,9 +80,9 @@
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
-					<div class="tbl-title">Description</div>
-					<div class="tbl-title">Platform</div>
+					<div class="tbl-title">Progetto</div>
+					<div class="tbl-title">Descrizione</div>
+					<div class="tbl-title">Piattaforma</div>
 				</div>
 				<div v-for="(wallet, index) in onChainWallets" :key="index" class="tbl-row">
 					<div>
@@ -98,9 +99,9 @@
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
-					<div class="tbl-title">Description</div>
-					<div class="tbl-title">Platform</div>
+					<div class="tbl-title">Progetto</div>
+					<div class="tbl-title">Descrizione</div>
+					<div class="tbl-title">Piattaforma</div>
 				</div>
 				<div v-for="(wallet, index) in lightningWallets" :key="index" class="tbl-row">
 					<div>
@@ -117,9 +118,9 @@
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
-					<div class="tbl-title">Description</div>
-					<div class="tbl-title">Platform</div>
+					<div class="tbl-title">Progetto</div>
+					<div class="tbl-title">Descrzione</div>
+					<div class="tbl-title">Piattaforma</div>
 				</div>
 				<div v-for="(wallet, index) in closedSourceWallets" :key="index" class="tbl-row">
 					<div>
@@ -136,9 +137,9 @@
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
-					<div class="tbl-title">Description</div>
-					<div class="tbl-title">Platform</div>
+					<div class="tbl-title">Progetto</div>
+					<div class="tbl-title">Descrizione</div>
+					<div class="tbl-title">Piattaforma</div>
 				</div>
 				<div v-for="(wallet, index) in custodialAccounts" :key="index" class="tbl-row">
 					<div>
@@ -155,9 +156,9 @@
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
+					<div class="tbl-title">Progetto</div>
 					<div class="tbl-title">Dev</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(wallet, index) in advancedStorageMethods" :key="index" class="tbl-row">
 					<div>
@@ -184,25 +185,7 @@
 			<p><sup>[7]</sup>These wallets integrate a KYC exchange to buy bitcoin. We recommend against using KYC exchanges due to the <a href="https://bitcoinqna.github.io/noKYConly1/" target="_blank">risks</a>.</p>
 		</div>
 
-		<h3>Depreciated Wallets</h3>
-
-		<div class="tbl-scroller">
-			<div class="tbl-wrapper">
-				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
-					<div class="tbl-title">Description</div>
-					<div class="tbl-title">Platform</div>
-				</div>
-				<div v-for="(wallet, index) in depreciatedWallets" :key="index" class="tbl-row">
-					<div>
-						<a :href="wallet.link" target="_blank">{{ wallet.title }}</a>
-					</div>
-					<div v-html="wallet.description"></div>
-					<div>{{ wallet.platform }}</div>
-				</div>
-			</div>
-		</div>
-
+		
 	</div>
 </template>
 
@@ -597,40 +580,6 @@ export default {
 					]
 				}
 			],
-
-			depreciatedWallets: [
-				{
-					title: 'ABCore',
-					link: 'https://github.com/greenaddress/abcore',
-					description: 'Bitcoin Core full node for Android',
-					platform: 'Android'
-				},
-				{
-					title: 'Armory',
-					link: 'https://www.btcarmory.com/',
-					description: 'Cold storage & multi-sig',
-					platform: 'Desktop'
-				},
-				{
-					title: 'GreenAddress',
-					link: 'https://github.com/greenaddress/WalletElectron/releases/tag/v0.1.04',
-					description: 'Desktop companion to Blockstream Green mobile wallet',
-					platform: 'Desktop'
-				},
-				{
-					title: 'Hodl Wallet',
-					link: 'https://hodlwallet.com/',
-					description: 'Relatively new wallet with simple UI',
-					platform: 'iOS & Android'
-				},
-				{
-					title: 'Bitcoin Lightning Wallet (BLW)',
-					link: 'https://lightning-wallet.com/posts/blw-is-deprecated/',
-					description: 'A standalone SPV Bitcoin node with a fully functional built-in Lightning node',
-					platform: 'Android'
-				}
-			],
-
 		}
 	}
 
