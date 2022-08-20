@@ -214,6 +214,11 @@ export default {
 					link: 'https://hodlinox.com/',
 					description: 'Bitcoin mnemonic seed backup'
 				},
+        {
+					title: 'Jade',
+					link: 'https://blockstream.com/jade/',
+					description: 'Hardware wallet di Blockstream'
+				},
 				{
 					title: 'Opendime',
 					link: 'https://opendime.com/',
