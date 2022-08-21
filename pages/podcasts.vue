@@ -63,6 +63,11 @@ export default {
 					link: 'https://bitcoinitaliapodcast.it/',
 					description: 'Il primo podcast Bitcoin in lingua italiana. Ogni giovedì alle 17'
 				},
+				{
+					title: 'Bitcoin Cabana',
+					link: 'https://bitcoincabana.com/',
+					description: 'Questo podcast esplora Bitcoin, macroeconomia e le tesi di investimento che ne emergono'
+				},
 			]
 		}
 	}
