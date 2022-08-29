@@ -7,7 +7,11 @@
 
 			<h3>Come Iniziare</h3>
 
-			<p>'Bitcoin Dalla Teoria alla pratica' di Alessio Barnini e Alessandro Aglietti (<a href="https://www.amazon.it/Bitcoin-Dalla-teoria-alla-pratica/dp/B07SNNNL2P" target="_blank">Copia fisica</a> | <a href="https://github.com/bitcoin-dalla-teoria-alla-pratica" target="_blank">GitHub</a>).</p>
+			<ul>
+				<li>Bitcoin: "Mastering Bitcoin" (<a href="https://www.amazon.it/Mastering-Bitcoin-Traduzione-italiana-blockchain-ebook/dp/B07WHDK5K9/" target="_blank">Copia fisica</a> | <a href="https://github.com/bitcoinbook/bitcoinbook" target="_blank">GitHub</a>)</li>
+				<li>Lightning: "Mastering the Lightning Network (LN)" (<a href="https://www.amazon.it/Mastering-Lightning-Network-Blockchain-Protocol/dp/1492054860/" target="_blank">Copia fisica</a> | <a href="https://github.com/lnbook/lnbook" target="_blank">GitHub</a>)</li>
+			</ul>
+
 
 			<p>La maggior parte delle risorse sullo Sviluppo sono in lingua inglese</p>
 
