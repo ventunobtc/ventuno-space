@@ -109,11 +109,6 @@ export default {
 					to: '/privacy'
 				},
 				{
-					title: 'Lavora con Bitcoin',
-					icon: 'jobs',
-					to: '/jobs'
-				},
-				{
 					title: 'Peers',
 					icon: '',
 					to: '/peers'
@@ -134,7 +129,7 @@ export default {
 					to: '/contact'
 				},
 				{
-					title: 'Listing Requirements',
+					title: 'Requisiti Listing',
 					icon: '',
 					to: '/listing-requirements'
 				}

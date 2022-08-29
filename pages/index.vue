@@ -1,6 +1,6 @@
 <template>
 	<div id="home-page">
-		<h1 class="welcome">Benvenuti su Ventuno,<br> una collezione delle migliori risorse Bitcoin, <br> in lingua italiana. 🇮🇹</h1>
+		<h1 class="welcome">Benvenuti su Ventuno<br> Una collezione delle migliori risorse Bitcoin, <br> in lingua italiana. 🇮🇹</h1>
 		<div class="subtitle">Impara di più approfondendo ogni categoria.</div>
 
 		<div class="categories">
@@ -110,11 +110,6 @@ export default {
 					title: 'Privacy',
 					icon: 'privacy',
 					to: '/privacy'
-				},
-				{
-					title: 'Lavora con Bitcoin',
-					icon: 'jobs',
-					to: '/jobs'
 				},
 				{
 					title: 'Peers',
