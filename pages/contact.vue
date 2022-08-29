@@ -3,11 +3,12 @@
 
 		<h1 class="page-title">Contatti</h1>
 
-		<p>Avete domande? Avete bisogno di aiuto? Contattateci e faremo del nostro meglio per aiutarvi.</p>
+		<p>Avete domande? Avete bisogno di aiuto? Scrivete un messaggio su Telegram e faremo del nostro meglio per aiutarvi.</p>
 
 		<ul class="contact-methods">
 
 			<li>Linktree - <a href="https://linktr.ee/ventunobtc" target="_blank">linktr.ee/ventunobtc</a></li>
+			<li>Telegram - <a href="https://t.me/ventunobtc" target="_blank">t.me/ventunobtc</a></li>
 			<li>Twitter - <a href="https://twitter.com/VentunoBtc" target="_blank">@VentunoBtc</a></li>
 			<li>GitHub Issue - <a href="https://github.com/ventunobtc/bitcoin-only/issues/new/choose" target="_blank">Apri una issue su GitHub</a></li>
 			<li></li>
