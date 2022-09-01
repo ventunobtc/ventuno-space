@@ -1,24 +1,24 @@
 <template>
 	<div class="listing-requirements-page">
 
-		<h1 class="page-title">Listing Requirements</h1>
+		<h1 class="page-title">Requisiti Listing</h1>
 
-		<h3>New Project Requirements</h3>
 
-		<p>For a new project to be listed on bitcoin-only it must simply meet the following two requirements:</p>
+		<h3>Requisiti per listing di nuovi progetti</h3>
+		<p>Affinché un nuovo progetto possa essere inserito nell'elenco di ventuno.space, deve semplicemente soddisfare i due seguenti requisiti:</p>
 
 		<ul class="requirements-list">
-			<li><span>1)</span>Support Bitcoin</li>
-			<li><span>2)</span>Not support altcoins</li>
+			<li><span>1)</span>Supportare Bitcoin</li>
+			<li><span>2)</span>Non supportare altcoins</li>
 		</ul>
 
-		<h3>How Do I Get My Project Added?</h3>
+		<h3>Come faccio a far aggiungere il mio progetto?</h3>
 
-		<p>Simply make an issue on the GitHub repo by <a href="https://github.com/bitcoin-only/bitcoin-only/issues/new/choose" target="_blank">following this link</a> and clicking the "Content Suggestion - Get Started" button (see below image):</p>
+		<p>È sufficiente creare una issue sul repo GitHub con <a href="https://github.com/ventunobtc/bitcoin-only/issues/new/choose" target="_blank">seguendo il seguente link</a> e cliccando il bottone "Content Suggestion - Get Started"  (vedi immagine sotto):</p>
 
 		<img src="/content-suggestion.png" alt="Suggest new content on Bitcoin-only">
 
-		<p>Replace the words in CAPITAL LETTERS and click "Sumbit New Issue"</p>
+		<p>Modificare le PAROLE IN MAIUSCOLO e cliccare "Sumbit New Issue"</p>
 
 		<img src="/content-suggestion-example.png" alt="Suggest new content example on Bitcoin-only">
 

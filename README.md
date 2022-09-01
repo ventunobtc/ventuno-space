@@ -9,18 +9,18 @@ Nasce come personalizzazione del sito [bitcoin-only](https://bitcoin-only.com), 
 - [X] Libri
 - [X] Conferenze
 - [X] Contatti
-- [ ] Sviluppo
-- [ ] Explorer / Dashboard
+- [X] Sviluppo
+- [X] Explorer / Dashboard
 - [X] Ottieni Bitcoin
 - [ ] Hardware
 - [X] Indice
-- [X] Lavoro
+- [X] Requisiti Listing 
 - [ ] Risorse Didattiche
 - [X] Meetups
 - [ ] Peers
 - [X] Podcasts
 - [ ] Privacy
-- [ ] Promuovi
+- [X] Promuovi
 - [ ] Spendi Bitcoind
 - [ ] Fatti pagare in Bitcoin
 - [ ] Video
@@ -29,6 +29,7 @@ Nasce come personalizzazione del sito [bitcoin-only](https://bitcoin-only.com), 
 
 
 ## Build Setup
+
 
 ```bash
 # install dependencies
