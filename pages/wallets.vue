@@ -27,8 +27,8 @@
 					<div class="tbl-title">Progetto</div>
 					<div class="tbl-title">CoinControl</div>
 					<div class="tbl-title">CoinJoin</div>
-					<div class="tbl-title">OnChain</div>
-					<div class="tbl-title">Lightning</div>
+					<div class="tbl-title">Bech32</div>
+					<div class="tbl-title">RBF</div>
 					<div class="tbl-title">Multisig</div>
 					<div class="tbl-title">Tor</div>
 					<div class="tbl-title">BIP47</div>
@@ -45,11 +45,11 @@
 					<!-- coinjoin -->
 					<div v-if="wallet.coinjoin"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
-					<!-- onchain -->
-					<div v-if="wallet.onchain"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<!-- bech32 -->
+					<div v-if="wallet.bech32"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
-					<!-- lightning -->
-					<div v-if="wallet.lightning"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<!-- rbf -->
+					<div v-if="wallet.rbf"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
 					<!-- multisig -->
 					<div v-if="wallet.multisig"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
@@ -219,6 +219,7 @@ export default {
 				{
 					title: 'Blockstream Green',
 					link: 'https://blockstream.com/green/',
+					bech32: false,
 					// Aggiungere caratteristiche wallet
 					platform: 'iOS, Android, Desktop'
 				},
@@ -263,8 +264,8 @@ export default {
 					link: 'https://muun.com/',
 					coincontrol: false,
 					coinjoin: false,
-					onchain: false,
-					lightning: true,
+					bech32: true,
+					rbf: true,
 					multisig: false,
 					tor: false,
 					bip47: false,
@@ -275,8 +276,8 @@ export default {
 					link: 'https://samouraiwallet.com/',
 					coincontrol: true,
 					coinjoin: true,
-					onchain: true,
-					lightning: false,
+					bech32: true,
+					rbf: false,
 					multisig: false,
 					tor: true,
 					bip47: true,
@@ -293,8 +294,8 @@ export default {
 					link: 'https://www.sparrowwallet.com/',
 					coincontrol: true,
 					coinjoin: true,
-					onchain: true,
-					lightning: false,
+					bech32: true,
+					rbf: false,
 					multisig: true,
 					tor: true,
 					bip47: true,
