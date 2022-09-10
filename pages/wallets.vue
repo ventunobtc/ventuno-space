@@ -19,15 +19,12 @@
 		  Leggete <a href="https://bitcoin-intro.com/en/backup" target="_blank">questo documento</a> per saperne di più sul backup del vostro wallet e consultate la pagina sulla <nuxt-link to="/privacy">privacy</nuxt-link>.</p>
 		<p>Qui <a href="https://veriphi.io/en/blog/software-wallet-analysis" target="_blank">un confronto</a> delle caratteristiche di molti dei wallet elencati di seguito.</p>
 
-		<h3>Wallets raccomandati</h3>
+		<h3>On-Chain Wallet</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
 					<div class="tbl-title">Progetto</div>
-					<div class="tbl-title">Desktop</div>
-					<div class="tbl-title">iOS</div>
-					<div class="tbl-title">Android</div>
 					<div class="tbl-title">CoinControl</div>
 					<div class="tbl-title">CoinJoin</div>
 					<div class="tbl-title">OnChain</div>
@@ -35,27 +32,19 @@
 					<div class="tbl-title">Multisig</div>
 					<div class="tbl-title">Tor</div>
 					<div class="tbl-title">BIP47</div>
+					<div class="tbl-title">Piattaforma</div>
 				</div>
-				<div v-for="(wallet, index) in recommendedWallets" :key="index" class="tbl-row">
+				<div v-for="(wallet, index) in onChainWallets" :key="index" class="tbl-row">
 					<div>
 						<a :href="wallet.link" target="_blank">{{ wallet.title }}</a>
 					</div>
 
-					<!-- desktop -->
-					<div v-if="wallet.desktop"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
-					<!-- ios -->
-					<div v-if="wallet.ios"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
-					<!-- android -->
-					<div v-if="wallet.android"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
 					<!-- coincontrol -->
 					<div v-if="wallet.coincontrol"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
 					<!-- coinjoin -->
 					<div v-if="wallet.coinjoin"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
 					<!-- onchain -->
 					<div v-if="wallet.onchain"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
@@ -71,25 +60,9 @@
 					<!-- BIP47 -->
 					<div v-if="wallet.bip47"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
-				</div>
-			</div>
-		</div>
-		
-		<h3>On-Chain Wallets</h3>
-
-		<div class="tbl-scroller">
-			<div class="tbl-wrapper">
-				<div class="tbl-header">
-					<div class="tbl-title">Progetto</div>
-					<div class="tbl-title">Descrizione</div>
-					<div class="tbl-title">Piattaforma</div>
-				</div>
-				<div v-for="(wallet, index) in onChainWallets" :key="index" class="tbl-row">
-					<div>
-						<a :href="wallet.link" target="_blank">{{ wallet.title }}</a>
-					</div>
-					<div v-html="wallet.description"></div>
-					<div>{{ wallet.platform }}</div>
+					<!-- Platform -->
+					<div v-html="wallet.platform"></div>
+					
 				</div>
 			</div>
 		</div>
@@ -175,8 +148,8 @@
 		</div>
 
 		<div class="footnotes">
-			<p><sup>[0]</sup>Google Drive backups allow companies to access your email address, name, and Google profile picture. It's strongly recommended to use a separate Google account to use these apps.</p>
-			<p><sup>[1]</sup>Blue Wallet's Lightning is custodial by default, but users can opt to connect their app to their own Lightning node using LNDhub. The on-chain functionality is non-custodial.</p>
+			<p><sup>[0]</sup>I backup di Google Drive consentono alle aziende di accedere al tuo indirizzo e-mail, nome e immagine profilo di Google. Si consiglia vivamente di utilizzare un account Google separato per utilizzare queste applicazioni.</p>
+			<p><sup>[1]</sup>Il wallet Lightning è custodial di default, ma gli utenti possono scegliere di collegare la propria applicazione al proprio nodo Lightning utilizzando LNDhub. Il wallet on-chain non è custodial.</p>
 			<p><sup>[2]</sup>Bottle.li is fully custodial, meaning you do not have your private keys, thus you are not guaranteed full control of your funds.</p>
 			<p><sup>[3]</sup>Opennode is fully custodial, meaning you do not have your private keys, thus you are not guaranteed full control of your funds. You can (and should) set reoccurring withdrawals to send any bitcoin you receive to your own wallet.</p>
 			<p><sup>[4]</sup>Tippin.me is fully custodial, meaning you do not have your private keys, thus you are not guaranteed full control of your funds.</p>
@@ -236,41 +209,58 @@ export default {
 
 	data() {
 		return {
-			recommendedWallets: [
+			onChainWallets: [
 				{
-					title: 'Sparrow Wallet',
-					link: 'https://www.sparrowwallet.com/',
-					desktop: true,
-					ios: false,
-					android: false,
-					coincontrol: true,
-					coinjoin: true,
-					onchain: true,
-					lightning: false,
-					multisig: true,
-					tor: true,
-					bip47: true,
+					title: 'Bitcoin Core',
+					link: 'https://bitcoincore.org/',
+					// Aggiungere caratteristiche wallet
+					platform: 'Desktop'
 				},
 				{
-					title: 'Samourai Wallet',
-					link: 'https://samouraiwallet.com/',
-					desktop: false,
-					ios: false,
-					android: true,
-					coincontrol: true,
-					coinjoin: true,
-					onchain: true,
-					lightning: false,
-					multisig: false,
-					tor: true,
-					bip47: true,
+					title: 'Blockstream Green',
+					link: 'https://blockstream.com/green/',
+					// Aggiungere caratteristiche wallet
+					platform: 'iOS, Android, Desktop'
+				},
+				{
+					title: 'Blue Wallet',
+					link: 'https://bluewallet.io/',
+					// Aggiungere caratteristiche wallet
+					platform: 'iOS, Android, MacOS<sup>[1]</sup>,<sup>[7]</sup>'
+				},
+				{
+					title: 'Caravan',
+					link: 'https://unchained-capital.github.io/caravan/#/',
+					// Aggiungere caratteristiche wallet
+					platform: 'Desktop'
+				},
+				{
+					title: 'Electrum',
+					link: 'https://electrum.org/#home',
+					// Aggiungere caratteristiche wallet
+					platform: 'Desktop, Android'
+				},
+				{
+					title: 'Fully Noded',
+					link: 'https://fonta1n3.github.io/FullyNoded/',
+					// Aggiungere caratteristiche wallet
+					platform: 'iOS'
+				},
+				{
+					title: 'Hexa Wallet',
+					link: 'https://hexawallet.io/',
+					// Aggiungere caratteristiche wallet
+					platform: 'iOS, Android<sup>[7]</sup>'
+				},
+				{
+					title: 'Lily Wallet',
+					link: 'https://lily.kevinmulcrone.com/',
+					// Aggiungere caratteristiche wallet
+					platform: 'Desktop'
 				},
 				{
 					title: 'Muun Wallet',
 					link: 'https://muun.com/',
-					desktop: false,
-					ios: true,
-					android: true,
 					coincontrol: false,
 					coinjoin: false,
 					onchain: false,
@@ -278,86 +268,42 @@ export default {
 					multisig: false,
 					tor: false,
 					bip47: false,
-				},
-			],
-
-			onChainWallets: [
-				{
-					title: 'Bitcoin Core',
-					link: 'https://bitcoincore.org/',
-					description: 'Full node & Bitcoin wallet',
-					platform: 'Desktop'
-				},
-				{
-					title: 'Blockstream Green',
-					link: 'https://blockstream.com/green/',
-					description: 'Bitcoin Wallet with option for 2FA & HW',
-					platform: 'iOS, Android & Desktop'
-				},
-				{
-					title: 'Blue Wallet',
-					link: 'https://bluewallet.io/',
-					description: 'Feature rich Bitcoin wallet<sup>[1]</sup>,<sup>[7]</sup>',
-					platform: 'iOS, Android, MacOS'
-				},
-				{
-					title: 'Caravan',
-					link: 'https://unchained-capital.github.io/caravan/#/',
-					description: 'Stateless multi-sig coordinator',
-					platform: 'Desktop'
-				},
-				{
-					title: 'Electrum',
-					link: 'https://electrum.org/#home',
-					description: 'The most feature rich bitcoin desktop wallet available today',
-					platform: 'Desktop, Android'
-				},
-				{
-					title: 'Fully Noded',
-					link: 'https://fonta1n3.github.io/FullyNoded/',
-					description: 'Advanced iOS wallet that connects to Bitcoin Core',
-					platform: 'iOS'
-				},
-				{
-					title: 'Hexa Wallet',
-					link: 'https://hexawallet.io/',
-					description: 'Relatively new Shamir Secret Sharing based recovery wallet <sup>[7]</sup>',
-					platform: 'iOS & Android'
-				},
-				{
-					title: 'Lily Wallet',
-					link: 'https://lily.kevinmulcrone.com/',
-					description: 'Relatively new multi-sig wallet with simple UI (Paid Features)',
-					platform: 'Desktop'
-				},
-				{
-					title: 'Muun Wallet',
-					link: 'https://muun.com/',
-					description: 'Relatively new wallet with novel multi-sig 2-of-2 spending.',
-					platform: 'iOS & Android'
+					platform: 'iOS, Android'
 				},
 				{
 					title: 'Samourai Wallet',
 					link: 'https://samouraiwallet.com/',
-					description: 'The most feature rich and advanced Bitcoin wallet available on Android today',
+					coincontrol: true,
+					coinjoin: true,
+					onchain: true,
+					lightning: false,
+					multisig: false,
+					tor: true,
+					bip47: true,
 					platform: 'Android'
 				},
 				{
 					title: 'Simple Bitcoin Wallet',
 					link: 'https://sbw.app/',
-					description: 'Bitcoin wallet with Coin Control, RBF & CPFP',
+					// Aggiungere caratteristiche wallet
 					platform: 'Android'
 				},
 				{
 					title: 'Sparrow Wallet',
 					link: 'https://www.sparrowwallet.com/',
-					description: 'Standards based desktop wallet with CoinJoin & BIP47',
+					coincontrol: true,
+					coinjoin: true,
+					onchain: true,
+					lightning: false,
+					multisig: true,
+					tor: true,
+					bip47: true,
 					platform: 'Desktop'
 				},
 				{
 					title: 'Specter',
 					link: 'https://github.com/cryptoadvance/specter-desktop',
-					description: 'Desktop GUI for Bitcoin Core optimised to work with hardware wallets & multisig <sup>[7]</sup>',
+					// Aggiungere caratteristiche wallet
 					platform: 'Desktop'
 				},
 			],
