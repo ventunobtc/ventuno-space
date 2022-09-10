@@ -86,25 +86,6 @@
 			</div>
 		</div>
 
-		<h3>Closed Sourced Wallets</h3>
-
-		<div class="tbl-scroller">
-			<div class="tbl-wrapper">
-				<div class="tbl-header">
-					<div class="tbl-title">Progetto</div>
-					<div class="tbl-title">Descrzione</div>
-					<div class="tbl-title">Piattaforma</div>
-				</div>
-				<div v-for="(wallet, index) in closedSourceWallets" :key="index" class="tbl-row">
-					<div>
-						<a :href="wallet.link" target="_blank">{{ wallet.title }}</a>
-					</div>
-					<div v-html="wallet.description"></div>
-					<div>{{ wallet.platform }}</div>
-				</div>
-			</div>
-		</div>
-
 		<h3>Custodial Accounts</h3>
 
 		<div class="tbl-scroller">
@@ -387,27 +368,6 @@ export default {
 					link: 'https://zeusln.app/',
 					description: 'Mobile app for LND users',
 					platform: 'iOS, Android'
-				}
-			],
-
-			closedSourceWallets: [
-				{
-					title: 'Casa Keymaster',
-					link: 'https://keys.casa/keymaster/',
-					description: 'Multi-sig Bitcoin<sup>[0]</sup>',
-					platform: 'iOS, Android'
-				},
-				{
-					title: 'Nunchuk',
-					link: 'https://nunchuk.io/',
-					description: 'Multi-sig Bitcoin [New] (frontend is closed source)',
-					platform: 'Desktop'
-				},
-				{
-					title: 'Unchained vault',
-					link: 'https://unchained.com/personal/',
-					description: 'Multi-sig Bitcoin',
-					platform: 'Desktop'
 				}
 			],
 
