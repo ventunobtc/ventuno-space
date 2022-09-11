@@ -77,9 +77,23 @@
 					<div class="tbl-title">Swap</div>
 					<div class="tbl-title">Taproot</div>
 					<div class="tbl-title">BTCPay</div>
-					<div class="tbl-title">URI Scheme</div>
+					<div class="tbl-title">API</div>
 					<div class="tbl-title">Tor</div>
 					<div class="tbl-title">Testnet</div>
+					<div class="tbl-title">Connessione nodo</div>
+					<div class="tbl-title">Submarine swap</div>
+					<div class="tbl-title">URI Scheme</div>
+					<div class="tbl-title">LNURL-p</div>
+					<div class="tbl-title">LNURL-w</div>
+					<div class="tbl-title">Bolt12</div>
+					<div class="tbl-title">Canali pubblci</div>
+					<div class="tbl-title">Canali privati</div>
+					<div class="tbl-title">Channel factories</div>
+					<div class="tbl-title">Anchor channel</div>
+					<div class="tbl-title">Wumbo channel</div>
+					<div class="tbl-title">Turbo channel</div>
+					<div class="tbl-title">AMP</div>
+
 					<div class="tbl-title">Piattaforma</div>
 				</div>
 				<div v-for="(wallet, index) in lightningWallets" :key="index" class="tbl-row">
@@ -99,14 +113,56 @@
 					<!-- BTCPay -->
 					<div v-if="wallet.btcpay"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
-					<!-- URI -->
-					<div v-if="wallet.uri"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<!-- API -->
+					<div v-if="wallet.api"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
-					<!-- tor -->
+					<!-- Tor -->
 					<div v-if="wallet.tor"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
 					<!-- testnet -->
 					<div v-if="wallet.testnet"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Connessione nodo -->
+					<div v-if="wallet.nodo"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Submarine swap -->
+					<div v-if="wallet.submarine"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- URI -->
+					<div v-if="wallet.uri"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- LNURL-p -->
+					<div v-if="wallet.lnurl"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
+					<!-- LNURL-w -->
+					<div v-if="wallet.lnurl"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
+					<!-- Bolt12 -->
+					<div v-if="wallet.bolt12"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Canali pubblici -->
+					<div v-if="wallet.public"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Canali privati -->
+					<div v-if="wallet.private"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Trampoline payments -->
+					<div v-if="wallet.trampoline"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Channel factories -->
+					<div v-if="wallet.factories"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Anchor channel -->
+					<div v-if="wallet.anchor"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Wumbo channel -->
+					<div v-if="wallet.wumbo"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Trubo channel -->
+					<div v-if="wallet.turbo"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- AMP -->
+					<div v-if="wallet.amp"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
 					<!-- Platform -->
 					<div v-html="wallet.platform"></div>
@@ -317,79 +373,79 @@ export default {
 				{
 					title: 'Blixt Wallet',
 					link: 'https://blixtwallet.github.io/',
-					//description: 'Non-custodial Bitcoin Lightning Wallet',
+					// Aggiungere caratteristiche wallet
 					platform: 'iOS & Android (Beta)'
 				},
 				{
 					title: 'Breez',
 					link: 'https://breez.technology/',
-					//description: 'Mobile non-custodial wallet',
+					// Aggiungere caratteristiche wallet
 					platform: 'iOS & Android (Beta)<sup>[0]</sup>'
 				},
 				{
 					title: 'Eclair',
 					link: 'https://github.com/ACINQ/eclair',
-					//description: 'Lightning node software',
+					// Aggiungere caratteristiche wallet
 					platform: 'Desktop'
 				},
 				{
 					title: 'Eclair Mobile',
 					link: 'https://github.com/ACINQ/eclair-mobile',
-					//description: 'Lightning-ready Bitcoin wallet',
+					// Aggiungere caratteristiche wallet
 					platform: 'Android'
 				},
 				{
 					title: 'Electrum',
 					link: 'https://electrum.org/#home',
-					//description: 'The most feature rich bitcoin desktop wallet available today',
+					// Aggiungere caratteristiche wallet
 					platform: 'Desktop'
 				},
 				{
 					title: 'Muun Wallet',
 					link: 'https://muun.com/',
-					//description: 'Relatively new lightning wallet',
+					// Aggiungere caratteristiche wallet
 					platform: 'iOS & Android'
 				},
 				{
 					title: 'Phoenix',
 					link: 'https://phoenix.acinq.co/',
-					//description: 'Lightning-only Bitcoin wallet',
+					// Aggiungere caratteristiche wallet
 					platform: 'iOS & Android'
 				},
 				{
 					title: 'Ride The Lightning',
 					link: 'https://github.com/Ride-The-Lightning/RTL',
-					//description: 'Web user interface to manage lightning node operations',
+					// Aggiungere caratteristiche wallet
 					platform: 'Web'
 				},
 				{
 					title: 'Sats App',
 					link: 'https://satsapp.com/',
-					//description: 'Mobile non-custodial wallet connected to Casa node (Paid Features)',
+					// Aggiungere caratteristiche wallet
 					platform: 'iOS & Android (Beta)'
 				},
 				{
 					title: 'Simple Bitcoin Wallet',
 					link: 'https://sbw.app/',
-					//description: 'Bitcoin wallet with fully functional built-in Lightning node',
+					// Aggiungere caratteristiche wallet
 					platform: 'Android'
 				},
 				{
 					title: 'Thunderhub',
 					link: 'https://thunderhub.io',
-					//description: 'Web user interface to manage lightning node operations',
+					// Aggiungere caratteristiche wallet
 					platform: 'Web'
 				},
 				{
 					title: 'Zap',
 					link: 'https://zap.jackmallers.com/',
-					//description: 'Desktop Lightning wallet. Mobile LND interface',
+					// Aggiungere caratteristiche wallet
 					platform: 'Desktop, iOS, Android'
 				},
 				{
 					title: 'Zeus',
 					link: 'https://zeusln.app/',
-					//description: 'Mobile app for LND users',
+					// Aggiungere caratteristiche wallet
 					platform: 'iOS, Android'
 				}
 			],
