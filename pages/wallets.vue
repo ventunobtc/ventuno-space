@@ -73,15 +73,44 @@
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
 					<div class="tbl-title">Progetto</div>
-					<div class="tbl-title">Descrizione</div>
+					<div class="tbl-title">Canali</div>
+					<div class="tbl-title">Swap</div>
+					<div class="tbl-title">Taproot</div>
+					<div class="tbl-title">BTCPay</div>
+					<div class="tbl-title">URI Scheme</div>
+					<div class="tbl-title">Tor</div>
+					<div class="tbl-title">Testnet</div>
 					<div class="tbl-title">Piattaforma</div>
 				</div>
 				<div v-for="(wallet, index) in lightningWallets" :key="index" class="tbl-row">
 					<div>
 						<a :href="wallet.link" target="_blank">{{ wallet.title }}</a>
 					</div>
-					<div v-html="wallet.description"></div>
-					<div>{{ wallet.platform }}</div>
+
+					<!-- canali -->
+					<div v-if="wallet.canali"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- swap -->
+					<div v-if="wallet.swap"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
+					<!-- taproot -->
+					<div v-if="wallet.taproot"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- BTCPay -->
+					<div v-if="wallet.btcpay"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- URI -->
+					<div v-if="wallet.uri"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- tor -->
+					<div v-if="wallet.tor"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- testnet -->
+					<div v-if="wallet.testnet"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Platform -->
+					<div v-html="wallet.platform"></div>
+					
 				</div>
 			</div>
 		</div>
@@ -294,79 +323,79 @@ export default {
 				{
 					title: 'Blixt Wallet',
 					link: 'https://blixtwallet.github.io/',
-					description: 'Non-custodial Bitcoin Lightning Wallet',
+					//description: 'Non-custodial Bitcoin Lightning Wallet',
 					platform: 'iOS & Android (Beta)'
 				},
 				{
 					title: 'Breez',
 					link: 'https://breez.technology/',
-					description: 'Mobile non-custodial wallet<sup>[0]</sup>',
+					//description: 'Mobile non-custodial wallet<sup>[0]</sup>',
 					platform: 'iOS & Android (Beta)'
 				},
 				{
 					title: 'Eclair',
 					link: 'https://github.com/ACINQ/eclair',
-					description: 'Lightning node software',
+					//description: 'Lightning node software',
 					platform: 'Desktop'
 				},
 				{
 					title: 'Eclair Mobile',
 					link: 'https://github.com/ACINQ/eclair-mobile',
-					description: 'Lightning-ready Bitcoin wallet',
+					//description: 'Lightning-ready Bitcoin wallet',
 					platform: 'Android'
 				},
 				{
 					title: 'Electrum',
 					link: 'https://electrum.org/#home',
-					description: 'The most feature rich bitcoin desktop wallet available today',
+					//description: 'The most feature rich bitcoin desktop wallet available today',
 					platform: 'Desktop'
 				},
 				{
 					title: 'Muun Wallet',
 					link: 'https://muun.com/',
-					description: 'Relatively new lightning wallet',
+					//description: 'Relatively new lightning wallet',
 					platform: 'iOS & Android'
 				},
 				{
 					title: 'Phoenix',
 					link: 'https://phoenix.acinq.co/',
-					description: 'Lightning-only Bitcoin wallet',
+					//description: 'Lightning-only Bitcoin wallet',
 					platform: 'iOS & Android'
 				},
 				{
 					title: 'Ride The Lightning',
 					link: 'https://github.com/Ride-The-Lightning/RTL',
-					description: 'Web user interface to manage lightning node operations',
+					//description: 'Web user interface to manage lightning node operations',
 					platform: 'Web'
 				},
 				{
 					title: 'Sats App',
 					link: 'https://satsapp.com/',
-					description: 'Mobile non-custodial wallet connected to Casa node (Paid Features)',
+					//description: 'Mobile non-custodial wallet connected to Casa node (Paid Features)',
 					platform: 'iOS & Android (Beta)'
 				},
 				{
 					title: 'Simple Bitcoin Wallet',
 					link: 'https://sbw.app/',
-					description: 'Bitcoin wallet with fully functional built-in Lightning node',
+					//description: 'Bitcoin wallet with fully functional built-in Lightning node',
 					platform: 'Android'
 				},
 				{
 					title: 'Thunderhub',
 					link: 'https://thunderhub.io',
-					description: 'Web user interface to manage lightning node operations',
+					//description: 'Web user interface to manage lightning node operations',
 					platform: 'Web'
 				},
 				{
 					title: 'Zap',
 					link: 'https://zap.jackmallers.com/',
-					description: 'Desktop Lightning wallet. Mobile LND interface',
+					//description: 'Desktop Lightning wallet. Mobile LND interface',
 					platform: 'Desktop, iOS, Android'
 				},
 				{
 					title: 'Zeus',
 					link: 'https://zeusln.app/',
-					description: 'Mobile app for LND users',
+					//description: 'Mobile app for LND users',
 					platform: 'iOS, Android'
 				}
 			],
