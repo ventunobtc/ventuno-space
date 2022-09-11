@@ -105,7 +105,7 @@
 			</div>
 		</div>
 
-		<h3>Advanced Storage Methods</h3>
+		<h3>Metodi di storage avanzati</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
@@ -408,22 +408,11 @@ export default {
 				{
 					title: '10x Security Bitcoin Guide',
 					link: 'https://btcguide.github.io/',
-					description: 'Store bitcoin without a single point of failure.',
+					description: 'Conservare bitcoin da maniaci.',
 					devs: [
 						{
 							name: 'Michael Flaxman',
 							link: 'https://twitter.com/mflaxman/'
-						}
-					]
-				},
-				{
-					title: 'Casa Wealth Security Protocol',
-					link: 'https://github.com/Casa/wealth-security-protocol',
-					description: 'Casa approach to designing their service <sup>[6]</sup>',
-					devs: [
-						{
-							name: 'Casa Team',
-							link: 'https://twitter.com/CasaHODL'
 						}
 					]
 				},
@@ -441,7 +430,7 @@ export default {
 				{
 					title: 'Glacier Protocol',
 					link: 'https://glacierprotocol.org/',
-					description: '[OLD] Cold storage protocol',
+					description: '[OLD] Protocollo cold storage',
 					devs: [
 						{
 							name: 'Glacier Protocol',
@@ -452,7 +441,7 @@ export default {
 				{
 					title: 'Hodl Guides',
 					link: 'https://github.com/DriftwoodPalace/guides',
-					description: '[OLD] Multiple guides to cold storage.',
+					description: '[OLD] Guide per cold storage.',
 					devs: [
 						{
 							name: 'Driftwood Palace',
@@ -463,7 +452,7 @@ export default {
 				{
 					title: 'Rusty\'s Bitcoin Storage Guide',
 					link: 'https://github.com/rustyrussell/bitcoin-storage-guide',
-					description: '[OLD] Cold storage guide.',
+					description: '[OLD] Guida per cold storage.',
 					devs: [
 						{
 							name: 'Rusty Russell',
@@ -474,7 +463,7 @@ export default {
 				{
 					title: 'Smart Custody',
 					link: 'https://github.com/BlockchainCommons/SmartCustodyWhitePapers/blob/master/%23SmartCustody-_Simple_Self-Custody_Cold_Storage_Scenario.md',
-					description: '[OLD] Best Practices for Cold Storage',
+					description: '[OLD] Best practices per cold storage',
 					devs: [
 						{
 							name: 'C. Allen',
