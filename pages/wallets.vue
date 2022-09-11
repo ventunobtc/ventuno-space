@@ -160,14 +160,8 @@
 		<div class="footnotes">
 			<p><sup>[0]</sup>I backup di Google Drive consentono alle aziende di accedere al tuo indirizzo e-mail, nome e immagine profilo di Google. Si consiglia vivamente di utilizzare un account Google separato per utilizzare queste applicazioni.</p>
 			<p><sup>[1]</sup>Il wallet Lightning è custodial di default, ma gli utenti possono scegliere di collegare la propria applicazione al proprio nodo Lightning utilizzando LNDhub. Il wallet on-chain non è custodial.</p>
-			<p><sup>[2]</sup>Bottle.li is fully custodial, meaning you do not have your private keys, thus you are not guaranteed full control of your funds.</p>
-			<p><sup>[3]</sup>Opennode is fully custodial, meaning you do not have your private keys, thus you are not guaranteed full control of your funds. You can (and should) set reoccurring withdrawals to send any bitcoin you receive to your own wallet.</p>
-			<p><sup>[4]</sup>Tippin.me is fully custodial, meaning you do not have your private keys, thus you are not guaranteed full control of your funds.</p>
-			<p><sup>[5]</sup>Wallet of Satoshi is fully custodial, meaning you do not have your private keys, thus you are not guaranteed full control of your funds.</p>
-			<p><sup>[6]</sup>Since the wallet is closed source, we recommend using 3/5 and only with hardware devices that you source independently.</p>
-			<p><sup>[7]</sup>These wallets integrate a KYC exchange to buy bitcoin. We recommend against using KYC exchanges due to the <a href="https://bitcoinqna.github.io/noKYConly1/" target="_blank">risks</a>.</p>
+			<p><sup>[2]</sup>These wallets integrate a KYC exchange to buy bitcoin. We recommend against using KYC exchanges due to the <a href="https://bitcoinqna.github.io/noKYConly1/" target="_blank">risks</a>.</p>
 		</div>
-
 		
 	</div>
 </template>
@@ -237,7 +231,7 @@ export default {
 					title: 'Blue Wallet',
 					link: 'https://bluewallet.io/',
 					// Aggiungere caratteristiche wallet
-					platform: 'iOS, Android, MacOS<sup>[1]</sup>,<sup>[7]</sup>'
+					platform: 'iOS, Android, MacOS<sup>[1]</sup>,<sup>[2]</sup>'
 				},
 				{
 					title: 'Caravan',
@@ -261,7 +255,7 @@ export default {
 					title: 'Hexa Wallet',
 					link: 'https://hexawallet.io/',
 					// Aggiungere caratteristiche wallet
-					platform: 'iOS, Android<sup>[7]</sup>'
+					platform: 'iOS, Android<sup>[2]</sup>'
 				},
 				{
 					title: 'Lily Wallet',
@@ -329,8 +323,8 @@ export default {
 				{
 					title: 'Breez',
 					link: 'https://breez.technology/',
-					//description: 'Mobile non-custodial wallet<sup>[0]</sup>',
-					platform: 'iOS & Android (Beta)'
+					//description: 'Mobile non-custodial wallet',
+					platform: 'iOS & Android (Beta)<sup>[0]</sup>'
 				},
 				{
 					title: 'Eclair',
@@ -410,25 +404,25 @@ export default {
 				{
 					title: 'Bottlepay',
 					link: 'https://bottlepay.com/',
-					description: 'Lightning Social Tipping<sup>[2]</sup>',
+					description: 'Lightning Social Tipping',
 					platform: 'Web'
 				},
 				{
 					title: 'Opennode',
 					link: 'https://opennode.co/',
-					description: 'Accept Bitcoin & Lightning payments<sup>[3]</sup>',
+					description: 'Accept Bitcoin & Lightning payments',
 					platform: 'Web'
 				},
 				{
 					title: 'Tippin.me',
 					link: 'https://tippin.me/',
-					description: 'Lightning Social Tipping<sup>[4]</sup>',
+					description: 'Lightning Social Tipping',
 					platform: 'Web'
 				},
 				{
 					title: 'Wallet of Satoshi',
 					link: 'https://www.walletofsatoshi.com/',
-					description: 'Lightning only wallet<sup>[5]</sup>',
+					description: 'Lightning only wallet',
 					platform: 'iOS, Android'
 				}
 			],
