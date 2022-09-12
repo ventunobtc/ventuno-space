@@ -19,19 +19,39 @@
 		  Leggete <a href="https://bitcoin-intro.com/en/backup" target="_blank">questo documento</a> per saperne di più sul backup del vostro wallet e consultate la pagina sulla <nuxt-link to="/privacy">privacy</nuxt-link>.</p>
 		<p>Qui <a href="https://veriphi.io/en/blog/software-wallet-analysis" target="_blank">un confronto</a> delle caratteristiche di molti dei wallet elencati di seguito.</p>
 
-		<h3>On-Chain Wallet</h3>
+		<h3>On-Chain Wallets</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
 					<div class="tbl-title">Progetto</div>
 					<div class="tbl-title">CoinControl</div>
+					<div class="tbl-title">FeeControl</div>
 					<div class="tbl-title">CoinJoin</div>
+					<div class="tbl-title">Payjoin</div>
 					<div class="tbl-title">Bech32</div>
+					<div class="tbl-title">Passphrase</div>
 					<div class="tbl-title">RBF</div>
+					<div class="tbl-title">CPFP</div>
+					<div class="tbl-title">PSBT</div>
 					<div class="tbl-title">Multisig</div>
+					<div class="tbl-title">Taproot</div>
 					<div class="tbl-title">Tor</div>
-					<div class="tbl-title">BIP47</div>
+					<div class="tbl-title">API</div>
+					<div class="tbl-title">Testnet</div>
+					<div class="tbl-title">Connessione nodo</div>
+					<div class="tbl-title">SPV</div>
+					<div class="tbl-title">Connessione hardware</div>
+					<div class="tbl-title">BIP-32</div>
+					<div class="tbl-title">BIP-39</div>
+					<div class="tbl-title">BIP-44</div>
+					<div class="tbl-title">BIP-47</div>
+					<div class="tbl-title">BIP-49</div>
+					<div class="tbl-title">BIP-85</div>
+					<div class="tbl-title">Batching</div>
+					<div class="tbl-title">Signing Messages</div>
+					<div class="tbl-title">RAW tx</div>
+					<div class="tbl-title">Miniscript</div>
 					<div class="tbl-title">Piattaforma</div>
 				</div>
 				<div v-for="(wallet, index) in onChainWallets" :key="index" class="tbl-row">
@@ -39,26 +59,86 @@
 						<a :href="wallet.link" target="_blank">{{ wallet.title }}</a>
 					</div>
 
-					<!-- coincontrol -->
+					<!-- Coincontrol -->
 					<div v-if="wallet.coincontrol"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
-					<!-- coinjoin -->
+					<!-- Feecontrol -->
+					<div v-if="wallet.feecontrol"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Coinjoin -->
 					<div v-if="wallet.coinjoin"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
-					<!-- bech32 -->
+					<!-- Payjoin -->
+					<div v-if="wallet.payjoin"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
+					<!-- Bech32 -->
 					<div v-if="wallet.bech32"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
-					<!-- rbf -->
+					<!-- Passphrase -->
+					<div v-if="wallet.passphrase"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- RBF -->
 					<div v-if="wallet.rbf"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
-					<!-- multisig -->
+					<!-- CPFP -->
+					<div v-if="wallet.cpfp"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- PSBT -->
+					<div v-if="wallet.psbt"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Multisig -->
 					<div v-if="wallet.multisig"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
-					<!-- tor -->
+					<!-- Taproot -->
+					<div v-if="wallet.taproot"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Tor -->
 					<div v-if="wallet.tor"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- API -->
+					<div v-if="wallet.api"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Testnet -->
+					<div v-if="wallet.testnet"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Connesione nodo -->
+					<div v-if="wallet.nodo"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- SPV -->
+					<div v-if="wallet.spv"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Connesione hardware -->
+					<div v-if="wallet.hardware"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- BIP32 -->
+					<div v-if="wallet.bip32"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- BIP39 -->
+					<div v-if="wallet.bip39"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- BIP44 -->
+					<div v-if="wallet.bip44"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
 					<!-- BIP47 -->
 					<div v-if="wallet.bip47"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- BIP49 -->
+					<div v-if="wallet.bip49"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- BIP85 -->
+					<div v-if="wallet.bip85"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Baching -->
+					<div v-if="wallet.batching"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Signing Messages -->
+					<div v-if="wallet.signing"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- RAW tx -->
+					<div v-if="wallet.signing"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Miniscript -->
+					<div v-if="wallet.miniscript"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
 					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
 					<!-- Platform -->
 					<div v-html="wallet.platform"></div>
@@ -93,7 +173,6 @@
 					<div class="tbl-title">Wumbo channel</div>
 					<div class="tbl-title">Turbo channel</div>
 					<div class="tbl-title">AMP</div>
-
 					<div class="tbl-title">Piattaforma</div>
 				</div>
 				<div v-for="(wallet, index) in lightningWallets" :key="index" class="tbl-row">
