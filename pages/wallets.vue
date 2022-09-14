@@ -4,34 +4,30 @@
 		<h1 class="page-title">Wallets</h1>
 
 		<div class="getting-started-section">
-
 			<h3>Come iniziare</h3>
-
 			<ul>
 				<li>Leggere questa pagina e i link condivisi</li>
 				<li>Scaricare i seguenti wallet solo per fare pratica :</li>
-					<ul>
-						<li>Desktop: <a href="https://electrum.org/#home" target="_blank">Electrum</a> su testnet</li>
-						<li>Mobile: <a href="https://bluewallet.io/" target="_blank">Blue Wallet</a></li>
-						<li>Lightning: <a href="https://muun.com/" target="_blank">Muun Wallet</a></li>
-					</ul>
+				<ul>
+					<li>Desktop: <a href="https://electrum.org/#home" target="_blank">Electrum</a> su testnet</li>
+					<li>Mobile: <a href="https://bluewallet.io/" target="_blank">Blue Wallet</a></li>
+					<li>Lightning: <a href="https://muun.com/" target="_blank">Muun Wallet</a></li>
+				</ul>
 			</ul>
-
 		</div>
 
 		<p>È molto importante che impariate a fare il backup del vostro seed mnemonico (12 o 24 parole) e che, se usate una passphrase, facciate il backup anche di quella.
 		  Leggete <a href="https://bitcoin-intro.com/en/backup" target="_blank">questo documento</a> per saperne di più sul backup del vostro wallet e consultate la pagina sulla <nuxt-link to="/privacy">privacy</nuxt-link>.</p>
 		<p>Qui <a href="https://veriphi.io/en/blog/software-wallet-analysis" target="_blank">un confronto</a> delle caratteristiche di molti dei wallet elencati di seguito.</p>
 
-		<div class="tbl-index">
-			<div class="tbl-onchain"><h3>On-Chain Wallets</h3></div>
-			<div>Sezioni
+		<h3>On-Chain Wallets
+			<div class="tbl-index">Indice
 				<a v-on:click="tab1(1)">[generali]</a>
 				<a v-on:click="tab2(1)">[tx]</a>
 				<a v-on:click="tab3(1)">[seed]</a>
-				<a v-on:click="tab4()">[avanzata]</a>
+				<a v-on:click="tab4()">[avanzate]</a>
 			</div>
-		</div>
+		</h3>
 		
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
@@ -180,14 +176,13 @@
 			</div>
 		</div>
 
-		<div class="tbl-index">
-			<div class="tbl-lightning"><h3>Lightning Wallets</h3></div>
-			<div>Sezioni
+		<h3>Lightning Wallets
+			<div class="tbl-index">Indice
 				<a v-on:click="tab1(2)">[generali]</a>
 				<a v-on:click="tab2(2)">[canali]</a>
 				<a v-on:click="tab3(2)">[avanzate]</a>
 			</div>
-		</div>
+		</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
@@ -367,7 +362,6 @@
 			<p><sup>[1]</sup>Il wallet Lightning è custodial di default, ma gli utenti possono scegliere di collegare la propria applicazione al proprio nodo Lightning utilizzando LNDhub. Il wallet on-chain non è custodial.</p>
 			<p><sup>[2]</sup>Questo wallet integra uno scambio KYC per acquistare bitcoin. Si sconsiglia di utilizzare gli exchange KYC a causa dei <a href="https://bitcoinqna.github.io/noKYConly1/" target="_blank">rischi</a>.</p>
 		</div>
-		
 	</div>
 </template>
 
@@ -388,18 +382,9 @@
 
 h3 {
 	margin-top: 30px;
-}
-.tbl-index {
-	display: table-row;
-	.tbl-onchain {
-		display: table-cell;
-		font-weight: 500;
-		padding: 0 500px 0 0;
-	}
-	.tbl-lightning {
-		display: table-cell;
-		font-weight: 500;
-		padding: 0 515px 0 0;
+	.tbl-index {
+		font-size: 14px;
+		color: #fff;
 	}
 }
 .tbl-wrapper {
