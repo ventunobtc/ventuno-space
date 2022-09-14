@@ -8,14 +8,18 @@
 			<h3>Come iniziare</h3>
 
 			<ul>
-				<li>Desktop: <a href="https://www.sparrowwallet.com/" target="_blank">Sparrow Wallet</a> connesso a <a href="https://bitcoincore.org/" target="_blank">Bitcoin Core</a></li>
-				<li>Mobile: <a href="https://bluewallet.io/" target="_blank">Blue Wallet</a></li>
-				<li>Lightning: <a href="https://muun.com/" target="_blank">Muun Wallet</a></li>
+				<li>Leggere questa pagina e i link condivisi</li>
+				<li>Scaricare i seguenti wallet solo per fare pratica :</li>
+					<ul>
+						<li>Desktop: <a href="https://electrum.org/#home" target="_blank">Electrum</a> su testnet</li>
+						<li>Mobile: <a href="https://bluewallet.io/" target="_blank">Blue Wallet</a></li>
+						<li>Lightning: <a href="https://muun.com/" target="_blank">Muun Wallet</a></li>
+					</ul>
 			</ul>
 
 		</div>
 
-		<p>È molto importante che impariate a fare il backup del vostro seed mnemonico (12 o 24 parole) e che, se usate una passphrase, facciate il backup anche di quella. <br>
+		<p>È molto importante che impariate a fare il backup del vostro seed mnemonico (12 o 24 parole) e che, se usate una passphrase, facciate il backup anche di quella.
 		  Leggete <a href="https://bitcoin-intro.com/en/backup" target="_blank">questo documento</a> per saperne di più sul backup del vostro wallet e consultate la pagina sulla <nuxt-link to="/privacy">privacy</nuxt-link>.</p>
 		<p>Qui <a href="https://veriphi.io/en/blog/software-wallet-analysis" target="_blank">un confronto</a> delle caratteristiche di molti dei wallet elencati di seguito.</p>
 
