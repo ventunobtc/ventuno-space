@@ -73,13 +73,18 @@ p {
 	display: table-row;
 	border-bottom: 2px solid #f2ad4f;
 
+	:first-child {
+		text-align: left;
+	}
+
 	.tbl-title {
 		display: table-cell;
 		font-size: 14px;
+		vertical-align: middle;
 		text-transform: uppercase;
-		letter-spacing: 0.5px;
+		letter-spacing: 0.2px;
 		font-weight: 500;
-		padding: 0 10px 10px 10px;
+		padding: 0 7px 10px 7px;
 	}
 }
 .tbl-row {
@@ -91,7 +96,12 @@ p {
 
 	&>div {
 		display: table-cell;
+		vertical-align: middle;
 		padding: 14px 10px;
+	}
+
+	:first-child {
+		text-align: left;
 	}
 
 	a {
@@ -101,7 +111,6 @@ p {
 			color: #f2ad4f;
 		}
 	}
-
 }
 @media only screen and (max-width: 550px) {
 	.getting-started-section {
