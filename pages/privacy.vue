@@ -12,25 +12,70 @@
 
 		</div>
 
-		<h3>CoinJoin Tools</h3>
+		<h3>CoinJoin Tools
+			<div class="tbl-index">Indice
+				<a v-on:click="tab1()">[generali]</a>
+				<a v-on:click="tab2()">[altro]</a>
+			</div>
+		</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
 					<div class="tbl-title">Name</div>
-					<div class="tbl-title">Description</div>
-					<div class="tbl-title">Learn More</div>
+					<template v-if="condition_coinjoin === 'A'">
+						<div class="tbl-title">Riproducibile</div>
+						<div class="tbl-title">Semplicità</div>
+						<div class="tbl-title">Tor</div>
+						<div class="tbl-title">Decentralizzazione</div>	
+						<div class="tbl-title">Privacy</div>	
+					</template>
+					<template v-if="condition_coinjoin === 'B'">
+						<div class="tbl-title">Coordinatore</div>
+						<div class="tbl-title">Liquidità</div>
+						<div class="tbl-title">Cifra minima</div>
+						<div class="tbl-title">Fee</div>
+						<div class="tbl-title">
+							<div class="left">Risorse</div>
+						</div>
+					</template>
 				</div>
 				<div v-for="(lineItem, index) in coinjoinTools" :key="index" class="tbl-row">
-					<div>
+					<div class="padding">
 						<a :href="lineItem.link" target="_blank">{{ lineItem.title }}</a>
 					</div>
-					<div v-html="lineItem.description"></div>
-					<div>
-						<template v-for="(infoLink, learnMoreIndex) in lineItem.learnMore">
-							<a :key="learnMoreIndex" :href="infoLink.link" target="_blank">{{ infoLink.name }}</a><span :key="learnMoreIndex"><br /></span>
-						</template>
-					</div>
+					
+					<template v-if="condition_coinjoin === 'A'">
+						<!-- Riproducibile -->
+						<div v-if="lineItem.riproducibile"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- Semplicità -->
+						<div v-if="lineItem.semplicita"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- Tor -->
+						<div v-if="lineItem.tor"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- Decentralizzazione -->
+						<div v-html="lineItem.decentralizzazione"></div>
+						<!-- Privacy -->
+						<div v-html="lineItem.privacy"></div>
+					</template>
+					<template v-if="condition_coinjoin === 'B'">
+						<!-- Coordinatore -->
+						<div v-html="lineItem.coordinatore"></div>
+						<!-- Liquidità -->
+						<div v-html="lineItem.liquidità"></div>
+						<!-- Cifra minima -->
+						<div v-html="lineItem.cifra"></div>
+						<!-- Fee -->
+						<div v-html="lineItem.fee"></div>
+						<!-- Risorse -->
+						<div class="left">
+							<template v-for="(infoLink, learnMoreIndex) in lineItem.learnMore">
+								<a :key="learnMoreIndex" :href="infoLink.link" target="_blank">{{ infoLink.name }}</a><span :key="learnMoreIndex">&emsp;</span>
+							</template>
+						</div>
+					</template>
 				</div>
 			</div>
 		</div>
@@ -41,15 +86,19 @@
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
 					<div class="tbl-title">Name</div>
-					<div class="tbl-title">Description</div>
-					<div class="tbl-title">Learn More</div>
+					<div class="tbl-title">
+						<div class="left">Description</div>
+					</div>
+					<div class="tbl-title">
+						<div class="left">Learn More</div>
+					</div>
 				</div>
 				<div v-for="(lineItem, index) in communicationTools" :key="index" class="tbl-row">
 					<div>
 						<a :href="lineItem.link" target="_blank">{{ lineItem.title }}</a>
 					</div>
-					<div v-html="lineItem.description"></div>
-					<div>
+					<div v-html="lineItem.description" class="left"></div>
+					<div class="left">
 						<template v-for="(infoLink, learnMoreIndex) in lineItem.learnMore">
 							<a :key="learnMoreIndex" :href="infoLink.link" target="_blank">{{ infoLink.name }}</a><span v-if="learnMoreIndex + 1 < lineItem.learnMore.length" :key="learnMoreIndex"> | </span>
 						</template>
@@ -64,19 +113,20 @@
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
 					<div class="tbl-title">Name</div>
-					<div class="tbl-title">Author</div>
+					<div class="tbl-title">
+						<div class="left">Author</div>
+					</div>
 				</div>
 				<div v-for="(lineItem, index) in otherInfo" :key="index" class="tbl-row">
 					<div>
 						<a :href="lineItem.link" target="_blank">{{ lineItem.title }}</a>
 					</div>
-					<div>
+					<div class="left">
 						<a :href="lineItem.authorLink" target="_blank">{{ lineItem.author }}</a>
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</div>
 </template>
 
@@ -85,6 +135,28 @@
 
 h3 {
 	margin-top: 30px;
+	.tbl-index {
+		font-size: 14px;
+		color: #fff;
+	}
+}
+.tbl-wrapper {
+	max-width: 1000px;
+}
+.tbl-header {
+	text-align: center;
+	.left {
+		text-align: left;
+	}	
+}
+.tbl-row {
+	text-align: center;
+	.padding {
+		padding: 24px 10px;
+	}
+	.left {
+		text-align: left;
+	}
 }
 </style>
 
@@ -99,15 +171,53 @@ export default {
 			{ hid: 'description', name: 'description', content: 'A collection of Bitcoin privacy tools.' }
 		]
 	},
+	methods: {
+		tab1() {
+			this.condition_coinjoin = "A"
+        },
+        tab2() {
+			this.condition_coinjoin = "B"
+		},
+	},
 
 	data() {
 		return {
+			condition_coinjoin: "A",
 
 			coinjoinTools: [
 				{
+					title: 'Joinmarket',
+					link: 'https://github.com/JoinMarket-Org/joinmarket-clientserver',
+					decentralizzazione: 'Alta/media/bassa',
+					privacy: 'alta',
+					coordinatore: 'Nome',
+					liquidità: 'alta',
+					cifra: 'prova',
+					fee: 'prova',
+					learnMore: [
+						{
+							name: 'Text',
+							link: 'https://github.com/JoinMarket-Org/joinmarket-clientserver'
+						},
+						{
+							name: 'Video',
+							link: 'https://www.youtube.com/watch?v=l2iv2MiGaYI&feature=youtu.be&t=18890'
+						},
+						{
+							name: 'Audio',
+							link: 'https://stephanlivera.com/episode/58'
+						},
+					]
+				},
+				{
 					title: 'Samourai Whirlpool',
 					link: 'https://docs.samourai.io/whirlpool',
-					description: 'Samourai Whirlpool is a free and open source (FOSS), non custodial, chaumian CoinJoin platform. Its goal is to break all deterministic links, to providing excellent forward looking on-chain privacy from a mobile device.',
+					decentralizzazione: 'Alta/media/bassa',
+					privacy: 'alta',
+					coordinatore: 'Nome',
+					liquidità: 'alta',
+					cifra: 'prova',
+					fee: 'prova',
 					learnMore: [
 						{
 							name: 'Text',
@@ -130,7 +240,12 @@ export default {
 				{
 					title: 'Sparrow Whirlpool',
 					link: 'https://sparrowwallet.com/docs/mixing-whirlpool.html',
-					description: 'Utilizing the same CoinJoin implementation as Samourai Whirlpool, Sparrow Whirlpool breaks deterministic links, providing excellent forward looking on-chain privacy from a desktop environment. Includes additional functionality, such as the ability to automatically mix out to cold storage.',
+					decentralizzazione: 'Alta/media/bassa',
+					privacy: 'alta',
+					coordinatore: 'Nome',
+					liquidità: 'alta',
+					cifra: 'prova',
+					fee: 'prova',
 					learnMore: [
 						{
 							name: 'Text',
@@ -151,9 +266,14 @@ export default {
 					]
 				},
 				{
-					title: 'Joinmarket',
-					link: 'https://github.com/JoinMarket-Org/joinmarket-clientserver',
-					description: 'Market based fee structure CoinJoin implementation.',
+					title: 'Wasabi',
+					link: 'https://wasabiwallet.io/',
+					decentralizzazione: 'Alta/media/bassa',
+					privacy: 'alta',
+					coordinatore: 'Nome',
+					liquidità: 'alta',
+					cifra: 'prova',
+					fee: 'prova',
 					learnMore: [
 						{
 							name: 'Text',
@@ -168,7 +288,7 @@ export default {
 							link: 'https://stephanlivera.com/episode/58'
 						},
 					]
-				}
+				},
 			],
 			communicationTools: [
 				{
@@ -268,9 +388,7 @@ export default {
 					authorLink: 'https://twitter.com/6102bitcoin'
 				}
 			]
-
 		}
 	}
-
 }
 </script>
