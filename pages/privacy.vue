@@ -5,10 +5,10 @@
 
 		<div class="getting-started-section">
 
-			<h3>Getting Started</h3>
+			<h3>Come iniziare</h3>
 
-			<p>Don't reuse addresses, learn to CoinJoin and use your own node. </p>
-			<p>Read how to <a href="https://bitcoinprivacy.guide/" target="_blank">use Bitcoin Privately</a> & <a href="https://en.bitcoin.it/Privacy" target="_blank">the bitcoin wiki page</a></p>
+			<p>Non riutilizzare gli indirizzi, impara a fare CoinJoin e usa il tuo nodo. </p>
+			<p>Leggi come <a href="https://bitcoinprivacy.guide/" target="_blank">usare Bitcoin privatamente </a> e la <a href="https://en.bitcoin.it/Privacy" target="_blank">pagina sulla privacy </a>di Bitcoin Wiki</p>
 
 		</div>
 
@@ -22,7 +22,7 @@
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Name</div>
+					<div class="tbl-title">Nome</div>
 					<template v-if="condition_coinjoin === 'A'">
 						<div class="tbl-title">Riproducibile</div>
 						<div class="tbl-title">Semplicità</div>
@@ -80,17 +80,17 @@
 			</div>
 		</div>
 
-		<h3>Communication Tools</h3>
+		<h3>Altri strumenti</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Name</div>
+					<div class="tbl-title">Nome</div>
 					<div class="tbl-title">
-						<div class="left">Description</div>
+						<div class="left">Descrizione</div>
 					</div>
 					<div class="tbl-title">
-						<div class="left">Learn More</div>
+						<div class="left">Risorse</div>
 					</div>
 				</div>
 				<div v-for="(lineItem, index) in communicationTools" :key="index" class="tbl-row">
@@ -107,14 +107,14 @@
 			</div>
 		</div>
 
-		<h3>Other Information</h3>
+		<h3>Risorse</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Name</div>
+					<div class="tbl-title">Nome</div>
 					<div class="tbl-title">
-						<div class="left">Author</div>
+						<div class="left">Autore</div>
 					</div>
 				</div>
 				<div v-for="(lineItem, index) in otherInfo" :key="index" class="tbl-row">
@@ -294,7 +294,7 @@ export default {
 				{
 					title: 'Juggernaut',
 					link: 'https://www.getjuggernaut.com/',
-					description: 'End-to-end encrypted messaging over the Lightning Network',
+					description: 'Invia messaggi end-to-end su Lightning Network',
 					learnMore: [
 						{
 							name: 'Text',
@@ -305,7 +305,7 @@ export default {
 				{
 					title: 'Sphinx',
 					link: 'https://sphinx.chat/',
-					description: 'Group messaging over the Lightning Network',
+					description: 'Chat di gruppo su Lightning Network',
 					learnMore: [
 						{
 							name: 'Text',
