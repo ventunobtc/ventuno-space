@@ -103,19 +103,106 @@
 			</div>
 		</div>
 
+		<h3>Hardware Wallet
+			<div class="tbl-index">Indice
+				<a v-on:click="tab1()">[generali]</a>
+				<a v-on:click="tab2()">[seed]</a>
+			</div>
+		</h3>
+
+		<div class="tbl-scroller">
+			<div class="tbl-wrapper">
+				<div class="tbl-header">
+					<div class="tbl-title">Project</div>
+					<template v-if="condition_hardwarewallet === 'A'">
+						<div class="tbl-title">Lightning</div>
+						<div class="tbl-title">FOSH</div>
+						<div class="tbl-title">Riproducibile</div>
+						<div class="tbl-title">Testnet</div>
+						<div class="tbl-title">Comunicazione</div>
+						<div class="tbl-title">Secure Element</div>
+						<div class="tbl-title">Costo</div>
+					</template>
+					<template v-if="condition_hardwarewallet === 'B'">
+						<div class="tbl-title">Multisig</div>
+						<div class="tbl-title">Passphrase</div>
+						<div class="tbl-title">BIP-32</div>
+						<div class="tbl-title">BIP-39</div>
+						<div class="tbl-title">BIP-44</div>
+						<div class="tbl-title">BIP-47</div>
+						<div class="tbl-title">BIP-49</div>
+						<div class="tbl-title">BIP-85</div>
+					</template>
+				</div>
+				<div v-for="(project, index) in hardwareWallet" :key="index" class="tbl-row">
+					<div>
+						<a :href="project.link" target="_blank">{{ project.title }}</a>
+					</div>
+					<template v-if="condition_hardwarewallet === 'A'">
+						<!-- Lightining -->
+						<div v-if="project.lightning"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- FOSH -->
+						<div v-if="project.fosh"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- Riproducibile -->
+						<div v-if="project.riproducibile"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- Testnet -->
+						<div v-if="project.testnet"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- Comunicazione -->
+						<div v-html="project.comunicazione"></div>
+						<!-- Secure Element -->
+						<div v-html="project.secure"></div>
+						<!-- Costo -->
+						<div v-html="project.costo"></div>
+					</template>
+						<template v-if="condition_hardwarewallet === 'B'">
+						<!-- Multisig -->
+						<div v-if="project.multisig"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- Passphrase -->
+						<div v-if="project.passphrase"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- BIP32 -->
+						<div v-if="project.bip32"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- BIP39 -->
+						<div v-if="project.bip39"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- BIP44 -->
+						<div v-if="project.bip44"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
+						<!-- BIP47 -->
+						<div v-if="project.bip47"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- BIP49 -->
+						<div v-if="project.bip49"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- BIP85 -->
+						<div v-if="project.bip85"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					</template>
+				</div>
+			</div>
+		</div>
+
 		<h3>Other Hardware</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
 					<div class="tbl-title">Project</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">
+						<div class="left">Description</div>
+					</div>
 				</div>
 				<div v-for="(project, index) in otherHardware" :key="index" class="tbl-row">
 					<div>
 						<a :href="project.link" target="_blank">{{ project.title }}</a>
 					</div>
-					<div>{{ project.description }}</div>
+					<div class="left">{{ project.description }}</div>
 				</div>
 			</div>
 		</div>
@@ -128,6 +215,10 @@
 
 h3 {
 	margin-top: 30px;
+	.tbl-index {
+		font-size: 14px;
+		color: #fff;
+	}
 }
 .tbl-wrapper {
 	max-width: 1000px;
@@ -157,9 +248,18 @@ export default {
 			{ hid: 'description', name: 'description', content: 'A collection of Bitcoin hardware.' }
 		]
 	},
+	methods: {
+		tab1() {
+			this.condition_hardwarewallet = "A"
+        },
+        tab2() {
+			this.condition_hardwarewallet = "B"
+		},
+	},
 
 	data() {
 		return {
+			condition_hardwarewallet: "A",
 
 			nodeBuyPlugPlay: [
 				{
@@ -188,7 +288,6 @@ export default {
 					//description: 'Full stack'
 				}
 			],
-
 			nodeDiy: [
 				{
 					title: 'Bitcoin Core',
@@ -251,7 +350,28 @@ export default {
 					//description: 'Other DIY hardware projects'
 				}
 			],
-
+			hardwareWallet: [
+				{
+					title: 'Coldcard',
+					link: 'https://coldcardwallet.com/',
+					description: 'Cold storage hardware wallet'
+				},
+				{
+					title: 'Jade',
+					link: 'https://blockstream.com/jade/',
+					description: 'Hardware wallet di Blockstream'
+				},
+				{
+					title: 'Passport',
+					link: 'https://foundationdevices.com/',
+					description: 'Cold storage hardware wallet'
+				},
+				{
+					title: 'Specter DIY',
+					link: 'https://github.com/cryptoadvance/specter-diy',
+					description: 'DIY cold storage hardware wallet'
+				}
+			],
 			otherHardware: [
 				{
 					title: 'Bitpiggys',
@@ -274,19 +394,9 @@ export default {
 					description: 'Bitcoin mnemonic seed backup'
 				},
 				{
-					title: 'Coldcard',
-					link: 'https://coldcardwallet.com/',
-					description: 'Cold storage hardware wallet'
-				},
-				{
 					title: 'Hodlinox',
 					link: 'https://hodlinox.com/',
 					description: 'Bitcoin mnemonic seed backup'
-				},
-        {
-					title: 'Jade',
-					link: 'https://blockstream.com/jade/',
-					description: 'Hardware wallet di Blockstream'
 				},
 				{
 					title: 'Opendime',
@@ -294,19 +404,9 @@ export default {
 					description: 'Bitcoin bearer bond'
 				},
 				{
-					title: 'Passport',
-					link: 'https://foundationdevices.com/',
-					description: 'Cold storage hardware wallet'
-				},
-				{
 					title: 'Seed Signer',
 					link: 'https://github.com/SeedSigner/seedsigner',
 					description: 'Offline, airgapped Bitcoin signing device'
-				},
-				{
-					title: 'Specter DIY',
-					link: 'https://github.com/cryptoadvance/specter-diy',
-					description: 'DIY cold storage hardware wallet'
 				}
 			]
 
