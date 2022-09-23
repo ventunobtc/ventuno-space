@@ -21,13 +21,40 @@
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
 					<div class="tbl-title">Project</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Onchain</div>
+					<div class="tbl-title">Lightning</div>
+					<div class="tbl-title">FOSH</div>
+					<div class="tbl-title">Tor</div>
+					<div class="tbl-title">API</div>
+					<div class="tbl-title">Semplicità</div>
+					<div class="tbl-title">Costo</div>
+					<div class="tbl-title">Piattaforma</div>
 				</div>
 				<div v-for="(project, index) in nodeBuyPlugPlay" :key="index" class="tbl-row">
 					<div>
 						<a :href="project.link" target="_blank">{{ project.title }}</a>
 					</div>
-					<div>{{ project.description }}</div>
+					<!-- Onchain -->
+					<div v-if="project.onchain"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Lightining -->
+					<div v-if="project.lightning"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- FOSH -->
+					<div v-if="project.fosh"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Tor -->
+					<div v-if="project.tor"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- API -->
+					<div v-if="project.api"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Semplicità -->
+					<div v-html="project.semplicità"></div>
+					<!-- Costo -->
+					<div v-html="project.costo"></div>
+					<!-- Piattaforma -->
+					<div v-html="project.piattaforma"></div>
 				</div>
 			</div>
 		</div>
@@ -38,13 +65,40 @@
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
 					<div class="tbl-title">Project</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Onchain</div>
+					<div class="tbl-title">Lightning</div>
+					<div class="tbl-title">FOSH</div>
+					<div class="tbl-title">Tor</div>
+					<div class="tbl-title">API</div>
+					<div class="tbl-title">Semplicità</div>
+					<div class="tbl-title">Costo</div>
+					<div class="tbl-title">Piattaforma</div>
 				</div>
 				<div v-for="(project, index) in nodeDiy" :key="index" class="tbl-row">
 					<div>
 						<a :href="project.link" target="_blank">{{ project.title }}</a>
 					</div>
-					<div>{{ project.description }}</div>
+					<!-- Onchain -->
+					<div v-if="project.onchain"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Lightining -->
+					<div v-if="project.lightning"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- FOSH -->
+					<div v-if="project.fosh"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Tor -->
+					<div v-if="project.tor"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- API -->
+					<div v-if="project.api"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Semplicità -->
+					<div v-html="project.semplicità"></div>
+					<!-- Costo -->
+					<div v-html="project.costo"></div>
+					<!-- Piattaforma -->
+					<div v-html="project.piattaforma"></div>
 				</div>
 			</div>
 		</div>
@@ -75,6 +129,21 @@
 h3 {
 	margin-top: 30px;
 }
+.tbl-wrapper {
+	max-width: 1000px;
+}
+.tbl-header {
+	text-align: center;
+	.left {
+		text-align: left;
+	}	
+}
+.tbl-row {
+	text-align: center;
+	.left {
+		text-align: left;
+	}
+}
 </style>
 
 <script>
@@ -96,27 +165,27 @@ export default {
 				{
 					title: 'MyNode',
 					link: 'http://mynodebtc.com/products/one',
-					description: 'Full stack - low cost'
+					//description: 'Full stack - low cost'
 				},
 				{
 					title: 'Nodl',
 					link: 'https://www.nodl.it/',
-					description: 'Full stack - feature rich'
+					//description: 'Full stack - feature rich'
 				},
 				{
 					title: 'Nodl Samourai',
 					link: 'https://shop.nodl.it/en/home/38-nodl-samourai-edition.html',
-					description: 'Full stack - RAID backups'
+					//description: 'Full stack - RAID backups'
 				},
 				{
 					title: 'Raspiblitz',
 					link: 'https://raspiblitz.com/',
-					description: 'Full stack'
+					//description: 'Full stack'
 				},
 				{
 					title: 'Start 9 Labs Embassy',
 					link: 'https://start9labs.com/',
-					description: 'Full stack'
+					//description: 'Full stack'
 				}
 			],
 
@@ -124,62 +193,62 @@ export default {
 				{
 					title: 'Bitcoin Core',
 					link: 'https://bitcoin.org/',
-					description: 'Install Bitcoin Core on your computer'
+					//description: 'Install Bitcoin Core on your computer'
 				},
 				{
 					title: 'MyNode',
 					link: 'http://mynodebtc.com/',
-					description: 'Full stack (Rock64 / Pi3 / Pi4)'
+					//description: 'Full stack (Rock64 / Pi3 / Pi4)'
 				},
 				{
 					title: 'Node Launcher',
 					link: 'https://github.com/PierreRochard/node-launcher',
-					description: 'UI to install full stack on Windows, macOS, & Linux'
+					//description: 'UI to install full stack on Windows, macOS, & Linux'
 				},
 				{
 					title: 'Samourai DOJO',
 					link: 'https://bitcoin-on-raspberry-pi-4.gitbook.io/',
-					description: 'Full node with API (PC / Pi4)'
+					//description: 'Full node with API (PC / Pi4)'
 				},
 				{
 					title: 'RaspiBolt',
 					link: 'https://raspibolt.org/',
-					description: 'Bitcoin & Lightning node, manual installation guide for Debian-based OS'
+					//description: 'Bitcoin & Lightning node, manual installation guide for Debian-based OS'
 				},
 				{
 					title: 'RoninDojo',
 					link: 'https://wiki.ronindojo.io/',
-					description: 'Full Stack (Rockpro 64 / Pi4 / Odroid N2)'
+					//description: 'Full Stack (Rockpro 64 / Pi4 / Odroid N2)'
 				},
 				{
 					title: 'Start9 Embassy',
 					link: 'https://docs.start9labs.com/getting-started/diy.html',
-					description: 'Full Stack (Pi4)'
+					//description: 'Full Stack (Pi4)'
 				},
 				{
 					title: 'The Bitcoin Machines',
 					link: 'https://thebitcoinmachines.com/',
-					description: 'Custom made enclosure, heatsink, & SATA expansion'
+					//description: 'Custom made enclosure, heatsink, & SATA expansion'
 				},
 				{
 					title: 'Thundroid',
 					link: 'https://magazine.odroid.com/article/thundroid-perfect-bitcoin-lightning-node/',
-					description: 'Lightning Node (Odroid HC2)\n'
+					//description: 'Lightning Node (Odroid HC2)\n'
 				},
 				{
 					title: 'Umbrel',
 					link: 'https://getumbrel.com/',
-					description: 'Full Stack (Pi4)'
+					//description: 'Full Stack (Pi4)'
 				},
 				{
 					title: 'Citadel',
 					link: 'https://runcitadel.space/',
-					description: 'Full Stack (Pi4)'
+					//description: 'Full Stack (Pi4)'
 				},
 				{
 					title: 'Other DIY Bitcoin Hardware',
 					link: 'https://diybitcoinhardware.com/',
-					description: 'Other DIY hardware projects'
+					//description: 'Other DIY hardware projects'
 				}
 			],
 
