@@ -5,22 +5,21 @@
 
 		<div class="getting-started-section">
 
-			<h3>Getting Started</h3>
+			<h3>Come iniziare</h3>
 
 			<ul>
-				<li> Samourai Wallet users: Buy a <a href="https://shop.nodl.it/en/home/38-nodl-samourai-edition.html" target="_blank">Nodl Samourai Edition</a>
-				<li> Blue Wallet users: Buy a <a href="http://mynodebtc.com/products/one" target="_blank">MyNode</a>
-				<li> Secure your bitcoin: Buy a <a href="https://coldcardwallet.com/" target="_blank">Coldcard</a> hardware wallet</li>
+				<li> Per il nodo scarica e utilizza <a href="https://umbrel.com/" target="_blank">Umbrel</a>
+				<li> Per mettere al sicuro i tuoi bitcoin compra <a href="https://blockstream.com/jade/" target="_blank">Jade</a></li>
 			</ul>
 
 		</div>
 
-		<h3>Node: Buy (Plug & Play)</h3>
+		<h3>Nodi: Plug & Play</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
+					<div class="tbl-title">Progetto</div>
 					<div class="tbl-title">Onchain</div>
 					<div class="tbl-title">Lightning</div>
 					<div class="tbl-title">FOSH</div>
@@ -59,12 +58,12 @@
 			</div>
 		</div>
 
-		<h3>Node: DIY</h3>
+		<h3>Nodi: DIY</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
+					<div class="tbl-title">Progetto</div>
 					<div class="tbl-title">Onchain</div>
 					<div class="tbl-title">Lightning</div>
 					<div class="tbl-title">FOSH</div>
@@ -113,7 +112,7 @@
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
+					<div class="tbl-title">Progetto</div>
 					<template v-if="condition_hardwarewallet === 'A'">
 						<div class="tbl-title">Lightning</div>
 						<div class="tbl-title">FOSH</div>
@@ -188,14 +187,14 @@
 			</div>
 		</div>
 
-		<h3>Other Hardware</h3>
+		<h3>Altri Hardware</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
+					<div class="tbl-title">Progetto</div>
 					<div class="tbl-title">
-						<div class="left">Description</div>
+						<div class="left">Descrizione</div>
 					</div>
 				</div>
 				<div v-for="(project, index) in otherHardware" :key="index" class="tbl-row">
@@ -265,111 +264,111 @@ export default {
 				{
 					title: 'MyNode',
 					link: 'http://mynodebtc.com/products/one',
-					//description: 'Full stack - low cost'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Nodl',
 					link: 'https://www.nodl.it/',
-					//description: 'Full stack - feature rich'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Nodl Samourai',
 					link: 'https://shop.nodl.it/en/home/38-nodl-samourai-edition.html',
-					//description: 'Full stack - RAID backups'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Raspiblitz',
 					link: 'https://raspiblitz.com/',
-					//description: 'Full stack'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Start 9 Labs Embassy',
 					link: 'https://start9labs.com/',
-					//description: 'Full stack'
+					// Aggiungere caratteristiche
 				}
 			],
 			nodeDiy: [
 				{
 					title: 'Bitcoin Core',
 					link: 'https://bitcoin.org/',
-					//description: 'Install Bitcoin Core on your computer'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'MyNode',
 					link: 'http://mynodebtc.com/',
-					//description: 'Full stack (Rock64 / Pi3 / Pi4)'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Node Launcher',
 					link: 'https://github.com/PierreRochard/node-launcher',
-					//description: 'UI to install full stack on Windows, macOS, & Linux'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Samourai DOJO',
 					link: 'https://bitcoin-on-raspberry-pi-4.gitbook.io/',
-					//description: 'Full node with API (PC / Pi4)'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'RaspiBolt',
 					link: 'https://raspibolt.org/',
-					//description: 'Bitcoin & Lightning node, manual installation guide for Debian-based OS'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'RoninDojo',
 					link: 'https://wiki.ronindojo.io/',
-					//description: 'Full Stack (Rockpro 64 / Pi4 / Odroid N2)'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Start9 Embassy',
 					link: 'https://docs.start9labs.com/getting-started/diy.html',
-					//description: 'Full Stack (Pi4)'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'The Bitcoin Machines',
 					link: 'https://thebitcoinmachines.com/',
-					//description: 'Custom made enclosure, heatsink, & SATA expansion'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Thundroid',
 					link: 'https://magazine.odroid.com/article/thundroid-perfect-bitcoin-lightning-node/',
-					//description: 'Lightning Node (Odroid HC2)\n'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Umbrel',
 					link: 'https://getumbrel.com/',
-					//description: 'Full Stack (Pi4)'
+					// Aggiungere caratteristiche				
 				},
 				{
 					title: 'Citadel',
 					link: 'https://runcitadel.space/',
-					//description: 'Full Stack (Pi4)'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Other DIY Bitcoin Hardware',
 					link: 'https://diybitcoinhardware.com/',
-					//description: 'Other DIY hardware projects'
+					// Aggiungere caratteristiche
 				}
 			],
 			hardwareWallet: [
 				{
 					title: 'Coldcard',
 					link: 'https://coldcardwallet.com/',
-					description: 'Cold storage hardware wallet'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Jade',
 					link: 'https://blockstream.com/jade/',
-					description: 'Hardware wallet di Blockstream'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Passport',
 					link: 'https://foundationdevices.com/',
-					description: 'Cold storage hardware wallet'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Specter DIY',
 					link: 'https://github.com/cryptoadvance/specter-diy',
-					description: 'DIY cold storage hardware wallet'
+					// Aggiungere caratteristiche
 				}
 			],
 			otherHardware: [
@@ -381,32 +380,32 @@ export default {
 				{
 					title: 'Blockclock',
 					link: 'https://getblockclock.com/',
-					description: 'Electromechanical Bitcoin interface'
+					description: 'Interfaccia Bitcoin elettromeccanica'
 				},
 				{
 					title: 'Blockclock Mini',
 					link: 'https://blockclockmini.com/',
-					description: 'Digital Bitcoin interface'
+					description: 'Interfaccia Bitcoin digitale'
 				},
 				{
 					title: 'Coldbit',
 					link: 'https://coldbit.com/',
-					description: 'Bitcoin mnemonic seed backup'
+					description: 'Backup fisico in acciaio del seed'
 				},
 				{
 					title: 'Hodlinox',
 					link: 'https://hodlinox.com/',
-					description: 'Bitcoin mnemonic seed backup'
+					description: 'Backup fisico in acciaio del seed'
 				},
 				{
 					title: 'Opendime',
 					link: 'https://opendime.com/',
-					description: 'Bitcoin bearer bond'
+					description: 'Chiavetta USB che permette di spendere Bitcoin come una banconota da un dollaro'
 				},
 				{
 					title: 'Seed Signer',
 					link: 'https://github.com/SeedSigner/seedsigner',
-					description: 'Offline, airgapped Bitcoin signing device'
+					description: 'Dispositivo di firma airgapped'
 				}
 			]
 
