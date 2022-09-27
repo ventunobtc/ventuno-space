@@ -5,63 +5,203 @@
 
 		<div class="getting-started-section">
 
-			<h3>Getting Started</h3>
+			<h3>Come iniziare</h3>
 
 			<ul>
-				<li> Samourai Wallet users: Buy a <a href="https://shop.nodl.it/en/home/38-nodl-samourai-edition.html" target="_blank">Nodl Samourai Edition</a>
-				<li> Blue Wallet users: Buy a <a href="http://mynodebtc.com/products/one" target="_blank">MyNode</a>
-				<li> Secure your bitcoin: Buy a <a href="https://coldcardwallet.com/" target="_blank">Coldcard</a> hardware wallet</li>
+				<li> Per il nodo scarica e utilizza <a href="https://umbrel.com/" target="_blank">Umbrel</a>
+				<li> Per mettere al sicuro i tuoi bitcoin compra <a href="https://blockstream.com/jade/" target="_blank">Jade</a></li>
 			</ul>
 
 		</div>
 
-		<h3>Node: Buy (Plug & Play)</h3>
+		<h3>Nodi: Plug & Play</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Progetto</div>
+					<div class="tbl-title">Onchain</div>
+					<div class="tbl-title">Lightning</div>
+					<div class="tbl-title">FOSH</div>
+					<div class="tbl-title">Tor</div>
+					<div class="tbl-title">API</div>
+					<div class="tbl-title">Semplicità</div>
+					<div class="tbl-title">Costo</div>
+					<div class="tbl-title">Piattaforma</div>
 				</div>
 				<div v-for="(project, index) in nodeBuyPlugPlay" :key="index" class="tbl-row">
 					<div>
 						<a :href="project.link" target="_blank">{{ project.title }}</a>
 					</div>
-					<div>{{ project.description }}</div>
+					<!-- Onchain -->
+					<div v-if="project.onchain"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Lightining -->
+					<div v-if="project.lightning"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- FOSH -->
+					<div v-if="project.fosh"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Tor -->
+					<div v-if="project.tor"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- API -->
+					<div v-if="project.api"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Semplicità -->
+					<div v-html="project.semplicità"></div>
+					<!-- Costo -->
+					<div v-html="project.costo"></div>
+					<!-- Piattaforma -->
+					<div v-html="project.piattaforma"></div>
 				</div>
 			</div>
 		</div>
 
-		<h3>Node: DIY</h3>
+		<h3>Nodi: DIY</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Progetto</div>
+					<div class="tbl-title">Onchain</div>
+					<div class="tbl-title">Lightning</div>
+					<div class="tbl-title">FOSH</div>
+					<div class="tbl-title">Tor</div>
+					<div class="tbl-title">API</div>
+					<div class="tbl-title">Semplicità</div>
+					<div class="tbl-title">Costo</div>
+					<div class="tbl-title">Piattaforma</div>
 				</div>
 				<div v-for="(project, index) in nodeDiy" :key="index" class="tbl-row">
 					<div>
 						<a :href="project.link" target="_blank">{{ project.title }}</a>
 					</div>
-					<div>{{ project.description }}</div>
+					<!-- Onchain -->
+					<div v-if="project.onchain"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Lightining -->
+					<div v-if="project.lightning"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- FOSH -->
+					<div v-if="project.fosh"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Tor -->
+					<div v-if="project.tor"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- API -->
+					<div v-if="project.api"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+					<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					<!-- Semplicità -->
+					<div v-html="project.semplicità"></div>
+					<!-- Costo -->
+					<div v-html="project.costo"></div>
+					<!-- Piattaforma -->
+					<div v-html="project.piattaforma"></div>
 				</div>
 			</div>
 		</div>
 
-		<h3>Other Hardware</h3>
+		<h3>Hardware Wallet
+			<div class="tbl-index">Indice
+				<a v-on:click="tab1()">[generali]</a>
+				<a v-on:click="tab2()">[seed]</a>
+			</div>
+		</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Progetto</div>
+					<template v-if="condition_hardwarewallet === 'A'">
+						<div class="tbl-title">Lightning</div>
+						<div class="tbl-title">FOSH</div>
+						<div class="tbl-title">Riproducibile</div>
+						<div class="tbl-title">Testnet</div>
+						<div class="tbl-title">Comunicazione</div>
+						<div class="tbl-title">Secure Element</div>
+						<div class="tbl-title">Costo</div>
+					</template>
+					<template v-if="condition_hardwarewallet === 'B'">
+						<div class="tbl-title">Multisig</div>
+						<div class="tbl-title">Passphrase</div>
+						<div class="tbl-title">BIP-32</div>
+						<div class="tbl-title">BIP-39</div>
+						<div class="tbl-title">BIP-44</div>
+						<div class="tbl-title">BIP-47</div>
+						<div class="tbl-title">BIP-49</div>
+						<div class="tbl-title">BIP-85</div>
+					</template>
+				</div>
+				<div v-for="(project, index) in hardwareWallet" :key="index" class="tbl-row">
+					<div>
+						<a :href="project.link" target="_blank">{{ project.title }}</a>
+					</div>
+					<template v-if="condition_hardwarewallet === 'A'">
+						<!-- Lightining -->
+						<div v-if="project.lightning"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- FOSH -->
+						<div v-if="project.fosh"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- Riproducibile -->
+						<div v-if="project.riproducibile"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- Testnet -->
+						<div v-if="project.testnet"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- Comunicazione -->
+						<div v-html="project.comunicazione"></div>
+						<!-- Secure Element -->
+						<div v-html="project.secure"></div>
+						<!-- Costo -->
+						<div v-html="project.costo"></div>
+					</template>
+						<template v-if="condition_hardwarewallet === 'B'">
+						<!-- Multisig -->
+						<div v-if="project.multisig"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- Passphrase -->
+						<div v-if="project.passphrase"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- BIP32 -->
+						<div v-if="project.bip32"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- BIP39 -->
+						<div v-if="project.bip39"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- BIP44 -->
+						<div v-if="project.bip44"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
+						<!-- BIP47 -->
+						<div v-if="project.bip47"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- BIP49 -->
+						<div v-if="project.bip49"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<!-- BIP85 -->
+						<div v-if="project.bip85"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
+						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+					</template>
+				</div>
+			</div>
+		</div>
+
+		<h3>Altri Hardware</h3>
+
+		<div class="tbl-scroller">
+			<div class="tbl-wrapper">
+				<div class="tbl-header">
+					<div class="tbl-title">Progetto</div>
+					<div class="tbl-title">
+						<div class="left">Descrizione</div>
+					</div>
 				</div>
 				<div v-for="(project, index) in otherHardware" :key="index" class="tbl-row">
 					<div>
 						<a :href="project.link" target="_blank">{{ project.title }}</a>
 					</div>
-					<div>{{ project.description }}</div>
+					<div class="left">{{ project.description }}</div>
 				</div>
 			</div>
 		</div>
@@ -74,6 +214,25 @@
 
 h3 {
 	margin-top: 30px;
+	.tbl-index {
+		font-size: 14px;
+		color: #fff;
+	}
+}
+.tbl-wrapper {
+	max-width: 1000px;
+}
+.tbl-header {
+	text-align: center;
+	.left {
+		text-align: left;
+	}	
+}
+.tbl-row {
+	text-align: center;
+	.left {
+		text-align: left;
+	}
 }
 </style>
 
@@ -88,101 +247,130 @@ export default {
 			{ hid: 'description', name: 'description', content: 'A collection of Bitcoin hardware.' }
 		]
 	},
+	methods: {
+		tab1() {
+			this.condition_hardwarewallet = "A"
+        },
+        tab2() {
+			this.condition_hardwarewallet = "B"
+		},
+	},
 
 	data() {
 		return {
+			condition_hardwarewallet: "A",
 
 			nodeBuyPlugPlay: [
 				{
 					title: 'MyNode',
 					link: 'http://mynodebtc.com/products/one',
-					description: 'Full stack - low cost'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Nodl',
 					link: 'https://www.nodl.it/',
-					description: 'Full stack - feature rich'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Nodl Samourai',
 					link: 'https://shop.nodl.it/en/home/38-nodl-samourai-edition.html',
-					description: 'Full stack - RAID backups'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Raspiblitz',
 					link: 'https://raspiblitz.com/',
-					description: 'Full stack'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Start 9 Labs Embassy',
 					link: 'https://start9labs.com/',
-					description: 'Full stack'
+					// Aggiungere caratteristiche
 				}
 			],
-
 			nodeDiy: [
 				{
 					title: 'Bitcoin Core',
 					link: 'https://bitcoin.org/',
-					description: 'Install Bitcoin Core on your computer'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'MyNode',
 					link: 'http://mynodebtc.com/',
-					description: 'Full stack (Rock64 / Pi3 / Pi4)'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Node Launcher',
 					link: 'https://github.com/PierreRochard/node-launcher',
-					description: 'UI to install full stack on Windows, macOS, & Linux'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Samourai DOJO',
 					link: 'https://bitcoin-on-raspberry-pi-4.gitbook.io/',
-					description: 'Full node with API (PC / Pi4)'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'RaspiBolt',
 					link: 'https://raspibolt.org/',
-					description: 'Bitcoin & Lightning node, manual installation guide for Debian-based OS'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'RoninDojo',
 					link: 'https://wiki.ronindojo.io/',
-					description: 'Full Stack (Rockpro 64 / Pi4 / Odroid N2)'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Start9 Embassy',
 					link: 'https://docs.start9labs.com/getting-started/diy.html',
-					description: 'Full Stack (Pi4)'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'The Bitcoin Machines',
 					link: 'https://thebitcoinmachines.com/',
-					description: 'Custom made enclosure, heatsink, & SATA expansion'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Thundroid',
 					link: 'https://magazine.odroid.com/article/thundroid-perfect-bitcoin-lightning-node/',
-					description: 'Lightning Node (Odroid HC2)\n'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Umbrel',
 					link: 'https://getumbrel.com/',
-					description: 'Full Stack (Pi4)'
+					// Aggiungere caratteristiche				
 				},
 				{
 					title: 'Citadel',
 					link: 'https://runcitadel.space/',
-					description: 'Full Stack (Pi4)'
+					// Aggiungere caratteristiche
 				},
 				{
 					title: 'Other DIY Bitcoin Hardware',
 					link: 'https://diybitcoinhardware.com/',
-					description: 'Other DIY hardware projects'
+					// Aggiungere caratteristiche
 				}
 			],
-
+			hardwareWallet: [
+				{
+					title: 'Coldcard',
+					link: 'https://coldcardwallet.com/',
+					// Aggiungere caratteristiche
+				},
+				{
+					title: 'Jade',
+					link: 'https://blockstream.com/jade/',
+					// Aggiungere caratteristiche
+				},
+				{
+					title: 'Passport',
+					link: 'https://foundationdevices.com/',
+					// Aggiungere caratteristiche
+				},
+				{
+					title: 'Specter DIY',
+					link: 'https://github.com/cryptoadvance/specter-diy',
+					// Aggiungere caratteristiche
+				}
+			],
 			otherHardware: [
 				{
 					title: 'Bitpiggys',
@@ -192,52 +380,32 @@ export default {
 				{
 					title: 'Blockclock',
 					link: 'https://getblockclock.com/',
-					description: 'Electromechanical Bitcoin interface'
+					description: 'Interfaccia Bitcoin elettromeccanica'
 				},
 				{
 					title: 'Blockclock Mini',
 					link: 'https://blockclockmini.com/',
-					description: 'Digital Bitcoin interface'
+					description: 'Interfaccia Bitcoin digitale'
 				},
 				{
 					title: 'Coldbit',
 					link: 'https://coldbit.com/',
-					description: 'Bitcoin mnemonic seed backup'
-				},
-				{
-					title: 'Coldcard',
-					link: 'https://coldcardwallet.com/',
-					description: 'Cold storage hardware wallet'
+					description: 'Backup fisico in acciaio del seed'
 				},
 				{
 					title: 'Hodlinox',
 					link: 'https://hodlinox.com/',
-					description: 'Bitcoin mnemonic seed backup'
-				},
-        {
-					title: 'Jade',
-					link: 'https://blockstream.com/jade/',
-					description: 'Hardware wallet di Blockstream'
+					description: 'Backup fisico in acciaio del seed'
 				},
 				{
 					title: 'Opendime',
 					link: 'https://opendime.com/',
-					description: 'Bitcoin bearer bond'
-				},
-				{
-					title: 'Passport',
-					link: 'https://foundationdevices.com/',
-					description: 'Cold storage hardware wallet'
+					description: 'Chiavetta USB che permette di spendere Bitcoin come una banconota da un dollaro'
 				},
 				{
 					title: 'Seed Signer',
 					link: 'https://github.com/SeedSigner/seedsigner',
-					description: 'Offline, airgapped Bitcoin signing device'
-				},
-				{
-					title: 'Specter DIY',
-					link: 'https://github.com/cryptoadvance/specter-diy',
-					description: 'DIY cold storage hardware wallet'
+					description: 'Dispositivo di firma airgapped'
 				}
 			]
 
