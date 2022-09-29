@@ -44,7 +44,7 @@
 				<div class="tbl-header">
 					<div class="tbl-title">Regione</div>
 					<div class="tbl-title">Città</div>
-					<div class="tbl-title">Gruppo</div>
+					<div class="tbl-title">Gruppo Telegram</div>
 				</div>
 				<div v-for="(meetup, index) in satoshispritz" :key="index" class="tbl-row">
 					<div>{{ meetup.region }}</div>
@@ -85,6 +85,9 @@
 h3 {
 	margin-top: 25px;
 }
+.tbl-wrapper {
+	max-width: 1000px;
+}
 .footnote {
 	max-width: 800px;
 	text-align: center;
@@ -124,6 +127,11 @@ export default {
 					group: 'https://t.me/satoshispritzmilano',
 				},
 				{
+					region: 'Lombardia',
+					city: 'Varese',
+					group: 'https://t.me/satoshispritzVarese',
+				},
+				{
 					region: 'Lazio',
 					city: 'Roma',
 					group: 'https://t.me/satoshispritzroma',
@@ -135,12 +143,57 @@ export default {
 				},
 				{
 					region: 'Veneto',
-					city: '',
-					group: 'https://t.me/satoshispritzveneto',
-				},			
+					city: 'Vicenza',
+					group: 'https://t.me/SatoshispritzVicenza',
+				},
+				{
+					region: 'Veneto',
+					city: 'Verona',
+					group: 'https://t.me/SatoshispritzVerona',
+				},
+				{
+					region: 'Veneto',
+					city: 'Padova',
+					group: 'https://t.me/SatoshispritzPadova',
+				},
+				{
+					region: 'Veneto',
+					city: 'Rovigo',
+					group: 'https://t.me/SatoshispritzRovigo',
+				},
+				{
+					region: 'Veneto',
+					city: 'Treviso',
+					group: 'https://t.me/SatoshispritzTreviso',
+				},
+				{
+					region: 'Veneto',
+					city: 'Venezia',
+					group: 'https://t.me/SatoshispritzVenezia',
+				},
+				{
+					region: 'Veneto',
+					city: 'Belluno',
+					group: 'https://t.me/SatoshispritzBelluno',
+				},
+				{
+					region: 'Emilia-Romagna',
+					city: 'Modena',
+					group: 'https://t.me/satoshispritzmodena',
+				},
+				{
+					region: 'Friuli-Venezia Giulia',
+					city: '-',
+					group: 'https://t.me/satoshispritzfriuli',
+				},
+				{
+					region: 'Puglia',
+					city: '-',
+					group: 'https://t.me/SatoshiSpritzPuglia',
+				},
 			],
-		meetups: [
-				
+
+			meetups: [
 				{
 					region: 'Emilia Romagna',
 					city: 'Reggio Emilia',
