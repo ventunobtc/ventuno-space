@@ -112,14 +112,9 @@ export default {
 					to: '/privacy'
 				},
 				{
-					title: 'Peers',
+					title: 'Community',
 					icon: 'peers',
-					to: '/peers'
-				},
-				{
-					title: 'Promuovi',
-					icon: 'promote',
-					to: '/promote'
+					to: '/community'
 				},
 				{
 					title: 'About',
