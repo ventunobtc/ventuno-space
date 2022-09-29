@@ -1,18 +1,18 @@
 <template>
 	<div id="peers-page">
 
-		<h1 class="page-title">Peers</h1>
+		<h1 class="page-title">Community</h1>
 
-		<h3>Site Content</h3>
+		<h3>Contenuto del sito</h3>
 
-		<p class="explainer">We are proud to have supported/worked with the following peers on site content:</p>
+		<p class="explainer">Siamo orgogliosi di aver supportato e lavorato con i seguenti colleghi sui contenuti del sito:</p>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Peer</div>
-					<div class="tbl-title">We Gave</div>
-					<div class="tbl-title">We Received</div>
+					<div class="tbl-title">Nome</div>
+					<div class="tbl-title">Dato</div>
+					<div class="tbl-title">Ricevuto</div>
 				</div>
 				<div v-for="(lineItem, index) in siteContent" :key="index" class="tbl-row">
 					<div>
@@ -30,14 +30,14 @@
 			</div>
 		</div>
 
-		<h3>Growth</h3>
+		<h3>Promuovi</h3>
 
-		<p class="explainer">Thanks to all the sites/podcasts that have helped with growth of the site. To accelerate site growth & to support great projects some grassroots promotion has been sponsored.</p>
+		<p class="explainer">Grazie a tutti i siti/podcast che hanno contribuito alla crescita del sito. Siamo orgogliosi di essere stati menzionati. Facci sapere se menzioni Ventuno sul tuo sito o podcast!</p>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Name</div>
+					<div class="tbl-title">Nome</div>
 					<div class="tbl-title">Sponsored</div>
 				</div>
 				<div v-for="(lineItem, index) in growth" :key="index" class="tbl-row">
@@ -48,13 +48,6 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="footnotes">
-			<p>If I missed your shout out please <a href="https://twitter.com/6102bitcoin" target="_blank">get in touch</a> and I'll make amends.</p>
-
-			<p>A shoutout does not entitle your project to being listed or bump you up the list to be evaluated. Only projects listed on bitcoin-only.com will be featured on this list for helping support our growth.</p>
-		</div>
-
 	</div>
 </template>
 
