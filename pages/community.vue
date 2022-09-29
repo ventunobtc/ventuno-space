@@ -38,7 +38,7 @@
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
 					<div class="tbl-title">Nome</div>
-					<div class="tbl-title">Sponsored</div>
+					<div class="tbl-title">Sponsor</div>
 				</div>
 				<div v-for="(lineItem, index) in growth" :key="index" class="tbl-row">
 					<div>
@@ -57,12 +57,12 @@
 h3 {
 	margin-top: 30px;
 }
+.tbl-wrapper {
+	max-width: 1000px;
+}
 .explainer {
 	margin-bottom: 30px;
 	margin-top: -15px;
-}
-.footnotes {
-	margin-top: 40px;
 }
 </style>
 
@@ -83,113 +83,23 @@ export default {
 
 			siteContent: [
 				{
-					peer: 'Bitko Yinowsky',
-					peerLink: 'https://twitter.com/BitkoYinowsky',
+					peer: 'Bitcoin-Only',
+					peerLink: 'https://twitter.com/bitcoinonly_',
 					weGave: '-',
 					weGaveLink: '',
-					weReceived: 'Main Logo & Page Logos',
+					weReceived: 'Sito web',
 					weReceivedLink: 'http://bitcoin-only.com/'
 				},
-				{
-					peer: 'Greg Walker',
-					peerLink: 'https://twitter.com/in3rsha',
-					weGave: '-',
-					weGaveLink: '',
-					weReceived: 'Introduction to Bitcoin',
-					weReceivedLink: 'https://github.com/bitcoin-only/bitcoin-only/blob/master/pages/what-is-bitcoin.vue'
-				},
-				{
-					peer: 'Marc Chouinard',
-					peerLink: 'https://twitter.com/TheRealestMarc',
-					weGave: '-',
-					weGaveLink: '',
-					weReceived: 'Complete website redesign',
-					weReceivedLink: 'https://bitcoin-only.com'
-				},
-				{
-					peer: 'Max Hillebrand',
-					peerLink: 'https://twitter.com/hillebrandmax',
-					weGave: '-',
-					weGaveLink: '',
-					weReceived: 'Video Series',
-					weReceivedLink: 'https://www.youtube.com/playlist?list=PLPj3KCksGbSYX2cNoOaV-w-9QuZ62LDk_'
-				},
-				{
-					peer: 'Phneep',
-					peerLink: 'https://twitter.com/phneep',
-					weGave: 'BTC',
-					weGaveLink: '',
-					weReceived: 'Commissioned Art',
-					weReceivedLink: '/promote'
-				},
-				{
-					peer: 'Ti Kawamoto',
-					peerLink: 'https://twitter.com/TiKawamoto',
-					weGave: '-',
-					weGaveLink: '',
-					weReceived: 'Old Logo',
-					weReceivedLink: ''
-				},
-				{
-					peer: 'Wiz',
-					peerLink: 'https://twitter.com/wiz',
-					weGave: '-',
-					weGaveLink: '',
-					weReceived: 'Technical Assistance',
-					weReceivedLink: ''
-				}
 			],
 
 			growth: [
 				{
-					name: 'Bitcoin Echo Chamber',
-					link: 'https://bitcoinechochamber.com/',
-					sponsor: 'Yes'
+					name: 'Esempio',
+					link: 'http://bitcoin-only.com/',
+					sponsor: 'Yes/No'
 				},
-				{
-					name: 'Bottom-shelf Bitcoin',
-					link: 'https://bottomshelfbitcoin.com/',
-					sponsor: 'Yes'
-				},
-				{
-					name: 'Lightning Hosted',
-					link: 'https://twitter.com/LightningHosted',
-					sponsor: 'Yes'
-				},
-				{
-					name: 'Start Node',
-					link: 'https://twitter.com/StartNodeOrg',
-					sponsor: 'Yes'
-				},
-				{
-					name: 'Block Digest',
-					link: 'https://twitter.com/blockdigest',
-					sponsor: 'No'
-				},
-				{
-					name: 'CryptoWords',
-					link: 'https://mailchi.mp/2731ce628dba/cryptowordsnewsletter',
-					sponsor: 'No'
-				},
-				{
-					name: 'Stephan Livera Podcast',
-					link: 'https://stephanlivera.com/episode/74',
-					sponsor: 'No'
-				},
-				{
-					name: 'TFTC',
-					link: 'https://anchor.fm/tales-from-the-crypt/episodes/Rabbit-Hole-Recap-Week-of-2019-05-06-e3vvq5',
-					sponsor: 'No'
-				},
-				{
-					name: 'Why Hold Bitcoin',
-					link: 'https://whyholdbitcoin.com/resources/',
-					sponsor: 'No'
-				}
 			]
-
 		}
 	}
-
 }
 </script>
