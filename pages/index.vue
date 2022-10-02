@@ -102,7 +102,7 @@ export default {
 					to: '/conferences'
 				},
 				{
-					title: 'Videos',
+					title: 'Video',
 					icon: 'videos',
 					to: '/videos'
 				},

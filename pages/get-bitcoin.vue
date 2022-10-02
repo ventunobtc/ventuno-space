@@ -249,8 +249,8 @@ export default {
 
 			winBitcoin: [
 				{
-					title: 'Hangar Six Gaming',
-					link: 'https://www.hangarsixgaming.com/',
+					title: 'Zebedee',
+					link: 'https://zebedee.io/',
 					description: 'Lightning gaming'
 				},
 				{
@@ -261,6 +261,11 @@ export default {
 			],
 
 			cashbackRewards: [
+				{
+					title: 'Bit Cashback',
+					link: 'https://bitcashback.net/',
+					description: 'Bitcoin cashback rewards'
+				},
 				{
 					title: 'Fold App',
 					link: 'https://foldapp.com/',
