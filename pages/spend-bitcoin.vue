@@ -5,19 +5,19 @@
 
 		<div class="getting-started-section">
 
-			<h3>Getting Started</h3>
+			<h3>Come Iniziare</h3>
 
-			<p>Bitcoin enables anyone to tap into a truly global marketplace. Consider the impact on your privacy if you buy goods which link to your identity or require physical delivery. It's best to avoid getting things delivered to your home address for this reason.</p>
+			<p>Bitcoin consente a chiunque di accedere a un mercato veramente globale. Considerate l'impatto sulla vostra privacy se acquistate beni collegati alla vostra identità o che richiedono una consegna fisica. Per questo motivo è meglio evitare di farsi consegnare i prodotti al proprio indirizzo di casa.</p>
 
 		</div>
 
-		<h3>Donate</h3>
+		<h3>Dona</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Name</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Nome</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(lineItem, index) in donate" :key="index" class="tbl-row">
 					<div>
@@ -28,13 +28,13 @@
 			</div>
 		</div>
 
-		<h3>Services</h3>
+		<h3>Servizi</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Name</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Nome</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(lineItem, index) in services" :key="index" class="tbl-row">
 					<div>
@@ -50,8 +50,8 @@
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Name</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Nome</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(lineItem, index) in tools" :key="index" class="tbl-row">
 					<div>
@@ -62,13 +62,13 @@
 			</div>
 		</div>
 
-		<h3>Fun & Play</h3>
+		<h3>Divertiti & Gioca</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Name</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Nome</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(lineItem, index) in funAndPlay" :key="index" class="tbl-row">
 					<div>
@@ -84,8 +84,8 @@
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Name</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Nome</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(lineItem, index) in stores" :key="index" class="tbl-row">
 					<div>
@@ -95,7 +95,7 @@
 				</div>
 			</div>
 		</div>
-
+		
 	</div>
 </template>
 
@@ -113,12 +113,12 @@ h3 {
 <script>
 export default {
 
-	name: 'SpendBitcoinPage',
+	Nome: 'SpendBitcoinPage',
 
 	head: {
 		title: 'Spendi Bitcoin - Bitcoin Only',
 		meta: [
-			{ hid: 'description', name: 'description', content: 'List of places where you can spend your Bitcoin.' }
+			{ hid: 'description', Nome: 'description', content: 'Elenco dei luoghi in cui è possibile spendere i propri Bitcoin.' }
 		]
 	},
 
@@ -129,14 +129,19 @@ export default {
 				{
 					title: 'Bitcoin Dev List',
 					link: 'https://bitcoindevlist.com/',
-					description: 'Donate to various Bitcoin developers'
+					description: 'Dona a diversi Bitcoin developers'
 				}
 			],
 			services: [
 				{
-					title: 'Art Design by SF',
-					link: 'https://artdesignbysf.com/',
-					description: 'Custom art & graphic design'
+					title: 'Bitrefill',
+					link: 'https://www.bitrefill.com/',
+					description: 'Acquista gift-card e ricariche telefoniche'
+				},
+				{
+					title: 'Sms4Sats',
+					link: 'https://sms4sats.com/',
+					description: 'Inviare e ricevere SMS senza rivelare il proprio numero di telefono'
 				},
 				{
 					title: 'Bitcoin Support',
@@ -161,14 +166,9 @@ export default {
 					description: 'Non-custodial Bitcoin services'
 				},
 				{
-					title: 'Bylls',
-					link: 'https://bylls.com/',
-					description: 'Pay bills (Canada)'
-				},
-				{
 					title: 'Fold App',
 					link: 'https://foldapp.com/',
-					description: 'Buy vouchers with Bitcoin cashback'
+					description: 'Acquistare voucher con cashback Bitcoin'
 				},
 				{
 					title: 'Host4Coins',
@@ -178,70 +178,40 @@ export default {
 				{
 					title: 'LNsms',
 					link: 'https://lnsms.world/',
-					description: 'Send texts worldwide and pay with Lightning'
-				},
-				{
-					title: 'paybtc',
-					link: 'https://paybtc.com.au/',
-					description: 'Pay any Australian bank account or BPAY bill with Bitcoin'
+					description: 'Inviate messaggi in tutto il mondo e pagate con Lightning'
 				},
 				{
 					title: 'Spacebit',
 					link: 'https://spacebit.live/',
-					description: 'Send messages via satellite'
-				},
-				{
-					title: 'Woleet',
-					link: 'https://www.woleet.io/',
-					description: 'Timestamping service'
+					description: 'Inviare messaggi via satellite'
 				},
 				{
 					title: 'Voltage',
 					link: 'https://getvoltage.io/',
-					description: 'Cloud Lightning node hosting'
+					description: 'Hosting cloud Lightning node'
 				}
 			],
-			funAndPlay: [
-				{
-					title: 'Fair Poker',
-					link: 'https://fair.poker/',
-					description: 'Provably fair Bitcoin poker'
-				},
+			funAndPlay: [	
 				{
 					title: 'Hello Dime',
 					link: 'https://www.hellodime.com/',
-					description: 'Bitcoin inspired card game'
-				},
-				{
-					title: 'Moneni',
-					link: 'https://moneni.com/',
-					description: 'Lightning games'
+					description: 'Gioco di carte ispirato a Bitcoin'
 				},
 				{
 					title: 'Lightning Puzzle',
 					link: 'https://www.lightningpuzzle.com/info',
-					description: 'Set / solve puzzles'
-				},
-				{
-					title: 'LNgames.net',
-					link: 'https://lngames.net/',
-					description: 'Lightning games'
+					description: 'Crea / risolvi puzzles'
 				},
 				{
 					title: 'Pollo Feed',
 					link: 'https://pollofeed.com/',
-					description: 'Feed chickens'
+					description: 'Alimenta polli'
 				},
 				{
 					title: 'Satoshis Game Of Life',
 					link: 'https://satoshisgameof.life/',
 					description: 'Conway\'s Game of Life'
-				},
-				{
-					title: 'Satoshis Games',
-					link: 'https://satoshis.games/',
-					description: 'Original Lightning games'
-				},
+				},		
 				{
 					title: 'Satoshis Place',
 					link: 'https://satoshis.place/',
@@ -250,134 +220,104 @@ export default {
 			],
 			stores: [
 				{
-					title: '1.21 Jigawatts',
-					link: 'https://www.jigawatt.co/',
-					description: 'Stamps, stickers, & more'
-				},
-				{
 					title: '21 million',
 					link: 'https://21million.co/',
-					description: 'Bitcoin Apparel'
+					description: 'Abbigliamento Bitcoin'
 				},
 				{
 					title: '21X',
 					link: 'https://www.21x.io/',
-					description: 'Bitcoin art, designs, & merchandise'
-				},
-				{
-					title: 'Arnhem Bitcoin City',
-					link: 'https://www.arnhembitcoinstad.nl/',
-					description: 'A Bitcoin friendly city'
+					description: 'Bitcoin art, design e merchandising'
 				},
 				{
 					title: 'Bitcoin Shirt',
 					link: 'https://bitcoinshirt.co/',
-					description: 'Bitcoin merchandise'
+					description: 'Bitcoin merchandising'
 				},
 				{
 					title: 'Bitcoin Tunnels',
 					link: 'https://www.bitcointunnels.com/',
-					description: 'Clothing, mugs, & more'
+					description: 'Abbigliamento, tazze e altro ancora'
 				},
 				{
 					title: 'Bitcoin Gear',
 					link: 'https://www.bitcoin-gear.com/',
-					description: 'Bitcoin merchandise'
+					description: 'Bitcoin merchandising'
 				},
 				{
 					title: 'Bitko Yinowsky',
 					link: 'https://bitko.cc/',
-					description: 'Bitcoin art'
+					description: 'Arte Bitcoin'
 				},
 				{
 					title: 'BTC Pins',
 					link: 'https://www.btcpins.com/',
-					description: 'Bitcoin lapel pins & stickers'
+					description: 'Spille e adesivi Bitcoin'
 				},
 				{
 					title: 'CryptoCloaks',
 					link: 'https://www.cryptocloaks.com/',
-					description: '3D printed cases & custom nodes'
+					description: 'Custodie stampate in 3D e nodi personalizzati'
 				},
 				{
 					title: 'DIYnodes',
 					link: 'https://diynodes.com/',
-					description: 'Bitcoin nodes & more'
-				},
-				{
-					title: 'Konsensus Network',
-					link: 'https://konsensus.network/shop',
-					description: 'The Bitcoin publishing house'
+					description: 'Nodi Bitcoin & altro'
 				},
 				{
 					title: 'Orange Coin Goods',
 					link: 'https://orangecoingoods.com/',
-					description: 'Bitcoin apparel & more'
+					description: 'Abbigliamento Bitcoin e altro'
 				},
 				{
 					title: 'Liberty Mugs',
 					link: 'https://www.libertymugs.com/',
-					description: 'Mugs, t-shirts, & more'
+					description: 'Abbigliamento, tazze e altro ancora'
 				},
 				{
 					title: 'Lightning Hood',
 					link: 'https://lightninghood.com/shop/',
-					description: 'Consultation, t-shirts, & more'
-				},
-				{
-					title: 'Lightning Hosted',
-					link: 'https://lightninghosted.com/',
-					description: 'Simple image hosting'
+					description: 'Consultazione, magliette e altro'
 				},
 				{
 					title: 'Mt. Socks',
 					link: 'https://www.mtsocks.com/',
-					description: 'Socks'
-				},
-				{
-					title: 'Original Satoshi',
-					link: 'https://www.originalsatoshi.com/',
-					description: 'Stickers & more'
+					description: 'Calzini'
 				},
 				{
 					title: 'PirateHash',
 					link: 'https://piratehash.com/',
-					description: 'Bitcoin curiosities & educational materials'
+					description: 'Curiosità e materiale didattico su Bitcoin'
 				},
 				{
 					title: 'Quinsolo',
 					link: 'https://quinsolo.com/',
-					description: 'Coasters, magnets, & more'
+					description: 'Sottobicchieri, magneti e altro ancora'
 				},
 				{
 					title: 'Sats Ledger',
 					link: 'https://www.satsledger.com/',
-					description: 'Bitcoin savings book for kids'
+					description: 'Libri Bitcoin per bambini'
 				},
 				{
 					title: 'SHAmory',
 					link: 'https://shamory.com/',
-					description: 'Card game that teaches kids how Bitcoin mining works'
+					description: 'Gioco di carte che insegna ai bambini come funziona il mining di Bitcoin'
 				},
 				{
 					title: 'Lightning Store',
 					link: 'http://lightning.store',
-					description: 'Bitcoin culture on T-shirts & stickers'
-				},
-				{
-					title: 'Start 2 Bitcoin',
-					link: 'https://www.start2bitcoin.com/',
-					description: 'Fun Bitcoin info pack'
+					description: 'Cultura Bitcoin su magliette e adesivi'
 				},
 				{
 					title: 'Von Bitcoin',
 					link: 'https://www.vonbitcoin.com/',
-					description: 'T-Shirts, prints, & more'
+					description: 'Magliette, stampe e altro ancora'
 				},
 				{
 					title: 'Wears My Liberty',
 					link: 'https://wearsmyliberty.com/',
-					description: 'Liberty shirts, hats, hoodies, & more'
+					description: 'Magliette, cappelli, felpe e altro.'
 				}
 			]
 

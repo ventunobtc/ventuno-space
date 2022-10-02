@@ -21,10 +21,10 @@ Nasce come personalizzazione del sito [bitcoin-only](https://bitcoin-only.com), 
 - [X] Podcasts
 - [ ] Privacy
 - [X] Promuovi
-- [ ] Spendi Bitcoind
+- [X] Spendi Bitcoin
 - [ ] Fatti pagare in Bitcoin
 - [ ] Video
-- [ ] Wallet
+- [X] Wallet
 - [ ] Cos'è Bitcoin
 
 

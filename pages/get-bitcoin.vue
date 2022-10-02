@@ -252,8 +252,8 @@ export default {
 
 			winBitcoin: [
 				{
-					title: 'Hangar Six Gaming',
-					link: 'https://www.hangarsixgaming.com/',
+					title: 'Zebedee',
+					link: 'https://zebedee.io/',
 					description: 'Lightning gaming'
 				},
 				{
