@@ -41,7 +41,6 @@ h3 {
 	padding: 20px 30px;
 	border: 1px solid rgba(255, 255, 255, 0.08);
 	border-radius: 5px;
-
 	.quote {
 		font-size: 18px;
 		font-style: italic;

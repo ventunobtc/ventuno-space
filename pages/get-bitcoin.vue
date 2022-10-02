@@ -119,9 +119,6 @@ h3 {
 	margin-bottom: 30px;
 	margin-top: -15px;
 }
-.tbl-wrapper {
-	max-width: 900px;
-}
 .footnote {
 	max-width: 900px;
 	text-align: center;

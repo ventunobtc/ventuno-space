@@ -57,9 +57,6 @@
 h3 {
 	margin-top: 30px;
 }
-.tbl-wrapper {
-	max-width: 1000px;
-}
 .explainer {
 	margin-bottom: 30px;
 	margin-top: -15px;
