@@ -265,6 +265,11 @@ export default {
 
 			cashbackRewards: [
 				{
+					title: 'Bit Cashback',
+					link: 'https://bitcashback.net/',
+					description: 'Bitcoin cashback rewards'
+				},
+				{
 					title: 'Fold App',
 					link: 'https://foldapp.com/',
 					description: 'Bitcoin cashback rewards'

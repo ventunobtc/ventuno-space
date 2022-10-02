@@ -12,18 +12,18 @@ Nasce come personalizzazione del sito [bitcoin-only](https://bitcoin-only.com), 
 - [X] Sviluppo
 - [X] Explorer / Dashboard
 - [X] Ottieni Bitcoin
-- [ ] Hardware
+- [X] Hardware
 - [X] Indice
 - [X] Requisiti Listing 
 - [ ] Risorse Didattiche
 - [X] Meetups
-- [ ] Peers
+- [ ] Community
 - [X] Podcasts
-- [ ] Privacy
+- [X] Privacy
 - [X] Promuovi
 - [X] Spendi Bitcoin
 - [ ] Fatti pagare in Bitcoin
-- [ ] Video
+- [X] Video
 - [X] Wallet
 - [ ] Cos'è Bitcoin
 
