@@ -140,9 +140,6 @@ h3 {
 		color: #fff;
 	}
 }
-.tbl-wrapper {
-	max-width: 1000px;
-}
 .tbl-header {
 	text-align: center;
 	.left {

@@ -45,10 +45,6 @@
 
 <style lang="scss" scoped>
 @import 'assets/css/pages.scss';
-
-.tbl-wrapper {
-	max-width: none;
-}
 </style>
 
 <script>

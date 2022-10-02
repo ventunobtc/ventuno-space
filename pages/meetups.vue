@@ -85,9 +85,6 @@
 h3 {
 	margin-top: 25px;
 }
-.tbl-wrapper {
-	max-width: 1000px;
-}
 .footnote {
 	max-width: 800px;
 	text-align: center;

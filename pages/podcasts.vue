@@ -37,9 +37,6 @@
 h3 {
 	margin-top: 30px;
 }
-.tbl-wrapper {
-	max-width: 900px;
-}
 </style>
 
 <script>
