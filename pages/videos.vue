@@ -1,87 +1,31 @@
 <template>
 	<div id="videos-page">
 
-		<h1 class="page-title">Videos</h1>
+		<h1 class="page-title">Video</h1>
 
 		<div class="getting-started-section">
 
-			<h3>Getting Started</h3>
+			<h3>Come Iniziare</h3>
 
-			<p>Watch the following videos:</p>
+			<p>Guarda i seguenti video:</p>
 
 			<ul>
-				<li><a href="https://www.youtube-nocookie.com/embed/Zbm772vF-5M" target="_blank">The Bitcoin Standard</a> - Saifedean Ammous on hard money</li>
-				<li><a href="https://www.youtube-nocookie.com/embed/q0XxsabgJEI" target="_blank">Why Bitcoin Matters</a> - Aleks Svetski on the future of money</li>
-				<li><a href="https://www.rt.com/shows/to-the-moon/457141-bitcoin-digital-currencies-revolution/" target="_blank">Bitcoin Genesis</a> - Max Keiser on the origins of Bitcoin</li>
-				<li><a href="https://www.youtube-nocookie.com/embed/DRPeExoH5rY" target="_blank">Bitcoin Explained</a> - BJ Dweck on what Bitcoin is</li>
+				<li><a href="https://www.youtube.com/watch?v=PScIpF9Wjpc" target="_blank">Il Bitcoin Standard</a> di Saifedean Ammous, spiegato in italiano  </li>
+				<li><a href="https://www.youtube.com/watch?v=_bgFysF3a8E" target="_blank">Hayek e Friedman predicono Bitcoin</a> - Ventuno.BTC (sub ita) </li>
+				<li><a href="https://www.youtube.com/playlist?list=PL40oTe99517XEIdKoAJk5o_Hr5cTIqPiB" target="_blank">Understanding Bitcoin</a> - Giacomo Zucco spiega Bitcoin in italiano </li>
 			</ul>
 
 		</div>
 
-		<p>Find more bitcoin videos at <a href="https://bitcointv.com/" target="_blank">BitcoinTV.com</a></p>
-
-		<h3>Video Podcasts</h3>
+		<h3>Altri video in italiano</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Name</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Nome</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
-				<div v-for="(lineItem, index) in videoPodcasts" :key="index" class="tbl-row">
-					<div>
-						<a :href="lineItem.link" target="_blank">{{ lineItem.title }}</a>
-					</div>
-					<div v-html="lineItem.description"></div>
-				</div>
-			</div>
-		</div>
-
-		<h3>Tutorials</h3>
-
-		<div class="tbl-scroller">
-			<div class="tbl-wrapper">
-				<div class="tbl-header">
-					<div class="tbl-title">Name</div>
-					<div class="tbl-title">Description</div>
-				</div>
-				<div v-for="(lineItem, index) in tutorials" :key="index" class="tbl-row">
-					<div>
-						<a :href="lineItem.link" target="_blank">{{ lineItem.title }}</a>
-					</div>
-					<div v-html="lineItem.description"></div>
-				</div>
-			</div>
-		</div>
-
-		<h3>Other Informative</h3>
-
-		<div class="tbl-scroller">
-			<div class="tbl-wrapper">
-				<div class="tbl-header">
-					<div class="tbl-title">Name</div>
-					<div class="tbl-title">Description</div>
-				</div>
-				<div v-for="(lineItem, index) in otherInfo" :key="index" class="tbl-row">
-					<div>
-						<a :href="lineItem.link" target="_blank">{{ lineItem.title }}</a>
-					</div>
-					<div v-html="lineItem.description"></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="footnote">* Skip 'The Difficulties in ...' & 'Bitcoin Engineering ...' (poor audio)</div>
-
-		<h3>Companies</h3>
-
-		<div class="tbl-scroller">
-			<div class="tbl-wrapper">
-				<div class="tbl-header">
-					<div class="tbl-title">Project</div>
-					<div class="tbl-title">Description</div>
-				</div>
-				<div v-for="(lineItem, index) in companies" :key="index" class="tbl-row">
+				<div v-for="(lineItem, index) in videoItalian" :key="index" class="tbl-row">
 					<div>
 						<a :href="lineItem.link" target="_blank">{{ lineItem.title }}</a>
 					</div>
@@ -114,144 +58,143 @@ export default {
 	name: 'VideosPage',
 
 	head: {
-		title: 'Videos - Bitcoin Only',
+		title: 'Video',
 		meta: [
-			{ hid: 'description', name: 'description', content: 'A collection of videos about Bitcoin.' }
+			{ hid: 'description', name: 'description', content: 'Una collezione di video su Bitcoin.' }
 		]
 	},
 
 	data() {
 		return {
 
-			videoPodcasts: [
+			videoItalian: [
 				{
-					title: 'Noti Satoshi',
-					link: 'https://www.youtube.com/watch?v=ZqGJdIfrJGc&list=PLZsflIub4SmESRXVrl1AkXUcu96ahF5c1',
-					description: 'Spanish Bitcoin news recap'
-				},
-				{
-					title: 'Satoshi en Venezuela',
-					link: 'https://www.youtube.com/c/SatoshienVenezuela/videos',
-					description: 'Spanish Bitcoin news'
-				},
-				{
-					title: 'Simply Bitcoin',
-					link: 'https://www.youtube.com/channel/UCB6Q0S1gUHXMe5-Jjx0_laQ/videos',
-					description: 'Daily Bitcoin news'
-				}
-			],
-			tutorials: [
-				{
-					title: '402PaymentRequired',
-					link: 'https://www.youtube.com/channel/UC_62FowZPxGB6ysv4mcj20A',
-					description: 'Step by step Bitcoin software tutorials'
-				},
-				{
-					title: 'Bitcoinheiros',
-					link: 'https://www.youtube.com/bitcoinheiros',
-					description: 'Brazilian Portuguese videos and tutorials'
-				},
-				{
-					title: 'KIS Bitcoin',
-					link: 'https://www.keepitsimplebitcoin.com/guides/',
-					description: 'Keep It Simple - practical guides'
-				},
-				{
-					title: 'Ministry of Nodes',
-					link: 'https://www.youtube.com/c/MinistryofNodes',
-					description: 'Stephan Livera & Ketan\'s video tutorials and guides'
-				},
-				{
-					title: 'TFTC Guides',
-					link: 'https://www.youtube.com/playlist?list=PL92Njil-H2HZ28lgWzKNCGH-vc-7ocKQ9',
-					description: 'Tales From The Crypt\'s guides'
-				},
-				{
-					title: 'Wasabi Series',
-					link: 'https://www.youtube.com/playlist?list=PLPj3KCksGbSaEmjU0sywoTYDVYYSu8LsS',
-					description: 'Max Hillebrand\'s Wasabi Wallet Guide'
-				},
-				{
-					title: 'Ziya Sadr',
-					link: 'https://www.youtube.com/c/ZiyaSadr',
-					description: 'Weekly bitcoin QnA Sessions, Software guides and tutorials in Persian'
-				}
-			],
-			otherInfo: [
-				{
-					title: 'Advancing Bitcoin',
-					link: 'https://vimeo.com/user94991385',
-					description: '11 superb presentations *'
-				},
-				{
-					title: 'Bitcoin Explained',
-					link: 'https://www.youtube-nocookie.com/embed/DRPeExoH5rY',
-					description: 'The definitive introduction to what Bitcoin is by BJ Dweck'
+					title: 'Bitcoin: valuta o asset digitale? Potenzialità, limiti e sviluppi futuri.',
+					link: 'https://www.youtube.com/watch?v=2rw8Xd9OiDA',
+					description: 'Giacomo Zucco con BIT PoliTO'
 				},
 				{
 					title: 'Bitcoin In Action',
 					link: 'https://www.youtube.com/BitcoinInAction',
-					description: 'Italian technical bitcoin explanations '
+					description: 'Spiegazioni tecniche su Bitcoin'
 				},
 				{
-					title: 'Bitcoin Stimulus',
-					link: 'https://www.youtube.com/channel/UCI6gR1ViAl7hJ2NNOg7S5yA',
-					description: 'Short Engaging Animated Explainers'
+					title: '5 luoghi comuni da sfatare su Blockchain',
+					link: 'https://www.youtube.com/watch?v=a-2cz-yzQns',
+					description: ''
 				},
 				{
-					title: 'BitKnow',
-					link: 'https://www.youtube.com/channel/UCYa3V18xMgDCzs5Ae3qQIMQ',
-					description: 'Interviews'
+					title: 'Come funzionano i Bitcoin',
+					link: 'https://www.youtube.com/watch?v=kpxBSohNr5Y',
+					description: ''
 				},
 				{
-					title: 'Bolt-A-Thon',
-					link: 'https://www.youtube.com/playlist?list=PLC_AgDAr0m6QhwqPDrqMfjX64oHGmwDMk',
-					description: '9 superb presentations + hackathon'
+					title: 'Bitcoin & Mining',
+					link: 'https://www.youtube.com/watch?v=kVCjfVN0344',
+					description: 'Conviene minare cryptovalute? Si diventa ricchi? Come funziona?'
 				},
 				{
-					title: 'Hard Money Film',
-					link: 'https://www.hardmoneyfilm.com/',
-					description: 'Excellent short film about money'
+					title: 'Vivere con Bitcoin',
+					link: 'https://www.youtube.com/watch?v=Qu_E7QmmoS4',
+					description: 'Massimo Musumeci & Luca Venturini'
 				},
 				{
-					title: 'Hungry Hodler',
-					link: 'https://www.youtube.com/channel/UCDTaIonIagoJNLGcyESBm1Q/videos',
-					description: 'Engaging & informative Bitcoin videos'
+					title: 'Bitcoin Valley: Terraforming Bitcoin 2019',
+					link: 'https://www.youtube.com/watch?v=90ihJJp6Cqs',
+					description: ''
+				},				
+				{
+					title: 'Atomic swap per principianti',
+					link: 'https://www.youtube.com/watch?v=xqtulqFaiNw',
+					description: ''
 				},
 				{
-					title: 'Ioni Appelberg',
-					link: 'https://www.youtube.com/user/waem',
-					description: 'Relatively new informative Bitcoin videos'
+					title: 'Bitcoin e Privacy',
+					link: 'https://www.youtube.com/playlist?list=PLJV6rfaH_FrxwQ_z8Yk7mi2_9iM9avInf',
+					description: 'Video della privacy week'
 				},
 				{
-					title: 'Justin Moon',
-					link: 'https://www.youtube.com/channel/UCLp4OswuHySZZ3zrVBIoDjg',
-					description: 'Interviews & presentations'
+					title: 'Bitcoin inconfiscabile riserva di valore',
+					link: 'https://www.youtube.com/watch?v=4BL2pusoX0o',
+					description: ''
+				},	
+            	{ 
+					title: 'Into the Bitcoin Protocol: come funziona?',  
+					link: 'https://www.youtube.com/watch?v=KF3uQzBpMnw', 
+					description: 'Alberto De Luigi con BIT PoliTO'
+				},
+				{ 
+					title: 'Introduzione a Bitcoin',  
+					link: 'https://www.youtube.com/watch?v=rnhmBpznlHM', 
+					description: 'Federico Tengo al Politecnico di Torino'
+				},
+				{ 
+					title: 'Bitcoin is for the millions not for the millioners',  
+					link: 'https://www.youtube.com/watch?v=OPXoVMsEwDc', 
+					description: 'Rikki del BipShow al Politecnico di Torino'
+				},
+				{ 
+					title: 'Tra Bitcoin Maximalism e centro America',  
+					link: 'https://www.youtube.com/watch?v=-UUeNcTTCI8', 
+					description: ''
 				},
 				{
-					title: 'Learn Me A Bitcoin',
-					link: 'https://www.youtube.com/channel/UCj9MFr-7a02d_qe4xVnZ1sA/',
-					description: '4 superb explainer videos'
+					title: 'Bitcoin: l\'evoluzione della moneta',  
+					link: 'https://www.youtube.com/embed/lZHrR3FCRgo', 
+					description: 'Tavola rotonda a Internet Festival 2021'
 				},
 				{
-					title: 'Saylor Series',
-					link: 'https://www.youtube.com/watch?v=4rvTppy1qLI&list=PL2jAZ0x9H0bRvoNt1xNJWYa9_8_an03h0',
-					description: 'Build the intellectual foundation necessary to understand Bitcoin'
-				}
+					title: 'Mining (discussione e live da Mining Farm in Russia)',  
+					link: 'https://www.youtube.com/watch?v=hoUAfkE9de0', 
+					description: ''
+				},
+				{
+					title: 'CTV, consenso, sviluppatori e miner',  
+					link: 'https://bitcointrain.substack.com/p/fermata-30-ctv-e-il-consenso-in-bitcoin?r=mtvgo&s=w&utm_campaign=post&utm_medium=web', 
+					description: ''
+				},
+				{
+					title: 'Le culture nel mondo Bitcoin',  
+					link: 'https://www.youtube.com/watch?v=TPjq4skAv9k', 
+					description: ''
+				},
+				{
+					title: '"Tutto quello che vi hanno detto sul denaro è sbagliato" con Giacomo Zucco',  
+					link: 'https://www.youtube.com/watch?v=fg764zWQmh8', 
+					description: ''
+				},
+				{
+					title: 'Il Bitcoin spiegato a tua nonna Giacomo Zucco',  
+					link: 'https://www.youtube.com/watch?v=iww3arc89BA', 
+					description: ''
+				},
+				{
+					title: 'Wasabi, Joinmarket, Coordinatori CoinJoin e Blockchain Analysis',  
+					link: 'https://www.youtube.com/watch?v=MKRqt4yzlI0', 
+					description: 'Giacomo Zucco e Riccardo Masutti'
+				},
+				{
+					title: 'Utilizzo di bitcoin da dispositivi mobile',  
+					link: 'https://www.youtube.com/watch?v=UlyPArGmQ4w', 
+					description: ''
+				},
+				{
+					title: 'Hardware Wallets: comparazione, analisi, approfondimento, dibattito',  
+					link: 'https://www.youtube.com/watch?v=fR3linC_deg', 
+					description: ''
+				},
+				{
+					title: 'Transazioni Bitcoin onchain, avvertenze, privacy, discussione',  
+					link: 'https://www.youtube.com/watch?v=oQuy7GkbMaA', 
+					description: ''
+				},
+				{
+					title: 'Bitcoin transazioni e privacy su Lightning / tips & tricks',  
+					link: 'https://www.youtube.com/watch?v=CoS_m3Vg2S8', 
+					description: ''
+				}				
 			],
-			companies: [
-				{
-					title: 'Amber',
-					link: 'https://www.youtube.com/channel/UCLu1BZeluW3qt-t2MIk7X5g',
-					description: 'Aleks Svetski & Amber Promo'
-				},
-				{
-					title: 'Bull Bitcoin',
-					link: 'https://www.youtube.com/channel/UC9acjFaknVIlsMMYwVXtcvQ',
-					description: 'Francis Pouliot & Bull Bitcoin Promo'
-				},
-			]
-
+			
 		}
 	}
 
