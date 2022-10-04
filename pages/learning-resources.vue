@@ -4,19 +4,19 @@
 
 		<div class="getting-started-section">
 
-			<h3>Getting Started</h3>
+			<h3>Come iniziare</h3>
 
-			<p>Work through the steps on <a href="https://bitcoin-intro.com/" target="_blank">bitcoin-intro.com</a>.</p>
+			<p>Seguire questi step su <a href="https://bitcoin-intro.com/" target="_blank">bitcoin-intro.com</a></p>
 
 		</div>
 
-		<h3>Articles</h3>
+		<h3>Articoli</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Title</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Titolo</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(article, index) in articles" :key="index" class="tbl-row">
 					<div class="item-title">
@@ -27,13 +27,13 @@
 			</div>
 		</div>
 
-		<h3>Periodicals</h3>
+		<h3>Periodici</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Title</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Titolo</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(periodical, index) in periodicals" :key="index" class="tbl-row">
 					<div class="item-title">
@@ -44,13 +44,13 @@
 			</div>
 		</div>
 
-		<h3>Classes</h3>
+		<h3>Corsi e Workshop</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Title</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Titolo</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(classInfo, index) in classes" :key="index" class="tbl-row">
 					<div class="item-title">
@@ -66,8 +66,8 @@
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Title</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Titolo</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(website, index) in websites" :key="index" class="tbl-row">
 					<div class="item-title">
@@ -78,13 +78,13 @@
 			</div>
 		</div>
 
-		<h3>Advanced Reading</h3>
+		<h3>Letture avanzate</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Title</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Titolo</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(advancedRead, index) in advancedReading" :key="index" class="tbl-row">
 					<div class="item-title">
