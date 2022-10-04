@@ -11,13 +11,29 @@
 
 			<ul>
 				<li><a href="https://www.youtube.com/watch?v=PScIpF9Wjpc" target="_blank">Il Bitcoin Standard</a> di Saifedean Ammous, spiegato in italiano  </li>
-				<li><a href="https://www.youtube.com/watch?v=_bgFysF3a8E" target="_blank">Hayek e Friedman predicono Bitcoin</a> - Ventuno.BTC (sub ita) </li>
 				<li><a href="https://www.youtube.com/playlist?list=PL40oTe99517XEIdKoAJk5o_Hr5cTIqPiB" target="_blank">Understanding Bitcoin</a> - Giacomo Zucco spiega Bitcoin in italiano </li>
 			</ul>
 
 		</div>
 
-		<h3>Altri video in italiano</h3>
+		<h3>Video Ventuno</h3>
+
+		<div class="tbl-scroller">
+			<div class="tbl-wrapper">
+				<div class="tbl-header">
+					<div class="tbl-title">Nome</div>
+					<div class="tbl-title">Descrizione</div>
+				</div>
+				<div v-for="(lineItem, index) in videoVentuno" :key="index" class="tbl-row">
+					<div>
+						<a :href="lineItem.link" target="_blank">{{ lineItem.title }}</a>
+					</div>
+					<div v-html="lineItem.description"></div>
+				</div>
+			</div>
+		</div>
+
+		<h3>Canali italiani</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
@@ -67,7 +83,25 @@ export default {
 	data() {
 		return {
 
+			videoVentuno: [
+				{
+					title: 'Hayek e Friedman predicono Bitcoin',
+					link: 'https://www.youtube.com/watch?v=_bgFysF3a8E',
+					description: 'Due interviste ai premi nobel per l\'economia Friedrich von Hayek e Milton Friedman'
+				},
+				{
+					title: 'Il Bitcoin Standard',
+					link: 'https://www.youtube.com/watch?v=PScIpF9Wjpc',
+					description: 'Sunto del libro di Saifedean Ammous'
+				}
+			],
+
 			videoItalian: [
+				{
+					title: 'Massimo Musumeci',
+					link: 'https://www.youtube.com/MassimoSMusumeci',
+					description: 'Canale YT a tema Bitcoin e privacy'
+				},
 				{
 					title: 'Bitcoin: valuta o asset digitale? Potenzialità, limiti e sviluppi futuri.',
 					link: 'https://www.youtube.com/watch?v=2rw8Xd9OiDA',
@@ -76,7 +110,7 @@ export default {
 				{
 					title: 'Bitcoin In Action',
 					link: 'https://www.youtube.com/BitcoinInAction',
-					description: 'Spiegazioni tecniche su Bitcoin'
+					description: 'Canale YT di spiegazioni tecniche su Bitcoin'
 				},
 				{
 					title: '5 luoghi comuni da sfatare su Blockchain',
