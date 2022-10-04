@@ -213,6 +213,11 @@ export default {
 					description: 'Canale YT di spiegazioni tecniche su Bitcoin'
 				},
 				{
+					title: 'Bitcoin Milano',
+					link: 'https://www.youtube.com/channel/UCmnfb8y24XyUj2wP4L_ezPA',
+					description: 'Canale YT di spiegazioni tecniche su Bitcoin'
+				},
+				{
 					title: 'Massimo Musumeci',
 					link: 'https://www.youtube.com/MassimoSMusumeci',
 					description: 'Canale YT a tema Bitcoin e privacy'
