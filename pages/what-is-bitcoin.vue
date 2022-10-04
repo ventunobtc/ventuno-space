@@ -17,7 +17,7 @@
 			network in sè richiede una struttura minima. I messaggi sono pubblicati secondo le possibilità di ciascuno, e i nodi possono unirsi o lasciare il
 			network quando vogliono, e accettare la catena di risultati più lunga come prova di quanto è avvenuto mentre erano disconnessi.</p>
 
-		<p>Whitepaper Bitcoin: <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">PDF</a></p>
+		<p>Whitepaper Bitcoin: <a href="/bitcoin-white-paper-it.pdf">PDF</a></p>
 
 		<h3>Il Bitcoin  Standard 
 			<div class="page-subtitle">Saifedean Ammous - Aprile, 2018</div>
