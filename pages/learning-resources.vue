@@ -140,6 +140,21 @@ export default {
 
 			periodicals: [
 				{
+					title: 'Risorsebitcoin by Mir',
+					link: 'https://github.com/mirserena/risorsebitcoin',
+					description: 'Lista di risorse su Bitcoin per chi si avvicina per la prima volta'
+				},
+				{
+					title: 'Bitcoin Train',
+					link: 'https://github.com/mirserena/risorsebitcoin',
+					description: 'Newsletter su Bitcoin'
+				},
+				{
+					title: 'Bitcoin: Tutto quello che devi sapere',
+					link: 'https://pindol.medium.com/premessa-1e5254a52475',
+					description: 'Aggregatore di contenuti su Bitcoin per chi si avvicina per la prima volta'
+				},
+				{
 					title: 'Citadel 21',
 					link: 'https://www.citadel21.com/',
 					description: 'Monthly Bitcoin cultural zine'
@@ -162,6 +177,11 @@ export default {
 			],
 
 			classes: [
+				{
+					title: 'Bitcoin dalla teoria alla pratica - Corso Completo',
+					link: 'https://www.udemy.com/course/bitcoin-blockchain-corso-completo-teoria-pratica-esempi-tutorial/?referralCode=AAC8EB895142D8301C13',
+					description: '2-day course (in development)'
+				},
 				{
 					title: '21 Lectures (Beginner)',
 					link: 'https://www.21lectures.com/beginner-course/',
@@ -219,6 +239,36 @@ export default {
 					title: 'BIPs',
 					link: 'https://bips.xyz/',
 					description: 'Explorer for BIPs. View, search and share easily BIPs'
+				},
+				{
+					title: 'Turtlecute',
+					link: 'https://turtlecute.org/',
+					description: 'Guide su Bitcoin e privacy'
+				},
+				{
+					title: 'Alberto De Luigi',
+					link: 'https://www.albertodeluigi.com/',
+					description: 'Tutto su Bitcoin: guide, tecnologia e mercato'
+				},
+				{
+					title: 'Forum BitcoinTalk Italia',
+					link: 'https://bitcointalk.org/index.php?board=28.0',
+					description: ''
+				},
+				{
+					title: 'Checkpoint Bitcoin',
+					link: 'https://checkpointbitcoin.it/',
+					description: 'Blog italiano specializzato su Bitcoin'
+				},
+				{
+					title: 'Checkpoint Bitcoin',
+					link: 'https://bitcoin-translate.it/',
+					description: ' Bitcoin in italiano dalla genesi ad oggi '
+				},
+				{
+					title: 'Bitcoin Italia Podcast',
+					link: 'https://bitcoinitaliapodcast.it/',
+					description: ' Bitcoin in italiano dalla genesi ad oggi '
 				},
 				{
 					title: 'Bitcoin Briefly',
