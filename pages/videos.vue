@@ -98,19 +98,34 @@ export default {
 
 			videoItalian: [
 				{
+					title: 'Bitcoin In Action',
+					link: 'https://www.youtube.com/BitcoinInAction',
+					description: 'Canale YT di spiegazioni tecniche su Bitcoin'
+				},
+				{
 					title: 'Massimo Musumeci',
 					link: 'https://www.youtube.com/MassimoSMusumeci',
 					description: 'Canale YT a tema Bitcoin e privacy'
 				},
 				{
-					title: 'Bitcoin: valuta o asset digitale? Potenzialità, limiti e sviluppi futuri.',
-					link: 'https://www.youtube.com/watch?v=2rw8Xd9OiDA',
-					description: 'Giacomo Zucco con BIT PoliTO'
+					title: 'Mir',
+					link: 'https://www.youtube.com/rnbmir',
+					description: 'Canale YT di brevi interviste in inglese con i più importanti dev e personalità nel mondo Bitcoin.'
 				},
 				{
-					title: 'Bitcoin In Action',
-					link: 'https://www.youtube.com/BitcoinInAction',
-					description: 'Canale YT di spiegazioni tecniche su Bitcoin'
+					title: 'Riccardo Masutti',
+					link: 'https://www.youtube.com/RiccardoMasutti',
+					description: 'Canale YT a tema sicurezza informatica, privacy e Bitcoin'
+				},
+				{
+					title: 'BIT PoliTO',
+					link: 'https://www.youtube.com/BITPoliTo',
+					description: 'Canale YT del team studentesco del Politecnico di Torino.'
+				},
+				{
+					title: 'Bitcoin Italia Podcast',
+					link: 'https://www.youtube.com/BitcoinItaliaPodcast',
+					description: 'Canale YT del primo podcast a raccontare Bitcoin in lingua italiana.'
 				},
 				{
 					title: '5 luoghi comuni da sfatare su Blockchain',
@@ -136,50 +151,25 @@ export default {
 					title: 'Bitcoin Valley: Terraforming Bitcoin 2019',
 					link: 'https://www.youtube.com/watch?v=90ihJJp6Cqs',
 					description: ''
-				},				
-				{
-					title: 'Atomic swap per principianti',
-					link: 'https://www.youtube.com/watch?v=xqtulqFaiNw',
-					description: ''
-				},
-				{
-					title: 'Bitcoin e Privacy',
-					link: 'https://www.youtube.com/playlist?list=PLJV6rfaH_FrxwQ_z8Yk7mi2_9iM9avInf',
-					description: 'Video della privacy week'
 				},
 				{
 					title: 'Bitcoin inconfiscabile riserva di valore',
 					link: 'https://www.youtube.com/watch?v=4BL2pusoX0o',
 					description: ''
 				},	
-            	{ 
-					title: 'Into the Bitcoin Protocol: come funziona?',  
-					link: 'https://www.youtube.com/watch?v=KF3uQzBpMnw', 
-					description: 'Alberto De Luigi con BIT PoliTO'
-				},
 				{ 
-					title: 'Introduzione a Bitcoin',  
-					link: 'https://www.youtube.com/watch?v=rnhmBpznlHM', 
-					description: 'Federico Tengo al Politecnico di Torino'
-				},
-				{ 
-					title: 'Bitcoin is for the millions not for the millioners',  
-					link: 'https://www.youtube.com/watch?v=OPXoVMsEwDc', 
-					description: 'Rikki del BipShow al Politecnico di Torino'
-				},
-				{ 
-					title: 'Tra Bitcoin Maximalism e centro America',  
-					link: 'https://www.youtube.com/watch?v=-UUeNcTTCI8', 
+					title: 'Tra Bitcoin Maximalism e centro America',
+					link: 'https://www.youtube.com/watch?v=-UUeNcTTCI8',
 					description: ''
 				},
 				{
-					title: 'Bitcoin: l\'evoluzione della moneta',  
-					link: 'https://www.youtube.com/embed/lZHrR3FCRgo', 
+					title: 'Bitcoin: l\'evoluzione della moneta',
+					link: 'https://www.youtube.com/embed/lZHrR3FCRgo',
 					description: 'Tavola rotonda a Internet Festival 2021'
 				},
 				{
-					title: 'Mining (discussione e live da Mining Farm in Russia)',  
-					link: 'https://www.youtube.com/watch?v=hoUAfkE9de0', 
+					title: 'Mining (discussione e live da Mining Farm in Russia)',
+					link: 'https://www.youtube.com/watch?v=hoUAfkE9de0',
 					description: ''
 				},
 				{
