@@ -94,24 +94,6 @@
 				</div>
 			</div>
 		</div>
-
-		<h3>Research</h3>
-
-		<div class="tbl-scroller">
-			<div class="tbl-wrapper">
-				<div class="tbl-header">
-					<div class="tbl-title">Title</div>
-					<div class="tbl-title">Description</div>
-				</div>
-				<div v-for="(publication, index) in research" :key="index" class="tbl-row">
-					<div class="item-title">
-						<a :href="publication.link" target="_blank">{{ publication.title }}</a>
-					</div>
-					<div>{{ publication.description }}</div>
-				</div>
-			</div>
-		</div>
-
 	</div>
 </template>
 
@@ -177,11 +159,6 @@ export default {
 					link: 'https://bitcoiner.guide/monthly',
 					description: 'Monthly index of Bitcoin and Lightning Network news and developments'
 				},
-				{
-					title: 'The Bitcoin Times',
-					link: 'https://bitcointimes.news/',
-					description: 'A beautiful, informative and stylish publication released 2-3 times per year'
-				}
 			],
 
 			classes: [
@@ -239,11 +216,6 @@ export default {
 
 			websites: [
 				{
-					title: '10hoursofbitcoin',
-					link: 'https://10hoursofbitcoin.com/',
-					description: 'Links to 10h of Bitcoin lessons'
-				},
-				{
 					title: 'BIPs',
 					link: 'https://bips.xyz/',
 					description: 'Explorer for BIPs. View, search and share easily BIPs'
@@ -252,11 +224,6 @@ export default {
 					title: 'Bitcoin Briefly',
 					link: 'https://bitcoinbriefly.com/',
 					description: 'Brief Bitcoin Explanations'
-				},
-				{
-					title: 'Bitcoind.me',
-					link: 'https://bitcoind.me/',
-					description: 'Persian resources - translated books, tutorials and more'
 				},
 				{
 					title: 'Bitcoin Designed',
@@ -269,19 +236,9 @@ export default {
 					description: 'A bitcoin application design guide'
 				},
 				{
-					title: 'Bitcoin Explained',
-					link: 'https://www.bitcoin-explained.com/',
-					description: 'Comprehensive intro with curated links'
-				},
-				{
 					title: 'Bitcoin Q & A',
 					link: 'https://bitcoiner.guide/qna/',
 					description: 'Extensive questions & answers'
-				},
-				{
-					title: 'Bitcoin Rabbit Hole',
-					link: 'http://bitcoinrabbithole.org/',
-					description: 'Index of Bitcoin content'
 				},
 				{
 					title: 'Bitcoin Resources',
@@ -297,11 +254,6 @@ export default {
 					title: 'Bitcoin Support',
 					link: 'https://guides.bitcoinsupport.com/',
 					description: 'Self-custody and privacy guides'
-				},
-				{
-					title: 'Bitcoin Translated',
-					link: 'https://bitcoin-translated.ru/',
-					description: 'Russian translations of articles & books'
 				},
 				{
 					title: 'Bitcoin.org',
@@ -324,29 +276,9 @@ export default {
 					description: 'Bitcoin & Lightning study guides'
 				},
 				{
-					title: 'Estudio Bitcoin',
-					link: 'https://estudiobitcoin.com/',
-					description: 'Resources for Spanish Bitcoiners'
-				},
-				{
-					title: 'exonumia.africa',
-					link: 'https://exonumia.africa',
-					description: 'Freely available African language translations of literature that explains Bitcoin'
-				},
-				{
 					title: 'Get Coined',
 					link: 'https://www.getcoined.io/',
 					description: 'Concise introduction for precoiners'
-				},
-				{
-					title: 'Hungry Hodler',
-					link: 'https://hungryhodler.com/',
-					description: 'Informative Bitcoin evangelizing'
-				},
-				{
-					title: 'L2B Global',
-					link: 'https://blog.l2b.global/',
-					description: 'Blog from an OTC desk'
 				},
 				{
 					title: 'Learn Me A Bitcoin',
@@ -377,11 +309,6 @@ export default {
 					title: 'Storing Bitcoin',
 					link: 'https://storingbitcoin.info/',
 					description: 'Interactive guide to storing bitcoin'
-				},
-				{
-					title: 'Veriphi',
-					link: 'https://veriphi.io/blog/',
-					description: 'Bitcoin tech explained'
 				},
 				{
 					title: 'Why Hold Bitcoin',
@@ -417,27 +344,7 @@ export default {
 					description: 'Max\'s cliffnotes'
 				}
 			],
-
-			research: [
-				{
-					title: 'Coinjoin Research',
-					link: 'https://github.com/6102bitcoin/CoinJoin-Research',
-					description: 'Coinjoin research by 6102bitcoin'
-				},
-				{
-					title: 'Bitcoin And The Trust Issue: Is Bitcoin Adoption Accelerated By The Abuse Of Trust?',
-					link: 'https://karozagorus.keybase.pub/KaroZagorus-2020-Thesis.pdf',
-					description: 'Bitcoin research thesis about Bitcoin and social organization'
-				},
-				{
-					title: 'Cryptoasset Consumer Research 2020',
-					link: 'https://www.fca.org.uk/publication/research/research-note-cryptoasset-consumer-research-2020.pdf',
-					description: 'Research by the UK FCA'
-				}
-			]
-
 		}
 	}
-
 }
 </script>
