@@ -10,7 +10,7 @@
 
 		</div>
 
-		<h3>Articoli</h3>
+		<h3>Articoli Ventuno</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
@@ -18,7 +18,7 @@
 					<div class="tbl-title">Titolo</div>
 					<div class="tbl-title">Descrizione</div>
 				</div>
-				<div v-for="(article, index) in articles" :key="index" class="tbl-row">
+				<div v-for="(article, index) in articlesVentuno" :key="index" class="tbl-row">
 					<div class="item-title">
 						<a :href="article.link" target="_blank">{{ article.title }}</a>
 					</div>
@@ -120,22 +120,12 @@ export default {
 	data () {
 		return {
 
-			articles: [
+			articlesVentuno: [
 				{
-					title: 'Gradually Then Suddenly',
-					link: 'https://unchained-capital.com/blog/category/gradually-then-suddenly/',
-					description: 'Detailed articles exploring bitcoin'
+					title: 'Il mining di Bitcoin ottimizza la produzione di energia rinnovabile',
+					link: 'https://medium.com/@ventunobtc/il-mining-di-bitcoin-ottimizza-la-produzione-di-energia-rinnovabile-68af1c490d4a',
+					description: 'Traduzione in italiano del thread Twitter di @Level39'
 				},
-				{
-					title: 'Technical Bitcoin Overview',
-					link: 'https://medium.com/@pierre_rochard/understanding-the-technical-side-of-bitcoin-2c212dd65c09',
-					description: 'Understanding the technical side of bitcoin'
-				},
-				{
-					title: 'Why Bitcoin',
-					link: 'https://medium.com/@wiz/why-bitcoin-359ada12629e',
-					description: 'Security, privacy, and freedom of your money'
-				}
 			],
 
 			periodicals: [
