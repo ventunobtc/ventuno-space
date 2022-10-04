@@ -228,6 +228,11 @@ export default {
 					description: 'Canale YT a tema sicurezza informatica, privacy e Bitcoin'
 				},
 				{
+					title: 'Bitcoin Train',
+					link: 'https://www.youtube.com/channel/UCSgcZJRSsU5mTY0kUCP-JvQ',
+					description: 'Canale dedicato alla newsletter Bitcoin Train'
+				},
+				{
 					title: 'BIT PoliTO',
 					link: 'https://www.youtube.com/BITPoliTo',
 					description: 'Canale YT del team studentesco del Politecnico di Torino.'
@@ -238,7 +243,6 @@ export default {
 					description: 'Canale YT del primo podcast a raccontare Bitcoin in lingua italiana.'
 				},
 			],
-			
 		}
 	}
 }
