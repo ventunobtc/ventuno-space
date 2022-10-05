@@ -4,16 +4,16 @@ export default {
 
 	// Global page headers (https://go.nuxtjs.dev/config-head)
 	head: {
-		title: 'Bitcoin Only',
+		title: 'Ventuno Space',
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-			{ hid: 'description', name: 'description', content: 'Bitcoin only resources including meetups, books, wallets, podcasts, conferences, and much more.' },
-			{ hid: 'og:site_name', name: 'og:site_name', content: 'Bitcoin Only' },
-			{ hid: 'og:description', name: 'og:description', content: 'Bitcoin only resources including meetups, books, wallets, podcasts, conferences, and much more.' },
-			{ hid: 'twitter:description', name: 'twitter:description', content: 'Bitcoin only resources including meetups, books, wallets, podcasts, conferences, and much more.' },
-			{ hid: 'og:title', name: 'og:title', content: 'Bitcoin Only' },
-			{ hid: 'og:url', name: 'og:url', content: 'https://bitcoin-only.com' },
+			{ hid: 'description', name: 'description', content: 'Risorse solo Bitcoin, tra cui meetup, libri, portafogli, podcast, conferenze e molto altro.' },
+			{ hid: 'og:site_name', name: 'og:site_name', content: 'Ventuno Space' },
+			{ hid: 'og:description', name: 'og:description', content: 'Risorse solo Bitcoin, tra cui meetup, libri, portafogli, podcast, conferenze e molto altro.' },
+			{ hid: 'twitter:description', name: 'twitter:description', content: 'Risorse solo Bitcoin, tra cui meetup, libri, portafogli, podcast, conferenze e molto altro.' },
+			{ hid: 'og:title', name: 'og:title', content: 'Ventuno Space' },
+			{ hid: 'og:url', name: 'og:url', content: 'https://ventuno.space' },
 			{ hid: 'og:image', name: 'og:image', content: '/og-image.png' },
 			{ hid: 'og:image:width', name: 'og:image:width', content: '800' },
 			{ hid: 'og:image:height', name: 'og:image:height', content: '418' },

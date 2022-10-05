@@ -6,7 +6,7 @@
 
 			<h3>Come iniziare</h3>
 
-			<p>Seguire questi step su <a href="https://bitcoin-intro.com/" target="_blank">bitcoin-intro.com</a></p>
+			<p>Seguire questi step su <a href="https://bitcoin-intro.com/it/" target="_blank">bitcoin-intro.com</a></p>
 
 		</div>
 
