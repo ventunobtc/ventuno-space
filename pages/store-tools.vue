@@ -1,15 +1,15 @@
 <template>
 	<div id="store-tools-page">
 
-		<h1 class="page-title">Store Tools</h1>
+		<h1 class="page-title">Fatti pagare in Bitcoin</h1>
 
-		<p class="explainer">These tools help you accept Bitcoin only.</p>
+		<p class="explainer">Questi strumenti ti aiutano ad accettare Bitcoin per te o la tua attività.</p>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Name</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Nome</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(lineItem, index) in storeTools" :key="index" class="tbl-row">
 					<div>
@@ -20,7 +20,7 @@
 			</div>
 		</div>
 
-		<div class="footnote">* Opennode is fully custodial meaning you do not have your private keys, thus you are not guaranteed full control of your funds. You can (and should) set reoccurring withdrawals to send any Bitcoin you receive to your own wallet. You are now also required to submit KYC Documentation to be an Opennode merchant.</div>
+		<div class="footnote">* Opennode è fully custodial, il che significa che non avete le vostre chiavi private, quindi non vi è garantito il pieno controllo dei vostri fondi. Potete (e dovreste) impostare prelievi ricorrenti per inviare qualsiasi Bitcoin che ricevete al vostro portafoglio. Ora vi è anche richiesto di presentare la documentazione KYC per essere un commerciante su Opennode.</div>
 
 	</div>
 </template>
@@ -58,40 +58,46 @@ export default {
 
 			storeTools: [
 				{
-					title: 'BullBitcoin',
-					link: 'https://bullbitcoin.com/',
-					description: 'Non-custodial Bitcoin services'
-				},
-				{
-					title: 'chainside',
+					title: 'Chainside',
 					link: 'https://www.chainside.net/en/home/',
-					description: 'Payments processor'
+					description: 'Gestore di pagamenti'
 				},
 				{
 					title: 'LNPay',
 					link: 'https://lnpay.co/',
-					description: 'Lighting Network payments processor'
+					description: 'Gestore di pagamenti su Lighting Network'
 				},
 				{
 					title: 'OpenNode',
 					link: 'https://www.opennode.co/',
-					description: 'Payments Processor *'
+					description: 'Gestore di pagamenti *'
 				},
 				{
 					title: 'paid.co',
 					link: 'https://paid.co/',
-					description: 'Sell things for Bitcoin (uses OpenNode) *'
+					description: 'Vendi cose per Bitcoin (usa OpenNode) *'
+				},
+				{
+					title: 'BTC Pay',
+					link: 'https://www.btcpayserver.it/',
+					description: 'Ricevi pagamenti Bitcoin / LN direttamente sul tuo nodo (oppure hosted)'
 				},
 				{
 					title: 'SatSale',
 					link: 'https://github.com/nickfarrow/SatSale',
-					description: 'Lightweight donations page, embeds and payment gateway'
+					description: 'Ricevi pagamenti Bitcoin / LN direttamente sul tuo nodo'
 				},
 				{
-					title: 'zaprite (BETA)',
-					link: 'https://app.zaprite.com/',
-					description: 'Bitcoin invoicing and task management'
+					title: 'LNCal.com',
+					link: 'https://lncal.com/',
+					description: 'Scambia il tuo tempo per Bitcoin'
+				},
+				{
+					title: 'LN Pos',
+					link: 'https://shop.fulmo.org/product/bitcoin-point-of-sale-pos/',
+					description: 'Soluzione DIY'
 				}
+				
 			]
 
 		}

@@ -57,6 +57,8 @@ export default {
 		]
 	},
 
+	// TODO: Add script to move past confernce based on .now() in a new section
+
 	data() {
 		return {
 
@@ -97,6 +99,12 @@ export default {
 					location: 'Amsterdam, Paesi Bassi',
 					dates: '12-14 Ottobre 2022'
 				},
+				{
+					title: 'Plan B Forum',
+					link: 'https://planb.lugano.ch/planb-forum/',
+					location: 'Lugano, Svizzera',
+					dates: '28-29 Ottobre 2022'
+				}
 			],
 			
 		}
