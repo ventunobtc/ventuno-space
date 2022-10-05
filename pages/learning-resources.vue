@@ -4,21 +4,21 @@
 
 		<div class="getting-started-section">
 
-			<h3>Getting Started</h3>
+			<h3>Come iniziare</h3>
 
-			<p>Work through the steps on <a href="https://bitcoin-intro.com/" target="_blank">bitcoin-intro.com</a>.</p>
+			<p>Seguire questi step su <a href="https://bitcoin-intro.com/" target="_blank">bitcoin-intro.com</a></p>
 
 		</div>
 
-		<h3>Articles</h3>
+		<h3>Articoli Ventuno</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Title</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Titolo</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
-				<div v-for="(article, index) in articles" :key="index" class="tbl-row">
+				<div v-for="(article, index) in articlesVentuno" :key="index" class="tbl-row">
 					<div class="item-title">
 						<a :href="article.link" target="_blank">{{ article.title }}</a>
 					</div>
@@ -27,13 +27,13 @@
 			</div>
 		</div>
 
-		<h3>Periodicals</h3>
+		<h3>Periodici</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Title</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Titolo</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(periodical, index) in periodicals" :key="index" class="tbl-row">
 					<div class="item-title">
@@ -44,13 +44,13 @@
 			</div>
 		</div>
 
-		<h3>Classes</h3>
+		<h3>Corsi e Workshop</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Title</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Titolo</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(classInfo, index) in classes" :key="index" class="tbl-row">
 					<div class="item-title">
@@ -66,8 +66,8 @@
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Title</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Titolo</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(website, index) in websites" :key="index" class="tbl-row">
 					<div class="item-title">
@@ -78,13 +78,13 @@
 			</div>
 		</div>
 
-		<h3>Advanced Reading</h3>
+		<h3>Letture avanzate</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
-					<div class="tbl-title">Title</div>
-					<div class="tbl-title">Description</div>
+					<div class="tbl-title">Titolo</div>
+					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(advancedRead, index) in advancedReading" :key="index" class="tbl-row">
 					<div class="item-title">
@@ -94,24 +94,6 @@
 				</div>
 			</div>
 		</div>
-
-		<h3>Research</h3>
-
-		<div class="tbl-scroller">
-			<div class="tbl-wrapper">
-				<div class="tbl-header">
-					<div class="tbl-title">Title</div>
-					<div class="tbl-title">Description</div>
-				</div>
-				<div v-for="(publication, index) in research" :key="index" class="tbl-row">
-					<div class="item-title">
-						<a :href="publication.link" target="_blank">{{ publication.title }}</a>
-					</div>
-					<div>{{ publication.description }}</div>
-				</div>
-			</div>
-		</div>
-
 	</div>
 </template>
 
@@ -138,25 +120,30 @@ export default {
 	data () {
 		return {
 
-			articles: [
+			articlesVentuno: [
 				{
-					title: 'Gradually Then Suddenly',
-					link: 'https://unchained-capital.com/blog/category/gradually-then-suddenly/',
-					description: 'Detailed articles exploring bitcoin'
+					title: 'Il mining di Bitcoin ottimizza la produzione di energia rinnovabile',
+					link: 'https://medium.com/@ventunobtc/il-mining-di-bitcoin-ottimizza-la-produzione-di-energia-rinnovabile-68af1c490d4a',
+					description: 'Traduzione in italiano del thread Twitter di @Level39'
 				},
-				{
-					title: 'Technical Bitcoin Overview',
-					link: 'https://medium.com/@pierre_rochard/understanding-the-technical-side-of-bitcoin-2c212dd65c09',
-					description: 'Understanding the technical side of bitcoin'
-				},
-				{
-					title: 'Why Bitcoin',
-					link: 'https://medium.com/@wiz/why-bitcoin-359ada12629e',
-					description: 'Security, privacy, and freedom of your money'
-				}
 			],
 
 			periodicals: [
+				{
+					title: 'Risorsebitcoin by Mir',
+					link: 'https://github.com/mirserena/risorsebitcoin',
+					description: 'Lista di risorse su Bitcoin per chi si avvicina per la prima volta'
+				},
+				{
+					title: 'Bitcoin Train',
+					link: 'https://github.com/mirserena/risorsebitcoin',
+					description: 'Newsletter su Bitcoin'
+				},
+				{
+					title: 'Bitcoin: Tutto quello che devi sapere',
+					link: 'https://pindol.medium.com/premessa-1e5254a52475',
+					description: 'Aggregatore di contenuti su Bitcoin per chi si avvicina per la prima volta'
+				},
 				{
 					title: 'Citadel 21',
 					link: 'https://www.citadel21.com/',
@@ -177,14 +164,14 @@ export default {
 					link: 'https://bitcoiner.guide/monthly',
 					description: 'Monthly index of Bitcoin and Lightning Network news and developments'
 				},
-				{
-					title: 'The Bitcoin Times',
-					link: 'https://bitcointimes.news/',
-					description: 'A beautiful, informative and stylish publication released 2-3 times per year'
-				}
 			],
 
 			classes: [
+				{
+					title: 'Bitcoin dalla teoria alla pratica - Corso Completo',
+					link: 'https://www.udemy.com/course/bitcoin-blockchain-corso-completo-teoria-pratica-esempi-tutorial/?referralCode=AAC8EB895142D8301C13',
+					description: '2-day course (in development)'
+				},
 				{
 					title: '21 Lectures (Beginner)',
 					link: 'https://www.21lectures.com/beginner-course/',
@@ -239,24 +226,44 @@ export default {
 
 			websites: [
 				{
-					title: '10hoursofbitcoin',
-					link: 'https://10hoursofbitcoin.com/',
-					description: 'Links to 10h of Bitcoin lessons'
-				},
-				{
 					title: 'BIPs',
 					link: 'https://bips.xyz/',
 					description: 'Explorer for BIPs. View, search and share easily BIPs'
 				},
 				{
+					title: 'Turtlecute',
+					link: 'https://turtlecute.org/',
+					description: 'Guide su Bitcoin e privacy'
+				},
+				{
+					title: 'Alberto De Luigi',
+					link: 'https://www.albertodeluigi.com/',
+					description: 'Tutto su Bitcoin: guide, tecnologia e mercato'
+				},
+				{
+					title: 'Forum BitcoinTalk Italia',
+					link: 'https://bitcointalk.org/index.php?board=28.0',
+					description: ''
+				},
+				{
+					title: 'Checkpoint Bitcoin',
+					link: 'https://checkpointbitcoin.it/',
+					description: 'Blog italiano specializzato su Bitcoin'
+				},
+				{
+					title: 'Checkpoint Bitcoin',
+					link: 'https://bitcoin-translate.it/',
+					description: ' Bitcoin in italiano dalla genesi ad oggi '
+				},
+				{
+					title: 'Bitcoin Italia Podcast',
+					link: 'https://bitcoinitaliapodcast.it/',
+					description: ' Bitcoin in italiano dalla genesi ad oggi '
+				},
+				{
 					title: 'Bitcoin Briefly',
 					link: 'https://bitcoinbriefly.com/',
 					description: 'Brief Bitcoin Explanations'
-				},
-				{
-					title: 'Bitcoind.me',
-					link: 'https://bitcoind.me/',
-					description: 'Persian resources - translated books, tutorials and more'
 				},
 				{
 					title: 'Bitcoin Designed',
@@ -269,19 +276,9 @@ export default {
 					description: 'A bitcoin application design guide'
 				},
 				{
-					title: 'Bitcoin Explained',
-					link: 'https://www.bitcoin-explained.com/',
-					description: 'Comprehensive intro with curated links'
-				},
-				{
 					title: 'Bitcoin Q & A',
 					link: 'https://bitcoiner.guide/qna/',
 					description: 'Extensive questions & answers'
-				},
-				{
-					title: 'Bitcoin Rabbit Hole',
-					link: 'http://bitcoinrabbithole.org/',
-					description: 'Index of Bitcoin content'
 				},
 				{
 					title: 'Bitcoin Resources',
@@ -297,11 +294,6 @@ export default {
 					title: 'Bitcoin Support',
 					link: 'https://guides.bitcoinsupport.com/',
 					description: 'Self-custody and privacy guides'
-				},
-				{
-					title: 'Bitcoin Translated',
-					link: 'https://bitcoin-translated.ru/',
-					description: 'Russian translations of articles & books'
 				},
 				{
 					title: 'Bitcoin.org',
@@ -324,29 +316,9 @@ export default {
 					description: 'Bitcoin & Lightning study guides'
 				},
 				{
-					title: 'Estudio Bitcoin',
-					link: 'https://estudiobitcoin.com/',
-					description: 'Resources for Spanish Bitcoiners'
-				},
-				{
-					title: 'exonumia.africa',
-					link: 'https://exonumia.africa',
-					description: 'Freely available African language translations of literature that explains Bitcoin'
-				},
-				{
 					title: 'Get Coined',
 					link: 'https://www.getcoined.io/',
 					description: 'Concise introduction for precoiners'
-				},
-				{
-					title: 'Hungry Hodler',
-					link: 'https://hungryhodler.com/',
-					description: 'Informative Bitcoin evangelizing'
-				},
-				{
-					title: 'L2B Global',
-					link: 'https://blog.l2b.global/',
-					description: 'Blog from an OTC desk'
 				},
 				{
 					title: 'Learn Me A Bitcoin',
@@ -377,11 +349,6 @@ export default {
 					title: 'Storing Bitcoin',
 					link: 'https://storingbitcoin.info/',
 					description: 'Interactive guide to storing bitcoin'
-				},
-				{
-					title: 'Veriphi',
-					link: 'https://veriphi.io/blog/',
-					description: 'Bitcoin tech explained'
 				},
 				{
 					title: 'Why Hold Bitcoin',
@@ -417,27 +384,7 @@ export default {
 					description: 'Max\'s cliffnotes'
 				}
 			],
-
-			research: [
-				{
-					title: 'Coinjoin Research',
-					link: 'https://github.com/6102bitcoin/CoinJoin-Research',
-					description: 'Coinjoin research by 6102bitcoin'
-				},
-				{
-					title: 'Bitcoin And The Trust Issue: Is Bitcoin Adoption Accelerated By The Abuse Of Trust?',
-					link: 'https://karozagorus.keybase.pub/KaroZagorus-2020-Thesis.pdf',
-					description: 'Bitcoin research thesis about Bitcoin and social organization'
-				},
-				{
-					title: 'Cryptoasset Consumer Research 2020',
-					link: 'https://www.fca.org.uk/publication/research/research-note-cryptoasset-consumer-research-2020.pdf',
-					description: 'Research by the UK FCA'
-				}
-			]
-
 		}
 	}
-
 }
 </script>

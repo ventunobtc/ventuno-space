@@ -11,13 +11,29 @@
 
 			<ul>
 				<li><a href="https://www.youtube.com/watch?v=PScIpF9Wjpc" target="_blank">Il Bitcoin Standard</a> di Saifedean Ammous, spiegato in italiano  </li>
-				<li><a href="https://www.youtube.com/watch?v=_bgFysF3a8E" target="_blank">Hayek e Friedman predicono Bitcoin</a> - Ventuno.BTC (sub ita) </li>
 				<li><a href="https://www.youtube.com/playlist?list=PL40oTe99517XEIdKoAJk5o_Hr5cTIqPiB" target="_blank">Understanding Bitcoin</a> - Giacomo Zucco spiega Bitcoin in italiano </li>
 			</ul>
 
 		</div>
 
-		<h3>Altri video in italiano</h3>
+		<h3>Video Ventuno</h3>
+
+		<div class="tbl-scroller">
+			<div class="tbl-wrapper">
+				<div class="tbl-header">
+					<div class="tbl-title">Nome</div>
+					<div class="tbl-title">Descrizione</div>
+				</div>
+				<div v-for="(lineItem, index) in videoVentuno" :key="index" class="tbl-row">
+					<div>
+						<a :href="lineItem.link" target="_blank">{{ lineItem.title }}</a>
+					</div>
+					<div v-html="lineItem.description"></div>
+				</div>
+			</div>
+		</div>
+
+		<h3>Canali italiani</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
@@ -26,6 +42,23 @@
 					<div class="tbl-title">Descrizione</div>
 				</div>
 				<div v-for="(lineItem, index) in videoItalian" :key="index" class="tbl-row">
+					<div>
+						<a :href="lineItem.link" target="_blank">{{ lineItem.title }}</a>
+					</div>
+					<div v-html="lineItem.description"></div>
+				</div>
+			</div>
+		</div>
+
+		<h3>Video fondamentali</h3>
+
+		<div class="tbl-scroller">
+			<div class="tbl-wrapper">
+				<div class="tbl-header">
+					<div class="tbl-title">Nome</div>
+					<div class="tbl-title">Descrizione</div>
+				</div>
+				<div v-for="(lineItem, index) in videoEssential" :key="index" class="tbl-row">
 					<div>
 						<a :href="lineItem.link" target="_blank">{{ lineItem.title }}</a>
 					</div>
@@ -67,136 +100,155 @@ export default {
 	data() {
 		return {
 
-			videoItalian: [
+			videoVentuno: [
 				{
-					title: 'Bitcoin: valuta o asset digitale? Potenzialità, limiti e sviluppi futuri.',
-					link: 'https://www.youtube.com/watch?v=2rw8Xd9OiDA',
-					description: 'Giacomo Zucco con BIT PoliTO'
+					title: 'Hayek e Friedman predicono Bitcoin',
+					link: 'https://www.youtube.com/watch?v=_bgFysF3a8E',
+					description: 'Due interviste ai premi nobel per l\'economia Friedrich von Hayek e Milton Friedman'
 				},
 				{
-					title: 'Bitcoin In Action',
-					link: 'https://www.youtube.com/BitcoinInAction',
-					description: 'Spiegazioni tecniche su Bitcoin'
-				},
+					title: 'Il Bitcoin Standard',
+					link: 'https://www.youtube.com/watch?v=PScIpF9Wjpc',
+					description: 'Sunto del libro di Saifedean Ammous'
+				}
+			],
+
+			videoEssential: [
 				{
 					title: '5 luoghi comuni da sfatare su Blockchain',
 					link: 'https://www.youtube.com/watch?v=a-2cz-yzQns',
-					description: ''
-				},
-				{
-					title: 'Come funzionano i Bitcoin',
-					link: 'https://www.youtube.com/watch?v=kpxBSohNr5Y',
-					description: ''
-				},
-				{
-					title: 'Bitcoin & Mining',
-					link: 'https://www.youtube.com/watch?v=kVCjfVN0344',
-					description: 'Conviene minare cryptovalute? Si diventa ricchi? Come funziona?'
-				},
-				{
-					title: 'Vivere con Bitcoin',
-					link: 'https://www.youtube.com/watch?v=Qu_E7QmmoS4',
-					description: 'Massimo Musumeci & Luca Venturini'
-				},
-				{
-					title: 'Bitcoin Valley: Terraforming Bitcoin 2019',
-					link: 'https://www.youtube.com/watch?v=90ihJJp6Cqs',
-					description: ''
-				},				
-				{
-					title: 'Atomic swap per principianti',
-					link: 'https://www.youtube.com/watch?v=xqtulqFaiNw',
-					description: ''
-				},
-				{
-					title: 'Bitcoin e Privacy',
-					link: 'https://www.youtube.com/playlist?list=PLJV6rfaH_FrxwQ_z8Yk7mi2_9iM9avInf',
-					description: 'Video della privacy week'
-				},
-				{
-					title: 'Bitcoin inconfiscabile riserva di valore',
-					link: 'https://www.youtube.com/watch?v=4BL2pusoX0o',
-					description: ''
-				},	
-            	{ 
-					title: 'Into the Bitcoin Protocol: come funziona?',  
-					link: 'https://www.youtube.com/watch?v=KF3uQzBpMnw', 
-					description: 'Alberto De Luigi con BIT PoliTO'
-				},
-				{ 
-					title: 'Introduzione a Bitcoin',  
-					link: 'https://www.youtube.com/watch?v=rnhmBpznlHM', 
-					description: 'Federico Tengo al Politecnico di Torino'
-				},
-				{ 
-					title: 'Bitcoin is for the millions not for the millioners',  
-					link: 'https://www.youtube.com/watch?v=OPXoVMsEwDc', 
-					description: 'Rikki del BipShow al Politecnico di Torino'
-				},
-				{ 
-					title: 'Tra Bitcoin Maximalism e centro America',  
-					link: 'https://www.youtube.com/watch?v=-UUeNcTTCI8', 
-					description: ''
-				},
-				{
-					title: 'Bitcoin: l\'evoluzione della moneta',  
-					link: 'https://www.youtube.com/embed/lZHrR3FCRgo', 
-					description: 'Tavola rotonda a Internet Festival 2021'
-				},
-				{
-					title: 'Mining (discussione e live da Mining Farm in Russia)',  
-					link: 'https://www.youtube.com/watch?v=hoUAfkE9de0', 
-					description: ''
-				},
-				{
-					title: 'CTV, consenso, sviluppatori e miner',  
-					link: 'https://bitcointrain.substack.com/p/fermata-30-ctv-e-il-consenso-in-bitcoin?r=mtvgo&s=w&utm_campaign=post&utm_medium=web', 
-					description: ''
+					description: 'Giacomo Zucco sfata 5 miti sulle potenzialità della tecnologia blockchain e del protocollo Bitcoin'
 				},
 				{
 					title: 'Le culture nel mondo Bitcoin',  
 					link: 'https://www.youtube.com/watch?v=TPjq4skAv9k', 
-					description: ''
+					description: 'Le culture e le numerose sub-culture nella community Bitcoin spiegate da Giacomo Zucco.'
+				},
+				{
+					title: 'Vivere con Bitcoin',
+					link: 'https://www.youtube.com/watch?v=Qu_E7QmmoS4',
+					description: 'Come ricevere la paga o il pagamento di fatture, fare la spesa, effettuare piccoli pagamenti e fare transazioni tra utenti, tutto usando esclusivamente bitcoin con Luca Venturini e Massimo Musumeci'
+				},
+				{
+					title: 'Bitcoin & Mining',
+					link: 'https://www.youtube.com/watch?v=kVCjfVN0344',
+					description: 'Conviene minare cryptovalute? Si diventa ricchi? Come funziona? Intervista a Gianluca Mazza'
+				},
+				{
+					title: 'Come funzionano i Bitcoin',
+					link: 'https://www.youtube.com/watch?v=kpxBSohNr5Y',
+					description: ' Spiegazione del protocollo Bitcoin nel dettaglio.'
+				},
+				{
+					title: 'Bitcoin Valley: Terraforming Bitcoin 2019',
+					link: 'https://www.youtube.com/watch?v=90ihJJp6Cqs',
+					description: 'Spiegazione progetto Bitcoin Valley'
+				},
+				{
+					title: 'Bitcoin inconfiscabile riserva di valore',
+					link: 'https://www.youtube.com/watch?v=4BL2pusoX0o',
+					description: 'Intervista a Mir Liponi'
+				},	
+				{ 
+					title: 'Tra Bitcoin Maximalism e centro America',
+					link: 'https://www.youtube.com/watch?v=-UUeNcTTCI8',
+					description: 'Intervista a Luca Venturini'
+				},
+				{
+					title: 'Bitcoin: l\'evoluzione della moneta',
+					link: 'https://www.youtube.com/embed/lZHrR3FCRgo',
+					description: 'Tavola rotonda a Internet Festival 2021'
+				},
+				{
+					title: 'Mining (discussione e live da Mining Farm in Russia)',
+					link: 'https://www.youtube.com/watch?v=hoUAfkE9de0',
+					description: 'Mining con Alessandro Olivo e Stefano Cirillo'
+				},
+				{
+					title: 'CTV, consenso, sviluppatori e miner',  
+					link: 'https://bitcointrain.substack.com/p/fermata-30-ctv-e-il-consenso-in-bitcoin?r=mtvgo&s=w&utm_campaign=post&utm_medium=web', 
+					description: 'Giacomo Zucco e Alekos Filini dibattono sul soft-fork CTV'
 				},
 				{
 					title: '"Tutto quello che vi hanno detto sul denaro è sbagliato" con Giacomo Zucco',  
 					link: 'https://www.youtube.com/watch?v=fg764zWQmh8', 
-					description: ''
+					description: 'Intervista del BIP Show a Giacomo Zucco su politica monetaria ed economia'
 				},
 				{
-					title: 'Il Bitcoin spiegato a tua nonna Giacomo Zucco',  
+					title: 'Il Bitcoin spiegato a tua nonna',  
 					link: 'https://www.youtube.com/watch?v=iww3arc89BA', 
-					description: ''
+					description: 'Spiegazione semplice di Giacomo Zucco di cos\'è Bitcoin'
 				},
 				{
 					title: 'Wasabi, Joinmarket, Coordinatori CoinJoin e Blockchain Analysis',  
 					link: 'https://www.youtube.com/watch?v=MKRqt4yzlI0', 
-					description: 'Giacomo Zucco e Riccardo Masutti'
+					description: 'Chiaccierata tra Giacomo Zucco e Riccardo Masutti'
 				},
 				{
 					title: 'Utilizzo di bitcoin da dispositivi mobile',  
 					link: 'https://www.youtube.com/watch?v=UlyPArGmQ4w', 
-					description: ''
+					description: 'Spiegazione di Massimo Musumeci con ospite Turtlecute'
 				},
 				{
 					title: 'Hardware Wallets: comparazione, analisi, approfondimento, dibattito',  
 					link: 'https://www.youtube.com/watch?v=fR3linC_deg', 
-					description: ''
+					description: 'Spiegazione di Massimo Musumeci con ospite Turtlecute'
 				},
 				{
 					title: 'Transazioni Bitcoin onchain, avvertenze, privacy, discussione',  
 					link: 'https://www.youtube.com/watch?v=oQuy7GkbMaA', 
-					description: ''
+					description: 'Spiegazione di Massimo Musumeci con ospite Turtlecute'
 				},
 				{
 					title: 'Bitcoin transazioni e privacy su Lightning / tips & tricks',  
 					link: 'https://www.youtube.com/watch?v=CoS_m3Vg2S8', 
-					description: ''
-				}				
+					description: 'Spiegazione di Massimo Musumeci con ospite Turtlecute'
+				}
 			],
-			
+
+			videoItalian: [
+				{
+					title: 'Bitcoin In Action',
+					link: 'https://www.youtube.com/BitcoinInAction',
+					description: 'Canale YT di spiegazioni tecniche su Bitcoin'
+				},
+				{
+					title: 'Bitcoin Milano',
+					link: 'https://www.youtube.com/channel/UCmnfb8y24XyUj2wP4L_ezPA',
+					description: 'Canale YT di spiegazioni tecniche su Bitcoin'
+				},
+				{
+					title: 'Massimo Musumeci',
+					link: 'https://www.youtube.com/MassimoSMusumeci',
+					description: 'Canale YT a tema Bitcoin e privacy'
+				},
+				{
+					title: 'Mir',
+					link: 'https://www.youtube.com/rnbmir',
+					description: 'Canale YT di brevi interviste in inglese con i più importanti dev e personalità nel mondo Bitcoin.'
+				},
+				{
+					title: 'Riccardo Masutti',
+					link: 'https://www.youtube.com/RiccardoMasutti',
+					description: 'Canale YT a tema sicurezza informatica, privacy e Bitcoin'
+				},
+				{
+					title: 'Bitcoin Train',
+					link: 'https://www.youtube.com/channel/UCSgcZJRSsU5mTY0kUCP-JvQ',
+					description: 'Canale dedicato alla newsletter Bitcoin Train'
+				},
+				{
+					title: 'BIT PoliTO',
+					link: 'https://www.youtube.com/BITPoliTo',
+					description: 'Canale YT del team studentesco del Politecnico di Torino.'
+				},
+				{
+					title: 'Bitcoin Italia Podcast',
+					link: 'https://www.youtube.com/BitcoinItaliaPodcast',
+					description: 'Canale YT del primo podcast a raccontare Bitcoin in lingua italiana.'
+				},
+			],
 		}
 	}
-
 }
 </script>
