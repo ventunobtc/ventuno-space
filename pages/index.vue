@@ -82,7 +82,7 @@ export default {
 					to: '/spend-bitcoin'
 				},
 				{
-					title: 'Fatti pagare in Bitcoin',
+					title: 'Servizi per le imprese',
 					icon: 'store-tools',
 					to: '/store-tools'
 				},
