@@ -1,7 +1,7 @@
 <template>
 	<div id="store-tools-page">
 
-		<h1 class="page-title">Fatti pagare in Bitcoin</h1>
+		<h1 class="page-title">Servizi per le imprese</h1>
 
 		<p class="explainer">Questi strumenti ti aiutano ad accettare Bitcoin per te o la tua attività.</p>
 
@@ -60,6 +60,26 @@ export default {
 				{
 					title: 'Chainside',
 					link: 'https://www.chainside.net/en/home/',
+					description: 'Gestore di pagamenti'
+				},
+				{
+					title: 'tinkl.it',
+					link: 'https://www.tinkl.it/',
+					description: 'Gestore di pagamenti'
+				},
+				{
+					title: 'inbitcoin',
+					link: 'https://inbitcoin.it/',
+					description: 'Gestore di pagamenti'
+				},
+				{
+					title: 'Bitcoin People',
+					link: 'https://www.bitcoinpeople.it/bpay',
+					description: 'Gestore di pagamenti'
+				},
+				{
+					title: 'Villaggio Bitcoin',
+					link: 'https://www.villaggiobitcoin.it/',
 					description: 'Gestore di pagamenti'
 				},
 				{
