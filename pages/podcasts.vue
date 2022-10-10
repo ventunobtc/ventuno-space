@@ -56,6 +56,11 @@ export default {
 
 			podcasts: [
 				{
+					title: 'Il priorato del Bitcoin',
+					link: 'http://anchor.fm/turtle-cute5',
+					description: 'Il primo podcast tossicamente massimalista'
+				},
+				{
 					title: 'Bitcoin Italia Podcast',
 					link: 'https://bitcoinitaliapodcast.it/',
 					description: 'Il primo podcast Bitcoin in lingua italiana. Ogni giovedì alle 17'

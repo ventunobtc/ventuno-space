@@ -6,7 +6,7 @@
 
 			<h3>Come iniziare</h3>
 
-			<p>Seguire questi step su <a href="https://bitcoin-intro.com/" target="_blank">bitcoin-intro.com</a></p>
+			<p>Tutto in una sola pagina <a href="https://bitcoin-translate.it/one-pager.php" target="_blank">bitcoin-translate.it/one-pager</a></p>
 
 		</div>
 
@@ -23,6 +23,23 @@
 						<a :href="article.link" target="_blank">{{ article.title }}</a>
 					</div>
 					<div>{{ article.description }}</div>
+				</div>
+			</div>
+		</div>
+
+		<h3>Altri aggregatori</h3>
+
+		<div class="tbl-scroller">
+			<div class="tbl-wrapper">
+				<div class="tbl-header">
+					<div class="tbl-title">Titolo</div>
+					<div class="tbl-title">Descrizione</div>
+				</div>
+				<div v-for="(other, index) in others" :key="index" class="tbl-row">
+					<div class="item-title">
+						<a :href="other.link" target="_blank">{{ other.title }}</a>
+					</div>
+					<div>{{ other.description }}</div>
 				</div>
 			</div>
 		</div>
@@ -61,7 +78,7 @@
 			</div>
 		</div>
 
-		<h3>Websites</h3>
+		<h3>Siti Web</h3>
 
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
@@ -74,6 +91,22 @@
 						<a :href="website.link" target="_blank">{{ website.title }}</a>
 					</div>
 					<div>{{ website.description }}</div>
+				</div>
+			</div>
+		</div>
+		<h3>Risorse in inglese</h3>
+
+		<div class="tbl-scroller">
+			<div class="tbl-wrapper">
+				<div class="tbl-header">
+					<div class="tbl-title">Titolo</div>
+					<div class="tbl-title">Descrizione</div>
+				</div>
+				<div v-for="(object, index) in english" :key="index" class="tbl-row">
+					<div class="item-title">
+						<a :href="object.link" target="_blank">{{ object.title }}</a>
+					</div>
+					<div>{{ object.description }}</div>
 				</div>
 			</div>
 		</div>
@@ -127,109 +160,54 @@ export default {
 					description: 'Traduzione in italiano del thread Twitter di @Level39'
 				},
 			],
-
 			periodicals: [
-				{
-					title: 'Risorsebitcoin by Mir',
-					link: 'https://github.com/mirserena/risorsebitcoin',
-					description: 'Lista di risorse su Bitcoin per chi si avvicina per la prima volta'
-				},
 				{
 					title: 'Bitcoin Train',
 					link: 'https://github.com/mirserena/risorsebitcoin',
 					description: 'Newsletter su Bitcoin'
 				},
 				{
-					title: 'Bitcoin: Tutto quello che devi sapere',
-					link: 'https://pindol.medium.com/premessa-1e5254a52475',
-					description: 'Aggregatore di contenuti su Bitcoin per chi si avvicina per la prima volta'
+					title: 'Bitcoin in Italiano',
+					link: 'https://btcita.substack.com/',
+					description: 'Una selezione di articoli dai protagonisti del mondo bitcoin, tradotti in italiano.'
 				},
-				{
-					title: 'Citadel 21',
-					link: 'https://www.citadel21.com/',
-					description: 'Monthly Bitcoin cultural zine'
-				},
-				{
-					title: 'Lightning Hood (Inactive)',
-					link: 'https://medium.com/@lightninghood',
-					description: 'Weekly summary of Bitcoin and Lightning Network news'
-				},
-				{
-					title: 'Lightning Labs',
-					link: 'https://lightninglabs.substack.com/archive',
-					description: 'Lightning Network news'
-				},
-				{
-					title: 'Bitcoin Monthly',
-					link: 'https://bitcoiner.guide/monthly',
-					description: 'Monthly index of Bitcoin and Lightning Network news and developments'
-				},
+				
 			],
-
 			classes: [
 				{
 					title: 'Bitcoin dalla teoria alla pratica - Corso Completo',
 					link: 'https://www.udemy.com/course/bitcoin-blockchain-corso-completo-teoria-pratica-esempi-tutorial/?referralCode=AAC8EB895142D8301C13',
-					description: '2-day course (in development)'
+					description: 'Corso completo che affronta le tematiche principali del protocollo, mettendo in pratica la teoria utilizzando veri nodi'
 				},
 				{
-					title: '21 Lectures (Beginner)',
-					link: 'https://www.21lectures.com/beginner-course/',
-					description: '2-day course (in development)'
+					title: 'Bitcoin, Sicurezza e Privacy - Riccardo Masutti',
+					link: 'https://bitcoinsicurezzaprivacy.it/apps/2zy7omrFCL6vYXDRwpYNuwpGvwaw/pos',
+					description: 'Contenuti video sui temi di sicurezza, privacy e bitcoin che vanno dai temi base a quelli avanzati'
 				},
 				{
-					title: '21 Lectures (Advanced)',
-					link: 'https://www.21lectures.com/advanced-course/',
-					description: '4-day Course'
+					title: 'Corso online "A scuola di Bitcoin"',
+					link: 'https://ascuoladibitcoin.com/',
+					description: 'Corsi su Bitcoin'
 				},
-				{
-					title: 'Bitcoin For Everybody',
-					link: 'https://learn.saylor.org/course/view.php?id=468',
-					description: 'Free 12 hour course by Stephan Livera'
-				},
-				{
-					title: 'Bitcoin Lessons',
-					link: 'https://www.bitcoinlessons.org/',
-					description: 'App based lessons'
-				},
-				{
-					title: 'Bitcoin Studio',
-					link: 'https://www.bitcoin-studio.com/workshops',
-					description: '1-day workshops'
-				},
-				{
-					title: 'Learn Me A Bitcoin',
-					link: 'http://learnmeabitcoin.com/workshops/',
-					description: '1-day workshop'
-				},
-				{
-					title: 'Smart Custody',
-					link: 'https://www.smartcustody.com/',
-					description: '1-day workshop'
-				},
-				{
-					title: 'Teach Bitcoin',
-					link: 'https://teachbitcoin.io/',
-					description: '4-week course (10h/week) online'
-				},
-				{
-					title: 'The Bitcoin Standard Academy',
-					link: 'https://saifedean.com/academy/',
-					description: '10-week course online'
-				},
-				{
-					title: 'Towards Liberty',
-					link: 'http://towardsliberty.com/',
-					description: 'Bitcoin mentorship'
-				}
 			],
-
-			websites: [
+			others: [
 				{
-					title: 'BIPs',
-					link: 'https://bips.xyz/',
-					description: 'Explorer for BIPs. View, search and share easily BIPs'
+					title: 'Risorsebitcoin by Mir',
+					link: 'https://github.com/mirserena/risorsebitcoin',
+					description: 'Lista di risorse su Bitcoin per chi si avvicina per la prima volta'
 				},
+				{
+					title: 'Bitcoin Translate',
+					link: 'https://bitcoin-translate.it/',
+					description: 'Lista di risorse su Bitcoin per chi si avvicina per la prima volta'
+				},
+				{
+					title: 'Bitcoin: Tutto quello che devi sapere',
+					link: 'https://pindol.medium.com/premessa-1e5254a52475',
+					description: 'Aggregatore di contenuti su Bitcoin per chi si avvicina per la prima volta'
+				},
+			],
+			websites: [
 				{
 					title: 'Turtlecute',
 					link: 'https://turtlecute.org/',
@@ -243,12 +221,7 @@ export default {
 				{
 					title: 'Forum BitcoinTalk Italia',
 					link: 'https://bitcointalk.org/index.php?board=28.0',
-					description: ''
-				},
-				{
-					title: 'Checkpoint Bitcoin',
-					link: 'https://checkpointbitcoin.it/',
-					description: 'Blog italiano specializzato su Bitcoin'
+					description: 'Forum in italiano di BitcoinTalk'
 				},
 				{
 					title: 'Checkpoint Bitcoin',
@@ -256,29 +229,32 @@ export default {
 					description: ' Bitcoin in italiano dalla genesi ad oggi '
 				},
 				{
-					title: 'Bitcoin Italia Podcast',
-					link: 'https://bitcoinitaliapodcast.it/',
-					description: ' Bitcoin in italiano dalla genesi ad oggi '
-				},
-				{
-					title: 'Bitcoin Briefly',
-					link: 'https://bitcoinbriefly.com/',
-					description: 'Brief Bitcoin Explanations'
-				},
-				{
-					title: 'Bitcoin Designed',
-					link: 'https://www.bitcoindesigned.com/',
-					description: 'Striking Bitcoin infographics'
-				},
-				{
-					title: 'Bitcoin Design Guide',
-					link: 'https://bitcoin.design/guide/',
-					description: 'A bitcoin application design guide'
+					title: 'Parlare Bitcoin',
+					link: 'https://parlarebitcoin.com/',
+					description: 'Blog e risorse per comprendere al meglio Bitcoin '
 				},
 				{
 					title: 'Bitcoin Q & A',
-					link: 'https://bitcoiner.guide/qna/',
-					description: 'Extensive questions & answers'
+					link: 'https://bitcoiner.guide/qna/it',
+					description: 'Domande e risposte esaustive'
+				},
+				{
+					title: 'Bitcoin.org',
+					link: 'https://bitcoin.org/it',
+					description: 'Informazioni su Bitcoin '
+				},
+				{
+					title: 'Bitcoin-Intro',
+					link: 'https://bitcoin-intro.com/it',
+					description: 'Guida passo dopo passo all\'onboarding di bitcoin'
+				}
+			],
+
+			english: [
+				{
+					title: 'BIPs',
+					link: 'https://bips.xyz/',
+					description: 'Explorer for BIPs. View, search and share easily BIPs'
 				},
 				{
 					title: 'Bitcoin Resources',
@@ -296,14 +272,19 @@ export default {
 					description: 'Self-custody and privacy guides'
 				},
 				{
-					title: 'Bitcoin.org',
-					link: 'https://bitcoin.org/',
-					description: 'Bitcoin information'
+					title: 'Bitcoin Briefly',
+					link: 'https://bitcoinbriefly.com/',
+					description: 'Brevi spiegazioni sui Bitcoin (EN)'
 				},
 				{
-					title: 'Bitcoin-Intro',
-					link: 'https://bitcoin-intro.com/',
-					description: 'Step by Step bitcoin onboarding guide'
+					title: 'Bitcoin Designed',
+					link: 'https://www.bitcoindesigned.com/',
+					description: 'Infografiche Bitcoin sorprendenti (EN) - Da tradurre'
+				},
+				{
+					title: 'Bitcoin Design Guide',
+					link: 'https://bitcoin.design/guide/',
+					description: '	Guida alla progettazione di applicazioni bitcoin (EN)'
 				},
 				{
 					title: 'BitKnow',
@@ -359,15 +340,14 @@ export default {
 					title: 'WORDS',
 					link: 'https://bitcoinwords.github.io/',
 					description: 'A monthly Bitcoin journal'
-				}
-			],
-
-			advancedReading: [
+				},
 				{
 					title: 'Bitcoin Questions',
 					link: 'https://github.com/bokobza/bitcoin-interview-questions',
 					description: 'Technical Bitcoin questions'
-				},
+				}
+			],
+			advancedReading: [
 				{
 					title: 'Lightning Summary',
 					link: 'https://medium.com/@unofficialbitcoinshow/how-lightning-network-maintains-bitcoins-value-proposition-d127da10077d',

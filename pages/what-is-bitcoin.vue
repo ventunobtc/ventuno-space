@@ -2,7 +2,7 @@
 	<div id="what-is-bitcoin-page">
 
 		<h1 class="page-title">Cos'è Bitcoin</h1>
-		<h3>Bitcoin: un sistema di contanti elettronico peer-to-peer
+		<h3>Bitcoin: un sistema di moneta elettronica peer-to-peer
 			<div class="page-subtitle">Satoshi Nakamoto - 31 Ottobre, 2008</div>
 		</h3>
 
@@ -22,7 +22,7 @@
 		<h3>Il Bitcoin  Standard 
 			<div class="page-subtitle">Saifedean Ammous - Aprile, 2018</div>
 		</h3>
-		<iframe class="video" src="https://www.youtube.com/watch?v=PScIpF9Wjpc"></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/PScIpF9Wjpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 </template>
 

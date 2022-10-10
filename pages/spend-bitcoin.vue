@@ -28,6 +28,23 @@
 			</div>
 		</div>
 
+		<h3>Negozi fisici che accettano Bitcoin</h3>
+
+		<div class="tbl-scroller">
+			<div class="tbl-wrapper">
+				<div class="tbl-header">
+					<div class="tbl-title">Nome</div>
+					<div class="tbl-title">Descrizione</div>
+				</div>
+				<div v-for="(lineItem, index) in physicalstores" :key="index" class="tbl-row">
+					<div>
+						<a :href="lineItem.link" target="_blank">{{ lineItem.title }}</a>
+					</div>
+					<div v-html="lineItem.description"></div>
+				</div>
+			</div>
+		</div>
+
 		<h3>Servizi</h3>
 
 		<div class="tbl-scroller">
@@ -78,7 +95,7 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<h3>Stores</h3>
 
 		<div class="tbl-scroller">
@@ -149,6 +166,24 @@ export default {
 					description: 'One-on-one Bitcoin phone support'
 				}
 			],
+			physicalstores: [
+				{
+					title: 'Qui Bitcoin',
+					link: 'https://www.quibitcoin.it/',
+					description: 'Lista di attivita che accettano Bitcoin in Italia'
+				},
+				{
+					title: 'Chi accetta Bitcoin - VillaggioBitcoin',
+					link: 'https://www.villaggiobitcoin.it/chi-accetta-bitcoin',
+					description: 'Lista di attivita che accettano Bitcoin in Italia'
+				},
+				{
+					title: 'Attività Bitcoin People',
+					link: 'https://www.bitcoinpeople.it/attivita-accettano-pagamenti-in-bitcoin/',
+					description: 'Lista di attivita che accettano Bitcoin in Italia'
+				},
+			],
+	
 			tools: [
 				{
 					title: 'Bitscribble',

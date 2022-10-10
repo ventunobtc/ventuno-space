@@ -15,14 +15,14 @@ Nasce come personalizzazione del sito [bitcoin-only](https://bitcoin-only.com), 
 - [X] Hardware
 - [X] Indice
 - [X] Requisiti Listing 
-- [ ] Risorse Didattiche
+- [X] Risorse Didattiche
 - [X] Meetups
 - [ ] Community
 - [X] Podcasts
 - [X] Privacy
 - [X] Promuovi
 - [X] Spendi Bitcoin
-- [ ] Fatti pagare in Bitcoin
+- [X] Servizi per le imprese
 - [X] Video
 - [X] Wallet
 - [ ] Cos'è Bitcoin
