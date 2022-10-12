@@ -105,7 +105,6 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 </template>
 
@@ -282,9 +281,7 @@ export default {
 					description: 'Bitcoin (Lightning) cashback rewards'
 				}
 			]
-
 		}
 	}
-
 }
 </script>

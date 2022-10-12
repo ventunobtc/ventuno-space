@@ -169,7 +169,7 @@ export default {
 				{
 					title: 'Bitcoin in Italiano',
 					link: 'https://btcita.substack.com/',
-					description: 'Una selezione di articoli dai protagonisti del mondo bitcoin, tradotti in italiano.'
+					description: 'Una selezione di articoli dai protagonisti del mondo Bitcoin, tradotti in italiano.'
 				},
 				
 			],
@@ -187,7 +187,7 @@ export default {
 				{
 					title: 'Corso online "A scuola di Bitcoin"',
 					link: 'https://ascuoladibitcoin.com/',
-					description: 'Corsi su Bitcoin'
+					description: 'Custodia e privacy di Bitcoin in pratiche lezioni'
 				},
 			],
 			others: [

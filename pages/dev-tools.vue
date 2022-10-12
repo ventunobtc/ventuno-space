@@ -12,7 +12,6 @@
 				<li>Lightning: "Mastering the Lightning Network (LN)" (<a href="https://www.amazon.it/Mastering-Lightning-Network-Blockchain-Protocol/dp/1492054860/" target="_blank">Copia fisica</a> | <a href="https://github.com/lnbook/lnbook" target="_blank">GitHub</a>)</li>
 			</ul>
 
-
 			<p>La maggior parte delle risorse sullo Sviluppo sono in lingua inglese</p>
 
 		</div>
@@ -50,8 +49,6 @@
 				</div>
 			</div>
 		</div>
-
-		
 	</div>
 </template>
 
@@ -92,7 +89,7 @@ export default {
 				{
 					title: 'Bitcoin Forge',
 					link: 'https://improvein.github.io/bitcoin-forge/',
-					description: 'Kit di strumenti per la manipolazione di TXs, & addresses',
+					description: 'Kit di strumenti per la manipolazione di TXs e addresses',
 				},
 				{
 					title: 'Bitcoin Playground',
@@ -112,7 +109,7 @@ export default {
 				{
 					title: 'Bitcoin Spring Boot Starter',
 					link: 'https://github.com/theborakompanioni/bitcoin-spring-boot-starter',
-					description: 'Spring Boot Starter for Bitcoin [Experimental]'
+					description: 'Spring Boot Starter per Bitcoin [Sperimentale]'
 				},
 				{
 					title: 'Braiins OS',
@@ -157,7 +154,7 @@ export default {
 				{
 					title: 'Mule Tools',
 					link: 'https://github.com/MuleTools/MuleTools',
-					description: 'Bitcoin transaction broadcasting'
+					description: 'Metodi di trasmissione alternativi delle TX bitcoin per aggirare la censura'
 				},
 				{
 					title: 'Node Launcher',
@@ -219,12 +216,10 @@ export default {
 				{
 					title: 'Script Explorer',
 					link: 'https://paulkernfeld.com/bse/',
-					description: 'Impara Bitcoin script (<a href="https://github.com/paulkernfeld/bitcoin-script-explorer" target="_blank">GitHub</a>)'
+					description: 'Impara Bitcoin Script (<a href="https://github.com/paulkernfeld/bitcoin-script-explorer" target="_blank">GitHub</a>)'
 				}
-			],
-			
+			]
 		}
 	}
-
 }
 </script>

@@ -374,7 +374,6 @@
 	top: 2px;
 	position: relative;
 }
-
 </style>
 
 <style lang="scss" scoped>

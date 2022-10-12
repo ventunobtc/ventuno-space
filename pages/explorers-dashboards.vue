@@ -28,8 +28,8 @@
 			</div>
 		</div>
 
-
 		<h3>Lightning Explorers</h3>
+
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
@@ -136,7 +136,7 @@ export default {
 				{
 					title: '1ML',
 					link: 'https://1ml.com/',
-					description: 'Lightning Network Search and Analysis Engine'
+					description: 'Lightning Network explorer'
 				},
 				{
 					title: 'Amboss',
@@ -146,7 +146,7 @@ export default {
 				{
 					title: 'Acinq Explorer',
 					link: 'https://explorer.acinq.co/',
-					description: 'LN explorer by acinq'
+					description: 'LN explorer by Acinq'
 				},
 			],
 			
@@ -164,12 +164,12 @@ export default {
 				{
 					title: 'Mempool.observer',
 					link: 'https://mempool.observer/',
-					description: 'Visualizzazione Mempool / block & fee charts'
+					description: 'Visualizzazione mempool, blockchain e grafico fees'
 				},
 				{
 					title: 'Mempool.space',
 					link: 'https://mempool.space/',
-					description: 'Visualizzazione Mempool / block & fee charts'
+					description: 'Visualizzazione mempool, blockchain e grafico fees'
 				},
 				{
 					title: 'What The Fee',
@@ -181,12 +181,12 @@ export default {
 				{
 					title: 'Bitbo',
 					link: 'https://bitbo.io/',
-					description: 'Bitcoin & LN metrics'
+					description: 'Metriche su Bitcoin e LN'
 				},
 				{
 					title: 'BitcoinKPIs',
 					link: 'https://bitcoinkpis.com/',
-					description: 'Bitcoin & LN graphs'
+					description: 'Grafici su Bitcoin e LN'
 				},
 				{
 					title: 'Bitcoin Treasuries',
@@ -196,12 +196,12 @@ export default {
 				{
 					title: 'Braiins Insights',
 					link: 'https://insights.braiins.com/en/',
-					description: 'Mining Stats & Graphs'
+					description: 'Statistiche e grafiche su Bitcoin'
 				},
 				{
 					title: 'Clark Moody Dashboard',
 					link: 'https://bitcoin.clarkmoody.com/dashboard/',
-					description: 'Bitcoin & LN metrics'
+					description: 'Metriche su Bitcoin e LN'
 				},
 				{
 					title: 'Priced In Bitcoin',
@@ -211,6 +211,5 @@ export default {
 			],
 		}
 	}
-
 }
 </script>

@@ -112,7 +112,6 @@
 				</div>
 			</div>
 		</div>
-		
 	</div>
 </template>
 
@@ -164,6 +163,11 @@ export default {
 					title: 'Bitcoin Support',
 					link: 'https://www.bitcoinsupport.com/',
 					description: 'One-on-one Bitcoin phone support'
+				},
+				{
+					title: 'Silent Link',
+					link: 'https://silent.link/',
+					description: 'Acquista eSIM'
 				}
 			],
 			physicalstores: [
@@ -188,17 +192,17 @@ export default {
 				{
 					title: 'Bitscribble',
 					link: 'https://bitscribble.com/',
-					description: 'Write 40 bytes of data to the blockchain'
+					description: 'Scrivi 40 byte di dati sulla blockchain'
 				},
 				{
 					title: 'BTCmessage',
 					link: 'https://btcmessage.com/',
-					description: 'Write data into the blockchain with vanity addrs'
+					description: 'Scrivi i dati nella blockchain con i vanity address'
 				},
 				{
 					title: 'BullBitcoin',
 					link: 'https://bullbitcoin.com/',
-					description: 'Non-custodial Bitcoin services'
+					description: 'Servizio non-custodial Bitcoin'
 				},
 				{
 					title: 'Fold App',
@@ -223,7 +227,7 @@ export default {
 				{
 					title: 'Voltage',
 					link: 'https://getvoltage.io/',
-					description: 'Hosting cloud Lightning node'
+					description: 'Hosting cloud di nodi lightning'
 				}
 			],
 			funAndPlay: [	
@@ -245,7 +249,7 @@ export default {
 				{
 					title: 'Satoshis Game Of Life',
 					link: 'https://satoshisgameof.life/',
-					description: 'Conway\'s Game of Life'
+					description: 'Il gioco della vita di Conway'
 				},		
 				{
 					title: 'Satoshis Place',
@@ -297,7 +301,7 @@ export default {
 				{
 					title: 'DIYnodes',
 					link: 'https://diynodes.com/',
-					description: 'Nodi Bitcoin & altro'
+					description: 'Nodi Bitcoin e altro'
 				},
 				{
 					title: 'Orange Coin Goods',
@@ -312,7 +316,7 @@ export default {
 				{
 					title: 'Lightning Hood',
 					link: 'https://lightninghood.com/shop/',
-					description: 'Consultazione, magliette e altro'
+					description: 'Abbigliamento, stickers e altro ancora'
 				},
 				{
 					title: 'Mt. Socks',
@@ -352,12 +356,10 @@ export default {
 				{
 					title: 'Wears My Liberty',
 					link: 'https://wearsmyliberty.com/',
-					description: 'Magliette, cappelli, felpe e altro.'
+					description: 'Magliette, cappelli, felpe e altro'
 				}
 			]
-
 		}
 	}
-
 }
 </script>
