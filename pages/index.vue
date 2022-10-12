@@ -47,9 +47,24 @@ export default {
 					to: '/learning-resources'
 				},
 				{
+					title: 'Conferenze',
+					icon: 'conferences',
+					to: '/conferences'
+				},
+				{
+					title: 'Podcasts',
+					icon: 'podcasts',
+					to: '/podcasts'
+				},
+				{
 					title: 'Meetups',
 					icon: 'meetups',
 					to: '/meetups'
+				},
+				{
+					title: 'Video',
+					icon: 'videos',
+					to: '/videos'
 				},
 				{
 					title: 'Libri',
@@ -62,14 +77,14 @@ export default {
 					to: '/wallets'
 				},
 				{
+					title: 'Privacy',
+					icon: 'privacy',
+					to: '/privacy'
+				},
+				{
 					title: 'Hardware',
 					icon: 'hardware',
 					to: '/hardware'
-				},
-				{
-					title: 'Podcasts',
-					icon: 'podcasts',
-					to: '/podcasts'
 				},
 				{
 					title: 'Ottieni Bitcoin',
@@ -82,7 +97,7 @@ export default {
 					to: '/spend-bitcoin'
 				},
 				{
-					title: 'Servizi per le imprese',
+					title: 'Fatti pagare in Bitcoin',
 					icon: 'store-tools',
 					to: '/store-tools'
 				},
@@ -97,19 +112,9 @@ export default {
 					to: '/dev-tools'
 				},
 				{
-					title: 'Conferenze',
-					icon: 'conferences',
-					to: '/conferences'
-				},
-				{
-					title: 'Video',
-					icon: 'videos',
-					to: '/videos'
-				},
-				{
-					title: 'Privacy',
-					icon: 'privacy',
-					to: '/privacy'
+					title: 'Listing Requirements',
+					icon: 'listing-requirements',
+					to: '/listing-requirements'
 				},
 				{
 					title: 'Community',
@@ -117,23 +122,17 @@ export default {
 					to: '/community'
 				},
 				{
-					title: 'About',
-					icon: 'about',
-					to: '/about'
-				},
-				{
 					title: 'Contatti',
 					icon: 'contact',
 					to: '/contact'
 				},
 				{
-					title: 'Listing Requirements',
-					icon: 'listing-requirements',
-					to: '/listing-requirements'
+					title: 'About',
+					icon: 'about',
+					to: '/about'
 				}
 			]
 		}
 	}
-
 }
 </script>

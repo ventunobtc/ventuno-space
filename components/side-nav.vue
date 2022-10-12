@@ -11,6 +11,10 @@
 			<li v-for="(navLink, index) in navigationLinks" :key="index">
 				<nuxt-link :to="navLink.to" exact>{{ navLink.title }}</nuxt-link>
 			</li>
+			<br>
+			<li v-for="(navLink, index) in contactLinks" :key="index">
+				<nuxt-link :to="navLink.to" exact>{{ navLink.title }}</nuxt-link>
+			</li>
 		</ul>
 
 	</div>
@@ -44,9 +48,24 @@ export default {
 					to: '/learning-resources'
 				},
 				{
+					title: 'Conferenze',
+					icon: '',
+					to: '/conferences'
+				},
+				{
+					title: 'Podcasts',
+					icon: '',
+					to: '/podcasts'
+				},
+				{
 					title: 'Meetups',
 					icon: '',
 					to: '/meetups'
+				},
+				{
+					title: 'Video',
+					icon: '',
+					to: '/videos'
 				},
 				{
 					title: 'Libri',
@@ -59,14 +78,14 @@ export default {
 					to: '/wallets'
 				},
 				{
+					title: 'Privacy',
+					icon: '',
+					to: '/privacy'
+				},
+				{
 					title: 'Hardware',
 					icon: '',
 					to: '/hardware'
-				},
-				{
-					title: 'Podcasts',
-					icon: '',
-					to: '/podcasts'
 				},
 				{
 					title: 'Ottieni Bitcoin',
@@ -79,7 +98,7 @@ export default {
 					to: '/spend-bitcoin'
 				},
 				{
-					title: 'Servizi per le imprese',
+					title: 'Fatti pagare in Bitcoin',
 					icon: '',
 					to: '/store-tools'
 				},
@@ -93,20 +112,13 @@ export default {
 					icon: '',
 					to: '/dev-tools'
 				},
+			],
+
+			contactLinks: [
 				{
-					title: 'Conferenze',
+					title: 'Requisiti Listing',
 					icon: '',
-					to: '/conferences'
-				},
-				{
-					title: 'Video',
-					icon: '',
-					to: '/videos'
-				},
-				{
-					title: 'Privacy',
-					icon: '',
-					to: '/privacy'
+					to: '/listing-requirements'
 				},
 				{
 					title: 'Community',
@@ -114,23 +126,17 @@ export default {
 					to: '/community'
 				},
 				{
-					title: 'About',
-					icon: '',
-					to: '/about'
-				},
-				{
 					title: 'Contatti',
 					icon: '',
 					to: '/contact'
 				},
 				{
-					title: 'Requisiti Listing',
+					title: 'About',
 					icon: '',
-					to: '/listing-requirements'
+					to: '/about'
 				}
 			]
 		}
 	}
 }
-
 </script>
