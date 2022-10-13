@@ -56,7 +56,7 @@ export default {
 
 			podcasts: [
 				{
-					title: 'Il priorato del Bitcoin',
+					title: 'Il Priorato del Bitcoin',
 					link: 'http://anchor.fm/turtle-cute5',
 					description: 'Il primo podcast tossicamente massimalista'
 				},
@@ -73,6 +73,5 @@ export default {
 			]
 		}
 	}
-
 }
 </script>

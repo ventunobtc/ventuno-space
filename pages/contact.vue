@@ -73,6 +73,6 @@ export default {
 			{ hid: 'description', name: 'description', content: 'Have any questions? Need some help? Contact me and I\'ll do my best to help'  }
 		]
 	}
-
+	
 }
 </script>

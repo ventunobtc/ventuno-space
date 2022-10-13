@@ -20,8 +20,7 @@
 			</div>
 		</div>
 
-		<div class="footnote">* Opennode è fully custodial, il che significa che non avete le vostre chiavi private, quindi non vi è garantito il pieno controllo dei vostri fondi. Potete (e dovreste) impostare prelievi ricorrenti per inviare qualsiasi Bitcoin che ricevete al vostro portafoglio. Ora vi è anche richiesto di presentare la documentazione KYC per essere un commerciante su Opennode.</div>
-
+		<div class="footnote">* Fully custodial, cioè non avete le vostre chiavi private. Non vi è garantito il pieno controllo dei vostri fondi. Potete (e dovreste) impostare prelievi ricorrenti per inviare qualsiasi Bitcoin che ricevete al vostro portafoglio non custodial. Ora vi è anche richiesto di presentare la documentazione KYC per essere un commerciante su Opennode.</div>
 	</div>
 </template>
 
@@ -33,7 +32,7 @@
 	//margin-top: -15px;
 }
 .footnote {
-	max-width: 800px;
+	max-width: 900px;
 	text-align: center;
 	font-style: italic;
 	color: rgba(255, 255, 255, 0.45);

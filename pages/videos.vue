@@ -40,12 +40,14 @@
 				<div class="tbl-header">
 					<div class="tbl-title">Nome</div>
 					<div class="tbl-title">Descrizione</div>
+					<div class="tbl-title">Piattaforma</div>
 				</div>
 				<div v-for="(lineItem, index) in videoItalian" :key="index" class="tbl-row">
 					<div>
 						<a :href="lineItem.link" target="_blank">{{ lineItem.title }}</a>
 					</div>
 					<div v-html="lineItem.description"></div>
+					<div v-html="lineItem.platform"></div>
 				</div>
 			</div>
 		</div>
@@ -66,7 +68,6 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 </template>
 
@@ -122,7 +123,7 @@ export default {
 				{
 					title: 'Le culture nel mondo Bitcoin',  
 					link: 'https://www.youtube.com/watch?v=TPjq4skAv9k', 
-					description: 'Le culture e le numerose sub-culture nella community Bitcoin spiegate da Giacomo Zucco.'
+					description: 'Le culture e le numerose sub-culture nella community Bitcoin spiegate da Giacomo Zucco'
 				},
 				{
 					title: 'Vivere con Bitcoin',
@@ -137,7 +138,7 @@ export default {
 				{
 					title: 'Come funzionano i Bitcoin',
 					link: 'https://www.youtube.com/watch?v=kpxBSohNr5Y',
-					description: ' Spiegazione del protocollo Bitcoin nel dettaglio.'
+					description: ' Spiegazione del protocollo Bitcoin nel dettaglio'
 				},
 				{
 					title: 'Bitcoin Valley: Terraforming Bitcoin 2019',
@@ -210,42 +211,50 @@ export default {
 				{
 					title: 'Bitcoin In Action',
 					link: 'https://www.youtube.com/BitcoinInAction',
-					description: 'Canale YT di spiegazioni tecniche su Bitcoin'
+					description: 'Spiegazioni tecniche su Bitcoin',
+					platform: 'YouTube'
 				},
 				{
 					title: 'Bitcoin Milano',
 					link: 'https://www.youtube.com/channel/UCmnfb8y24XyUj2wP4L_ezPA',
-					description: 'Canale YT di spiegazioni tecniche su Bitcoin'
+					description: 'Spiegazioni tecniche su Bitcoin',
+					platform: 'YouTube'
 				},
 				{
 					title: 'Massimo Musumeci',
 					link: 'https://www.youtube.com/MassimoSMusumeci',
-					description: 'Canale YT a tema Bitcoin e privacy'
+					description: 'Bitcoin e privacy',
+					platform: 'YouTube'
 				},
 				{
 					title: 'Mir',
 					link: 'https://www.youtube.com/rnbmir',
-					description: 'Canale YT di brevi interviste in inglese con i più importanti dev e personalità nel mondo Bitcoin.'
+					description: 'Brevi interviste in inglese con i più importanti dev e personalità nel mondo Bitcoin.',
+					platform: 'YouTube'
 				},
 				{
 					title: 'Riccardo Masutti',
 					link: 'https://www.youtube.com/RiccardoMasutti',
-					description: 'Canale YT a tema sicurezza informatica, privacy e Bitcoin'
+					description: 'Sicurezza informatica, privacy e Bitcoin',
+					platform: 'YouTube'
 				},
 				{
 					title: 'Bitcoin Train',
 					link: 'https://www.youtube.com/channel/UCSgcZJRSsU5mTY0kUCP-JvQ',
-					description: 'Canale dedicato alla newsletter Bitcoin Train'
+					description: 'Canale dedicato alla newsletter Bitcoin Train',
+					platform: 'YouTube'
 				},
 				{
 					title: 'BIT PoliTO',
 					link: 'https://www.youtube.com/BITPoliTo',
-					description: 'Canale YT del team studentesco del Politecnico di Torino.'
+					description: 'Team studentesco del Politecnico di Torino.',
+					platform: 'YouTube'
 				},
 				{
 					title: 'Bitcoin Italia Podcast',
 					link: 'https://www.youtube.com/BitcoinItaliaPodcast',
-					description: 'Canale YT del primo podcast a raccontare Bitcoin in lingua italiana.'
+					description: 'Primo podcast a raccontare Bitcoin in lingua italiana',
+					platform: 'YouTube'
 				},
 			],
 		}
