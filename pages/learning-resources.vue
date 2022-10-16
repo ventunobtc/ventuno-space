@@ -94,6 +94,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<h3>Risorse in inglese</h3>
 
 		<div class="tbl-scroller">
@@ -249,7 +250,6 @@ export default {
 					description: 'Guida passo dopo passo all\'onboarding di bitcoin'
 				}
 			],
-
 			english: [
 				{
 					title: 'BIPs',
