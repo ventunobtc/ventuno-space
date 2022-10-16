@@ -56,7 +56,7 @@
 							<a>{{ project.description }}</a>
 						</div>
 						<div>
-							<a>{{ project.address }}</a>
+							<a :href="'https://mempool.space/it/address/'+project.address" target="_blank">{{ project.address }}</a>
 						</div>
 						
 					</div>
