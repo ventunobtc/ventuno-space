@@ -30,7 +30,8 @@
 							<a> {{ lineItem.contribute }} </a>
 						</div>						
 						<div>
-							<a :href="'lightning:' + lineItem.donation.lnaddress" target="_blank">{{ lineItem.donation.lnaddress }}</a>
+							<a v-if="lineItem.donation.lnaddress" :href="'lightning:' + lineItem.donation.lnaddress" target="_blank">{{ lineItem.donation.lnaddress }}</a>
+							<div v-else>{{ lineItem.donation.lnaddress }}</div>
 						</div>
 					</div>
 				</div>
@@ -119,6 +120,14 @@ export default {
 					contribute: 'Gestione e traduzione sito, traduzione articoli',
 					donation: {
 						lnaddress: 'wally@getalby.com',
+					}
+				},
+				{
+					peer: 'cyphersats',
+					peerLink: 'https://github.com/cyphersats',
+					contribute: 'Gestione e traduzione sito, traduzione articoli',
+					donation: {
+						lnaddress: '',
 					}
 				}
 			],
