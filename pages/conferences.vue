@@ -91,8 +91,8 @@ in order to work correctly with automized rendering. For example:
 	link: 'https://braiins.com/bitcoin-mining-conference-2022',
 	location: 'Prague / CZ',
 	displayDates: '14-16 Giugno 2022',
-	startDate: '14 June 2022 10:30:00 GMT+2',
-	endDate: '16 June 2022 23:59:00 GMT+2'
+	startDate: '14 June 2022',
+	endDate: '16 June 2022'
 }
 */
 let conferencesList = [  
