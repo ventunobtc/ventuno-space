@@ -78,6 +78,23 @@
 			</div>
 		</div>
 
+		<h3>Negozi Fisici Bitcoin</h3>
+
+		<div class="tbl-scroller">
+			<div class="tbl-wrapper">
+				<div class="tbl-header">
+					<div class="tbl-title">Nome</div>
+					<div class="tbl-title">Luogo</div>
+				</div>
+				<div v-for="(store, index) in stores" :key="index" class="tbl-row">
+					<div>{{ store.name }}</div>
+					<div class="item-title">
+						<a :href="store.link" target="_blank">{{ store.address }}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<h3>Siti Web</h3>
 
 		<div class="tbl-scroller">
@@ -164,7 +181,7 @@ export default {
 			periodicals: [
 				{
 					title: 'Bitcoin Train',
-					link: 'https://github.com/mirserena/risorsebitcoin',
+					link: 'https://bitcointrain.substack.com/',
 					description: 'Newsletter su Bitcoin'
 				},
 				{
@@ -207,6 +224,11 @@ export default {
 					link: 'https://pindol.medium.com/premessa-1e5254a52475',
 					description: 'Aggregatore di contenuti su Bitcoin per chi si avvicina per la prima volta'
 				},
+				{
+					title: 'European Bitcoiners',
+					link: 'https://europeanbitcoiners.com/tag/it/',
+					description: 'Articoli e traduzioni in italiano dalla community di European Bitcoiners'
+				},
 			],
 			websites: [
 				{
@@ -226,8 +248,8 @@ export default {
 				},
 				{
 					title: 'Checkpoint Bitcoin',
-					link: 'https://bitcoin-translate.it/',
-					description: ' Bitcoin in italiano dalla genesi ad oggi '
+					link: 'https://checkpointbitcoin.it/',
+					description: 'Il Blog Italiano Specializzato su Bitcoin'
 				},
 				{
 					title: 'Parlare Bitcoin',
@@ -248,6 +270,11 @@ export default {
 					title: 'Bitcoin-Intro',
 					link: 'https://bitcoin-intro.com/it',
 					description: 'Guida passo dopo passo all\'onboarding di bitcoin'
+				},
+				{
+					title: 'SakamotoNews',
+					link: 'https://sakamotonews.it/',
+					description: 'Feed di news e fake news su Bitcoin'
 				}
 			],
 			english: [
@@ -346,6 +373,19 @@ export default {
 					link: 'https://github.com/bokobza/bitcoin-interview-questions',
 					description: 'Technical Bitcoin questions'
 				}
+			],
+			stores:[
+				{ 
+					name: "Villaggio Bitcoin",
+					link: "https://goo.gl/maps/64A9gsJ68WHo97Yk6",
+					address: "Via Roma, 37, 25047 - Darfo Boario Terme (Brescia)"
+				},
+				{ 
+					name: "Comproeuro",
+					link: "https://g.page/comproeuro-Rovereto?share",
+					address: "Via Rialto, 16, 38068 - Rovereto (Trento)"
+				},
+				
 			],
 			advancedReading: [
 				{
