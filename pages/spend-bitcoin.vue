@@ -186,6 +186,11 @@ export default {
 					link: 'https://www.bitcoinpeople.it/attivita-accettano-pagamenti-in-bitcoin/',
 					description: 'Lista di attivita che accettano Bitcoin in Italia'
 				},
+				{
+					title: 'Coinmap',
+					link: 'https://www.coinmap.it/',
+					description: 'Mappa mondiale di negozi fisici che accettano bitcoin'
+				},
 			],
 	
 			tools: [
