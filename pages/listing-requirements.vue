@@ -14,7 +14,7 @@
 
 		<h3>Come faccio a far aggiungere il mio progetto?</h3>
 
-		<p>È sufficiente creare una issue sul repo GitHub seguendo questo <a href="https://github.com/ventunobtc/bitcoin-only/issues/new/choose" target="_blank">link</a> e cliccando il bottone "Content Suggestion - Get Started"  (vedi immagine sotto):</p>
+		<p>È sufficiente creare una issue sul repo GitHub seguendo questo <a href="https://github.com/ventunobtc/ventuno-space/issues/new/choose" target="_blank">link</a> e cliccando il bottone "Content Suggestion - Get Started"  (vedi immagine sotto):</p>
 
 		<img src="/content-suggestion.png" alt="Suggest new content on Ventuno.space">
 

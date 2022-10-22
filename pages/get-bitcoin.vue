@@ -166,6 +166,12 @@ export default {
 					link: 'https://bisq.network/',
 					description: 'Compra e Vendi Bitcoin in modo p2p e anonimo',
 					location: 'Desktop App'
+				},
+				{
+					title: 'Peach',
+					link: 'https://peachbitcoin.com/',
+					description: 'Compra e Vendi Bitcoin in modo p2p direttamente da mobile',
+					location: 'Mobile App'
 				}
 			],
 

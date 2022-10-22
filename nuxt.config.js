@@ -17,7 +17,7 @@ export default {
 			{ hid: 'og:image', name: 'og:image', content: '/og-image.png' },
 			{ hid: 'og:image:width', name: 'og:image:width', content: '800' },
 			{ hid: 'og:image:height', name: 'og:image:height', content: '418' },
-			{ hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' }
+			{ hid: 'twitter:card', name: 'twitter:card', content: '/og-image.png' }
 		],
 		link: [
 			{ rel: 'icon', type: 'image/png', href: '/favicon.png' },

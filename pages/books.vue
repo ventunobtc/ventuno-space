@@ -218,6 +218,42 @@ export default {
 							link: 'https://www.amazon.it/Domande-risposte-Bitcoin-blockchain-definizione/dp/B089D4JYH8/'
 						},
 					]
+				},
+				{
+					title: 'Protocollo Bitcoin',
+					synopsis: 'Fondamenti per capire la tecnologia delle criptovalute e le sue applicazioni',
+					authors: [
+						{
+							name: 'Umberto Tarantino',
+							link: 'https://twitter.com/smartmouse_'
+						}
+					],
+					purchaseLinks: [
+						{
+							title: 'Amazon',
+							link: 'https://www.amazon.it/Protocollo-Bitcoin-Fondamenti-criptovalute-applicazioni/dp/B09MYVXR6Q'
+						},
+					]
+				},
+				{
+					title: 'Villaggio Bitcoin',
+					synopsis: 'L\'alba di una nuova società basata su una moneta sana e onesta',
+					authors: [
+						{
+							name: 'Valerio Dalla Costa',
+							link: 'https://twitter.com/villaggiobtc'
+						}
+					],
+					purchaseLinks: [
+						{
+							title: 'Diretto',
+							link: 'https://www.villaggiobitcoin.it/libro-villaggio-bitcoin/'
+						},
+						{
+							title: 'Amazon',
+							link: 'https://www.amazon.it/Villaggio-Bitcoin-societ%C3%A0-basata-moneta/dp/B0B677K5F5'
+						},
+					]
 				}
 			]
 
