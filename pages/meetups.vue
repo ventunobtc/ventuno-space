@@ -50,7 +50,7 @@
 					<div>{{ meetup.region }}</div>
 					<div>{{ meetup.city }}</div>
 					<div>
-						<a :href="meetup.group" target="_blank">{{ meetup.group }}</a>
+						<a :href="meetup.group" target="_blank">Link</a>
 					</div>
 				</div>
 			</div>
@@ -69,7 +69,7 @@
 					<div>{{ meetup.region }}</div>
 					<div>{{ meetup.city }}</div>
 					<div>
-						<a :href="meetup.group" target="_blank">{{ meetup.group }}</a>
+						<a :href="meetup.group" target="_blank">Link</a>
 					</div>
 				</div>
 			</div>
@@ -129,6 +129,11 @@ export default {
 					group: 'https://t.me/satoshispritzVarese',
 				},
 				{
+					region: 'Lombardia',
+					city: 'Mantova',
+					group: 'https://t.me/satoshispritzmantova',
+				},
+				{
 					region: 'Lazio',
 					city: 'Roma',
 					group: 'https://t.me/satoshispritzroma',
@@ -175,8 +180,18 @@ export default {
 				},
 				{
 					region: 'Emilia-Romagna',
+					city: 'Bologna',
+					group: 'https://t.me/SatoshiSpritzBologna',
+				},
+				{
+					region: 'Emilia-Romagna',
 					city: 'Modena',
 					group: 'https://t.me/satoshispritzmodena',
+				},
+				{
+					region: 'Toscana',
+					city: 'Prato',
+					group: 'https://t.me/SatoshiSpritzPrato',
 				},
 				{
 					region: 'Friuli-Venezia Giulia',

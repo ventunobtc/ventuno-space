@@ -148,6 +148,7 @@ export default {
 					description: 'Dona a diversi Bitcoin developers'
 				}
 			],
+			
 			services: [
 				{
 					title: 'Bitrefill',
@@ -168,8 +169,14 @@ export default {
 					title: 'Silent Link',
 					link: 'https://silent.link/',
 					description: 'Acquista eSIM'
+				},
+				{
+					title: 'AI Generator Bot',
+					link: 'https://www.t.me/aigenerator_bot',
+					description: 'Bot Telegram per generare immagini tramite IA, rimuovere lo sfondo dalle foto o colorare immagini in bianco e nero'
 				}
 			],
+
 			physicalstores: [
 				{
 					title: 'Qui Bitcoin',

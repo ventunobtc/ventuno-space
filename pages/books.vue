@@ -33,7 +33,7 @@
 					</div>
 					<div>
 						<template v-for="(purchaseLink, purchaseLinkIndex) in book.purchaseLinks">
-							<a :key="purchaseLinkIndex" :href="purchaseLink.link" target="_blank">{{ purchaseLink.title }}</a><span v-if="purchaseLinkIndex + 1 < book.purchaseLinks.length" :key="purchaseLinkIndex"> , </span>
+							<a :key="purchaseLinkIndex" :href="purchaseLink.link" target="_blank">{{ purchaseLink.title }}</a><span v-if="purchaseLinkIndex + 1 < book.purchaseLinks.length" :key="purchaseLinkIndex">, </span>
 						</template>
 					</div>
 				</div>
@@ -196,6 +196,34 @@ export default {
 						{
 							title: 'Repository',
 							link: 'https://github.com/lnbook/lnbook'
+						}
+					]
+				},
+				{
+					title: 'Criptoeconomia',
+					synopsis: 'Principi fondamentali di Bitcoin',
+					authors: [
+						{
+							name: 'Eric Voskuil',
+							link: 'https://twitter.com/evoskuil'
+						},
+						{
+							name: 'James Chaing',
+							link: ''
+						}
+					],
+					purchaseLinks: [
+						{
+							title: 'Amazon-EN',
+							link: 'https://www.amazon.it/Cryptoeconomics-Fundamental-Principles-Eric-Voskuil/dp/1735060828'
+						},
+						{
+							title: 'Amazon-IT',
+							link: 'https://www.amazon.it/Criptoeconomia-Principi-Fondamentali-Eric-Voskuil/dp/1735060887'
+						},
+						{
+							title: 'Repository',
+							link: 'https://github.com/parsevalbtc/cryptoeconomics-IT-translation'
 						}
 					]
 				},
