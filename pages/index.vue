@@ -112,7 +112,7 @@ export default {
 					to: '/dev-tools'
 				},
 				{
-					title: 'Listing Requirements',
+					title: 'Requisiti Listing',
 					icon: 'listing-requirements',
 					to: '/listing-requirements'
 				},
