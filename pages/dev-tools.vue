@@ -76,7 +76,7 @@ export default {
 	name: 'DevToolsPage',
 
 	head: {
-		title: 'Dev Tools - Bitcoin Only',
+		title: 'Dev Tools - Ventuno',
 		meta: [
 			{ hid: 'description', name: 'description', content: 'A collection Bitcoin developer tools.' }
 		]

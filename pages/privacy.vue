@@ -163,7 +163,7 @@ export default {
 	name: 'PrivacyPage',
 
 	head: {
-		title: 'Privacy - Bitcoin Only',
+		title: 'Privacy - Ventuno',
 		meta: [
 			{ hid: 'description', name: 'description', content: 'A collection of Bitcoin privacy tools.' }
 		]

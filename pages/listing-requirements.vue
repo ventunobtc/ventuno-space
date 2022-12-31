@@ -57,7 +57,7 @@ export default {
 	name: 'ListingRequirementsPage',
 
 	head: {
-		title: 'Listing Requirements - Bitcoin Only',
+		title: 'Listing Requirements - Ventuno',
 		meta: [
 			{ hid: 'description', name: 'description', content: 'Listing requirement for Bitcoin Only.' }
 		]

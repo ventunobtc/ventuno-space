@@ -414,7 +414,7 @@ h3 {
 export default {
     name: "WalletsPage",
     head: {
-        title: "Wallets - Bitcoin Only",
+        title: "Wallets - Ventuno",
         meta: [
             { hid: "description", name: "description", content: "A collection Bitcoin only wallets." }
         ]

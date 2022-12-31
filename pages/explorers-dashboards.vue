@@ -96,7 +96,7 @@ export default {
 	name: 'ExplorersDashboardsPage',
 
 	head: {
-		title: 'Explorers & Dashboards - Bitcoin Only',
+		title: 'Explorers & Dashboards - Ventuno',
 		meta: [
 			{ hid: 'description', name: 'description', content: 'A collection of Bitcoin only explorers, dashboards, and other analysis tools.' }
 		]
