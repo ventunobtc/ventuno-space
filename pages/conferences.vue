@@ -177,7 +177,7 @@ export default {
 	name: 'ConferencesPage',
 
 	head: {
-		title: 'Conferences - Bitcoin Only',
+		title: 'Conferences - Ventuno',
 		meta: [
 			{ hid: 'description', name: 'description', content: 'A collection of Bitcoin only conferences.' }
 		]

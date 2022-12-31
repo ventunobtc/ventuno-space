@@ -46,7 +46,7 @@ export default {
 	name: 'StoreToolsPage',
 
 	head: {
-		title: 'Store Tools - Bitcoin Only',
+		title: 'Store Tools - Ventuno',
 		meta: [
 			{ hid: 'description', name: 'description', content: 'A collection of tools that help you accept Bitcoin.' }
 		]

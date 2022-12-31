@@ -132,7 +132,7 @@ export default {
 	Nome: 'SpendBitcoinPage',
 
 	head: {
-		title: 'Spendi Bitcoin - Bitcoin Only',
+		title: 'Spendi Bitcoin - Ventuno',
 		meta: [
 			{ hid: 'description', Nome: 'description', content: 'Elenco dei luoghi in cui è possibile spendere i propri Bitcoin.' }
 		]

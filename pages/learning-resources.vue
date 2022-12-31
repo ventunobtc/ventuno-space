@@ -162,7 +162,7 @@ export default {
 	name: 'LearningResourcesPage',
 
 	head: {
-		title: 'Risorse Didattiche - Bitcoin Only',
+		title: 'Risorse Didattiche - Ventuno',
 		meta: [
 			{ hid: 'description', name: 'description', content: 'A collection of educational resources to learn more about Bitcoin.' }
 		]

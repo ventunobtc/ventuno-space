@@ -104,7 +104,7 @@ export default {
 	name: 'PeersPage',
 
 	head: {
-		title: 'Peers - Bitcoin Only',
+		title: 'Peers - Ventuno',
 		meta: [
 			{ hid: 'description', name: 'description', content: 'A collection of people we have worked with in the past.' }
 		]

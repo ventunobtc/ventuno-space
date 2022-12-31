@@ -133,7 +133,7 @@ export default {
 	name: 'GetBitcoinPage',
 
 	head: {
-		title: 'Ottieni Bitcoin - Bitcoin Only',
+		title: 'Ottieni Bitcoin - Ventuno',
 		meta: [
 			{ hid: 'description', name: 'description', content: 'Lista di metodi per ottenere Bitcoin.' }
 		]

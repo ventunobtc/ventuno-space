@@ -100,7 +100,7 @@ export default {
 	name: 'MeetupsPage',
 
 	head: {
-		title: 'Meetups - Bitcoin Only',
+		title: 'Meetups - Ventuno',
 		meta: [
 			{ hid: 'description', name: 'description', content: 'A collection of Bitcoin only meetups.' }
 		]

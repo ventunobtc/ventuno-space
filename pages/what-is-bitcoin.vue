@@ -48,7 +48,7 @@ export default {
 	name: 'WhatIsBitcoinPage',
 
 	head: {
-		title: 'Cos\'è Bitcoin - Bitcoin Only',
+		title: 'Cos\'è Bitcoin - Ventuno',
 		meta: [
 			{ hid: 'description', name: 'description', content: 'An explanation of what Bitcoin is.' }
 		]

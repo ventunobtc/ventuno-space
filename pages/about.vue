@@ -58,7 +58,7 @@ export default {
 	name: 'AboutPage',
 
 	head: {
-		title: 'About - Bitcoin Only',
+		title: 'About - Ventuno',
 		meta: [
 			{ hid: 'description', name: 'description', content: 'About Bitcoin Only' }
 		]

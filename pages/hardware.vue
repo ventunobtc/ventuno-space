@@ -239,7 +239,7 @@ export default {
 	name: 'HardwarePage',
 
 	head: {
-		title: 'Hardware - Bitcoin Only',
+		title: 'Hardware - Ventuno',
 		meta: [
 			{ hid: 'description', name: 'description', content: 'A collection of Bitcoin hardware.' }
 		]

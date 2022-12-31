@@ -68,7 +68,7 @@ export default {
 	name: 'ContactPage',
 
 	head: {
-		title: 'Contact - Bitcoin Only',
+		title: 'Contact - Ventuno',
 		meta: [
 			{ hid: 'description', name: 'description', content: 'Have any questions? Need some help? Contact me and I\'ll do my best to help'  }
 		]
