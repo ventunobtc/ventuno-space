@@ -452,12 +452,16 @@ export default {
                     title: "Bitcoin Core",
                     link: "https://bitcoincore.org/",
                     // Aggiungere caratteristiche wallet
-                    platform: "Desktop"
+                    platform: "Desktop",
+					riproducibile: true,
+					coincontrol: true,
                 },
                 {
                     title: "Blockstream Green",
                     link: "https://blockstream.com/green/",
-                    bech32: false,
+					riproducibile: true,
+					coincontrol: true,
+					bech32: false,
                     // Aggiungere caratteristiche wallet
                     platform: "iOS, Android, Desktop"
                 },
@@ -465,6 +469,7 @@ export default {
                     title: "Blue Wallet",
                     link: "https://bluewallet.io/",
                     // Aggiungere caratteristiche wallet
+					coincontrol: true,
                     platform: "iOS, Android, MacOS<sup>[1]</sup>,<sup>[2]</sup>"
                 },
                 {
@@ -477,6 +482,8 @@ export default {
                     title: "Electrum",
                     link: "https://electrum.org/#home",
                     // Aggiungere caratteristiche wallet
+					riproducibile: true,
+					coincontrol: true,
                     platform: "Desktop, Android"
                 },
                 {
@@ -489,6 +496,7 @@ export default {
                     title: "Hexa Wallet",
                     link: "https://hexawallet.io/",
                     // Aggiungere caratteristiche wallet
+					riproducibile: false,
                     platform: "iOS, Android<sup>[2]</sup>"
                 },
                 {
@@ -512,7 +520,8 @@ export default {
                 {
                     title: "Samourai Wallet",
                     link: "https://samouraiwallet.com/",
-                    coincontrol: true,
+					riproducibile: false,
+					coincontrol: true,
                     coinjoin: true,
                     bech32: true,
                     rbf: false,
@@ -525,6 +534,8 @@ export default {
                     title: "SBW",
                     link: "https://sbw.app/",
                     // Aggiungere caratteristiche wallet
+					riproducibile: true,
+					coincontrol: true,
                     platform: "Android"
                 },
                 {
@@ -543,6 +554,7 @@ export default {
                     title: "Specter",
                     link: "https://github.com/cryptoadvance/specter-desktop",
                     // Aggiungere caratteristiche wallet
+                    coincontrol: true,
                     platform: "Desktop"
                 },
             ],
@@ -551,12 +563,14 @@ export default {
                     title: "Blixt Wallet",
                     link: "https://blixtwallet.github.io/",
                     // Aggiungere caratteristiche wallet
+					riproducibile: false,
                     platform: "iOS, Android (Beta)"
                 },
                 {
                     title: "Breez",
                     link: "https://breez.technology/",
                     // Aggiungere caratteristiche wallet
+					riproducibile: false,
                     platform: "iOS, Android (Beta)<sup>[0]</sup>"
                 },
                 {
@@ -569,24 +583,28 @@ export default {
                     title: "Eclair Mobile",
                     link: "https://github.com/ACINQ/eclair-mobile",
                     // Aggiungere caratteristiche wallet
+					riproducibile: false,
                     platform: "Android"
                 },
                 {
                     title: "Electrum",
                     link: "https://electrum.org/#home",
                     // Aggiungere caratteristiche wallet
+					riproducibile: true,
                     platform: "Desktop"
                 },
                 {
                     title: "Muun Wallet",
                     link: "https://muun.com/",
                     // Aggiungere caratteristiche wallet
+					riproducibile: false,
                     platform: "iOS, Android"
                 },
                 {
                     title: "Phoenix",
                     link: "https://phoenix.acinq.co/",
                     // Aggiungere caratteristiche wallet
+					riproducibile: false,
                     platform: "iOS, Android"
                 },
                 {
@@ -599,12 +617,14 @@ export default {
                     title: "Sats App",
                     link: "https://satsapp.com/",
                     // Aggiungere caratteristiche wallet
+					riproducibile: false,
                     platform: "iOS, Android (Beta)"
                 },
                 {
                     title: "SBW",
                     link: "https://sbw.app/",
                     // Aggiungere caratteristiche wallet
+					riproducibile: true,
                     platform: "Android"
                 },
                 {
@@ -617,12 +637,14 @@ export default {
                     title: "Zap",
                     link: "https://zap.jackmallers.com/",
                     // Aggiungere caratteristiche wallet
+					riproducibile: true,
                     platform: "Desktop, iOS, Android"
                 },
                 {
                     title: "Zeus",
                     link: "https://zeusln.app/",
                     // Aggiungere caratteristiche wallet
+					riproducibile: false,
                     platform: "iOS, Android"
                 }
             ],
