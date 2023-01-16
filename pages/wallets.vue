@@ -80,97 +80,69 @@
 
 					<template v-if="condition_onchain === 'A'">
 						<!-- Riproducibile -->
-						<div v-if="wallet.riproducibile"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.riproducibile'></check-circle>
 						<!-- Coincontrol -->
-						<div v-if="wallet.coincontrol"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.coincontrol'></check-circle>
 						<!-- Feecontrol -->
-						<div v-if="wallet.feecontrol"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.feecontrol'></check-circle>
 						<!-- Bech32 -->
-						<div v-if="wallet.bech32"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.bech32'></check-circle>
 						<!-- API -->
-						<div v-if="wallet.api"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.api'></check-circle>
 						<!-- Tor -->
-						<div v-if="wallet.tor"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.tor'></check-circle>
 						<!-- Testnet -->
-						<div v-if="wallet.testnet"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.testnet'></check-circle>
 						<!-- Platform -->
 						<div class="left" v-html="wallet.platform"></div>
 					</template>
 					<template v-else-if="condition_onchain === 'B'">
 						<!-- Multisig -->
-						<div v-if="wallet.multisig"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.multisig'></check-circle>
 						<!-- Taproot -->
-						<div v-if="wallet.taproot"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.taproot'></check-circle>
 						<!-- Coinjoin -->
-						<div v-if="wallet.coinjoin"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
+						<check-circle :attivo='wallet.coinjoin'></check-circle>
 						<!-- Payjoin -->
-						<div v-if="wallet.payjoin"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
+						<check-circle :attivo='wallet.payjoin'></check-circle>
 						<!-- Baching -->
-						<div v-if="wallet.batching"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.batching'></check-circle>
 						<!-- RBF -->
-						<div v-if="wallet.rbf"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.rbf'></check-circle>
 						<!-- CPFP -->
-						<div v-if="wallet.cpfp"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.cpfp'></check-circle>
 						<!-- PSBT -->
-						<div v-if="wallet.psbt"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.psbt'></check-circle>
 					</template>
 					<template v-else-if="condition_onchain === 'C'">
 						<!-- Passphrase -->
-						<div v-if="wallet.passphrase"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.passphrase'></check-circle>
 						<!-- BIP32 -->
-						<div v-if="wallet.bip32"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.bip32'></check-circle>
 						<!-- BIP39 -->
-						<div v-if="wallet.bip39"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.bip39'></check-circle>
 						<!-- BIP44 -->
-						<div v-if="wallet.bip44"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
+						<check-circle :attivo='wallet.bip44'></check-circle>
 						<!-- BIP47 -->
-						<div v-if="wallet.bip47"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.bip47'></check-circle>
 						<!-- BIP49 -->
-						<div v-if="wallet.bip49"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.bip49'></check-circle>
 						<!-- BIP85 -->
-						<div v-if="wallet.bip85"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.bip85'></check-circle>
 					</template>
 					<template v-else-if="condition_onchain === 'D'">
 						<!-- RAW tx -->
-						<div v-if="wallet.signing"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.rawtx'></check-circle>
 						<!-- Signing Messages -->
-						<div v-if="wallet.signing"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.signing'></check-circle>
 						<!-- SPV -->
-						<div v-if="wallet.spv"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.spv'></check-circle>
 						<!-- Connessione nodo -->
-						<div v-if="wallet.nodo"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.nodo'></check-circle>
 						<!-- Connesione hardware -->
-						<div v-if="wallet.hardware"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.hardware'></check-circle>
 						<!-- Miniscript -->
-						<div v-if="wallet.miniscript"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.miniscript'></check-circle>
 					</template>
 				</div>
 			</div>
@@ -227,77 +199,55 @@
 					
 					<template v-if="condition_lightning === 'A'">
 						<!-- Riproducibile -->
-						<div v-if="wallet.riproducibile"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.riproducibile'></check-circle>
 						<!-- Swap -->
-						<div v-if="wallet.swap"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
+						<check-circle :attivo='wallet.swap'></check-circle>
 						<!-- Taproot -->
-						<div v-if="wallet.taproot"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.taproot'></check-circle>
 						<!-- AMP -->
-						<div v-if="wallet.amp"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.amp'></check-circle>
 						<!-- BTCPay -->
-						<div v-if="wallet.btcpay"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.btcpay'></check-circle>
 						<!-- API -->
-						<div v-if="wallet.api"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.api'></check-circle>
 						<!-- Tor -->
-						<div v-if="wallet.tor"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.tor'></check-circle>
 						<!-- Testnet -->
-						<div v-if="wallet.testnet"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.testnet'></check-circle>
 						<!-- Platform -->
 						<div class="left" v-html="wallet.platform"></div>
 					</template>
 					<template v-if="condition_lightning === 'B'">
 						<!-- canali -->
-						<div v-if="wallet.canali"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.canali'></check-circle>
 						<!-- Canali pubblici -->
-						<div v-if="wallet.public"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.public'></check-circle>
 						<!-- Canali privati -->
-						<div v-if="wallet.private"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.private'></check-circle>
 						<!-- Anchor channel -->
-						<div v-if="wallet.anchor"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.anchor'></check-circle>
 						<!-- Wumbo channel -->
-						<div v-if="wallet.wumbo"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.wumbo'></check-circle>
 						<!-- Turbo channel -->
-						<div v-if="wallet.turbo"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.turbo'></check-circle>
 						<!-- Channel factories -->
-						<div v-if="wallet.factories"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.factories'></check-circle>
 						<!-- Trampoline payments -->
-						<div v-if="wallet.trampoline"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.trampoline'></check-circle>
 					</template>
 					<template v-if="condition_lightning === 'C'">
 						<!-- LNURL-p -->
-						<div v-if="wallet.lnurl"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
+						<check-circle :attivo='wallet.lnurl'></check-circle>
 						<!-- LNURL-w -->
-						<div v-if="wallet.lnurl"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium" > </b-icon></div>
+						<check-circle :attivo='wallet.lnurl'></check-circle>
 						<!-- Bolt12 -->
-						<div v-if="wallet.bolt12"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.bolt12'></check-circle>
 						<!-- URI Scheme-->
-						<div v-if="wallet.uri"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.uri'></check-circle>
 						<!-- Submarine swap -->
-						<div v-if="wallet.submarine"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.submarine'></check-circle>
 						<!-- Connessione nodo -->
-						<div v-if="wallet.nodo"><b-icon icon="check-circle" size="is-medium"> </b-icon></div>
-						<div v-else><b-icon icon="panorama-fisheye" size="is-medium"> </b-icon></div>
+						<check-circle :attivo='wallet.nodo'></check-circle>
 					</template>
 				</div>
 			</div>
@@ -411,7 +361,9 @@ h3 {
 </style>
 
 <script>
+import checkCircle from '../components/check-circle.vue'
 export default {
+  components: { checkCircle },
     name: "WalletsPage",
     head: {
         title: "Wallets - Ventuno",
@@ -451,69 +403,92 @@ export default {
                 {
                     title: "Bitcoin Core",
                     link: "https://bitcoincore.org/",
-                    // Aggiungere caratteristiche wallet
                     platform: "Desktop",
 					riproducibile: true,
 					coincontrol: true,
+					bech32: true,
+					testnet: true,
+					taproot: true,
+					rbf: true,
+					bip32: true,
+					bip44: true,
+					bip49: true,
+					nodo: true,
+					hardware: true,
+					miniscript: true,
                 },
                 {
                     title: "Blockstream Green",
                     link: "https://blockstream.com/green/",
 					riproducibile: true,
+					feecontrol: true,
 					coincontrol: true,
-					bech32: false,
-                    // Aggiungere caratteristiche wallet
+					bech32: true,
+					passphrase: true,
+					bip39: true,
                     platform: "iOS, Android, Desktop"
                 },
                 {
                     title: "Blue Wallet",
                     link: "https://bluewallet.io/",
-                    // Aggiungere caratteristiche wallet
 					coincontrol: true,
+					feecontrol: true,
+					bech32: true,
+					rbf: true,
+					psbt: true,
+					bip39: true,
                     platform: "iOS, Android, MacOS<sup>[1]</sup>,<sup>[2]</sup>"
                 },
                 {
                     title: "Caravan",
                     link: "https://unchained-capital.github.io/caravan/#/",
-                    // Aggiungere caratteristiche wallet
+					bech32: true,
                     platform: "Desktop"
                 },
                 {
                     title: "Electrum",
                     link: "https://electrum.org/#home",
-                    // Aggiungere caratteristiche wallet
 					riproducibile: true,
 					coincontrol: true,
+					bech32: true,
+					tor: true,
+					coinjoin: false,
                     platform: "Desktop, Android"
                 },
                 {
                     title: "Fully Noded",
                     link: "https://fonta1n3.github.io/FullyNoded/",
-                    // Aggiungere caratteristiche wallet
+					bech32: true,
+					taproot: true,
                     platform: "iOS"
                 },
                 {
                     title: "Hexa Wallet",
                     link: "https://hexawallet.io/",
-                    // Aggiungere caratteristiche wallet
 					riproducibile: false,
+					bech32: true,
+					testnet: true,
                     platform: "iOS, Android<sup>[2]</sup>"
                 },
                 {
                     title: "Lily Wallet",
-                    link: "https://lily.kevinmulcrone.com/",
-                    // Aggiungere caratteristiche wallet
+                    link: "https://lily-wallet.com/",
+                    feecontrol: true,
+					multisig: true,
+					psbt: true,
+					nodo: true,
+					hardware: true,
                     platform: "Desktop"
                 },
                 {
                     title: "Muun Wallet",
                     link: "https://muun.com/",
+					riproducibile: false,
                     coincontrol: false,
                     coinjoin: false,
                     bech32: true,
-                    rbf: true,
                     multisig: false,
-                    tor: false,
+                    taproot: true,
                     bip47: false,
                     platform: "iOS, Android"
                 },
@@ -522,12 +497,21 @@ export default {
                     link: "https://samouraiwallet.com/",
 					riproducibile: false,
 					coincontrol: true,
-                    coinjoin: true,
+					feecontrol: true,
                     bech32: true,
+					testnet: true,
                     rbf: false,
                     multisig: false,
                     tor: true,
+					taproot: true,
+                    coinjoin: true,
+					batching: true,
+					cpfp: true,
+					bip32: true,
+					bip39: true,
+					bip44: true,
                     bip47: true,
+					bip49: true,
                     platform: "Android"
                 },
                 {
@@ -542,19 +526,25 @@ export default {
                     title: "Sparrow Wallet",
                     link: "https://www.sparrowwallet.com/",
                     coincontrol: true,
-                    coinjoin: true,
                     bech32: true,
+					tor: true,
                     rbf: false,
                     multisig: true,
                     tor: true,
+					testnet: true,
+					taproot: true,
+                    coinjoin: true,
+					rbf: true,
+					psbt: true,
                     bip47: true,
                     platform: "Desktop"
                 },
                 {
                     title: "Specter",
                     link: "https://github.com/cryptoadvance/specter-desktop",
-                    // Aggiungere caratteristiche wallet
+					bech32: true,
                     coincontrol: true,
+					taproot: true,
                     platform: "Desktop"
                 },
             ],
