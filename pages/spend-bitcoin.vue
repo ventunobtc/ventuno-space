@@ -7,7 +7,7 @@
 
 			<h3>Come Iniziare</h3>
 
-			<p>Bitcoin consente a chiunque di accedere a un mercato veramente globale. Considerate l'impatto sulla vostra privacy se acquistate beni collegati alla vostra identità o che richiedono una consegna fisica. Per questo motivo è meglio evitare di farsi consegnare i prodotti al proprio indirizzo di casa.</p>
+			<p>Bitcoin consente a chiunque di accedere a un mercato veramente globale.<br>Considerate l'impatto sulla vostra privacy se acquistate beni collegati alla vostra identità o che richiedono una consegna fisica. Per questo motivo è meglio evitare di farsi consegnare i prodotti al proprio indirizzo di casa.</p>
 
 		</div>
 
@@ -146,6 +146,11 @@ export default {
 					title: 'Bitcoin Dev List',
 					link: 'https://bitcoindevlist.com/',
 					description: 'Dona a diversi Bitcoin developers'
+				},
+				{
+					title: 'Progetto Ventuno su Geyser',
+					link: 'https://geyser.fund/project/ventunobtc',
+					description: 'Dona al progetto Ventuno o altri progetti Bitcoin'
 				}
 			],
 			

@@ -39,6 +39,10 @@
 
 		<h3>Satoshi Spritz</h3>
 
+		<div class="getting-started-section">
+			Visita <a href="http://satoshispritz.it/" target="_blank">satoshispritz.it</a> per una lista completa di tutti i Satoshi Spritz in Italia
+		</div>
+		
 		<div class="tbl-scroller">
 			<div class="tbl-wrapper">
 				<div class="tbl-header">
