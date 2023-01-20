@@ -370,6 +370,16 @@ export default {
 			],
 			otherHardware: [
 				{
+					title: 'Smartino',
+					link: 'https://github.com/smartm0use/smartino',
+					description: 'Bitcoin Core on Android'
+				},
+				{
+					title: 'NodeBox',
+					link: 'https://bitcoin-translate.it/docs/NodeBox-HOW-TO.pdf',
+					description: 'Guida in italiano alla realizzazione di un full node bitcoin'
+				},
+				{
 					title: 'Bitpiggys',
 					link: 'https://www.bitpiggys.com/',
 					description: 'Piggybank + Opendime'

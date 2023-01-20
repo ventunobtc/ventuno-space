@@ -2,6 +2,11 @@
 	<div id="conferences-page">
 
 		<h1 class="page-title">Conferenze</h1>
+		
+		<div class="getting-started-section">
+			<p>Ventuno collabora con BTC Prague 2023 per ottenere uno sconto del 10% su tutti i biglietti! <br>
+				Se desideri partecipare all'evento, considera di comprare i biglietti partendo da questo <a href="https://www.tixr.com/groups/btcprg/events/btc-prague-54508?pc=ventuno" target="_blank">link</a> oppure utilizza il codice "VENTUNO"</p>
+		</div>
 
 		<p>Queste sono conferenze o eventi dal vivo a tema solo Bitcoin.</p>
 
@@ -40,8 +45,6 @@
 				</div>
 			</div>
 		</div>
-
-		
 
 		<div v-if="pastConferences.length!=0" class="tbl-scroller">
 			<h3>Passate</h3>
@@ -148,9 +151,25 @@ let conferencesList = [
 		title: 'Plan B Forum',
 		link: 'https://planb.lugano.ch/planb-forum/',
 		location: 'Lugano, Svizzera',
-		displayDates: '28-29 Ottobre 2022',
-		startDate: '28 October 2022',
-		endDate: '29 October 2022',
+		displayDates: '20-21 Ottobre 2023',
+		startDate: '20 October 2023',
+		endDate: '21 October 2023',
+	},
+	{
+		title: 'Bitcoin 2023',
+		link: 'https://b.tc/conference/',
+		location: 'Miami, USA',
+		displayDates: '18-20 Maggio 2023',
+		startDate: '18 May 2023',
+		endDate: '20 May 2023',
+	},
+	{
+		title: 'BTC Prague',
+		link: 'https://www.btcprague.com/',
+		location: 'Praga, Repubblica Ceca',
+		displayDates: '08-10 Giugno 2023',
+		startDate: '08 June 2023',
+		endDate: '10 June 2023',
 	}
 ];
 

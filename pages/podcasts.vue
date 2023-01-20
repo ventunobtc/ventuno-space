@@ -70,6 +70,11 @@ export default {
 					link: 'https://bitcoincabana.com/',
 					description: 'Questo podcast esplora Bitcoin, macroeconomia e le tesi di investimento che ne emergono'
 				},
+				{
+					title: 'Arancione Podcast',
+					link: 'https://open.spotify.com/show/5qq9eKOLlpZirubGEoHkUG?si=794306cf4e2e46dc',
+					description: 'Ripercorre sintetizza e traduce alcuni tra i più importanti podcast Bitcoin in lingua straniera'
+				},
 			]
 		}
 	}
