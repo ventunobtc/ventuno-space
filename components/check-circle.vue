@@ -1,14 +1,26 @@
 <template>
-   <div>
-    <b-icon v-if="attivo" icon="check-circle" size="is-medium"> </b-icon>
-    <b-icon v-else icon="panorama-fisheye" size="is-medium"> </b-icon>
-   </div> 
+  <div>
+    <b-icon :icon="getIcon(attivo)" size="is-medium"> </b-icon>
+  </div>
 </template>
 
 <script>
 export default {
-    props: {
-        attivo: Boolean
-    } 
-}
+  props: {
+    attivo: Boolean,
+  },
+  methods: {
+    // https://pictogrammers.com/library/mdi/
+    getIcon(status) {
+      switch (status) {
+        case true:
+          return "check-circle";
+        case false:
+          return "close-circle";
+        default:
+          return "panorama-fisheye";
+      }
+    },
+  },
+};
 </script>
