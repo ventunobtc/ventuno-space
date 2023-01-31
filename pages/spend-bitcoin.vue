@@ -361,6 +361,11 @@ export default {
 					description: 'Gioco di carte che insegna ai bambini come funziona il mining di Bitcoin'
 				},
 				{
+					title: 'Spendabit',
+					link: 'https://spendabit.co',
+					description: 'Bitcoin online stores search engine'
+				},
+				{
 					title: 'Lightning Store',
 					link: 'http://lightning.store',
 					description: 'Cultura Bitcoin su magliette e adesivi'
