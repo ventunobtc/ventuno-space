@@ -4,8 +4,8 @@
 		<h1 class="page-title">Conferenze</h1>
 		
 		<div class="getting-started-section">
-			<p>Ventuno collabora con BTC Prague 2023 per ottenere uno sconto del 10% su tutti i biglietti! <br>
-				Se desideri partecipare all'evento, considera di comprare i biglietti partendo da questo <a href="https://www.tixr.com/groups/btcprg/events/btc-prague-54508?pc=ventuno" target="_blank">link</a> oppure utilizza il codice "VENTUNO"</p>
+			<p>Ventuno collabora con <a href="https://www.btcprague.com" target="_blank">BTC Prague 2023</a> per ottenere uno sconto del 10% su tutti i biglietti! <br>
+				Se desideri partecipare all'evento, utilizza il codice "<b>VENTUNO</b>"</p>
 		</div>
 
 		<p>Queste sono conferenze o eventi dal vivo a tema solo Bitcoin.</p>
