@@ -363,7 +363,7 @@ export default {
 				{
 					title: 'Spendabit',
 					link: 'https://spendabit.co',
-					description: 'Bitcoin online stores search engine'
+					description: 'Spendi BTC in centinaia di negozi che accettano Bitcoin'
 				},
 				{
 					title: 'Lightning Store',
