@@ -162,6 +162,12 @@ export default {
 					location: 'Telegram'
 				},
 				{
+					title: 'Bitcoin Ita Market',
+					link: 'https://t.me/bitcoinIta_Market',
+					description: 'Canale telegram per comprare Bitcoin in modo p2p',
+					location: 'Telegram'
+				},
+				{
 					title: 'Bisq',
 					link: 'https://bisq.network/',
 					description: 'Compra e Vendi Bitcoin in modo p2p e anonimo',
@@ -200,13 +206,6 @@ export default {
 				{
 					title: 'Young Platform',
 					link: 'https://exchange.youngplatform.com/it/',
-					description: 'Exchange italiano',
-					location: 'IT',
-					autoDca: 'Sì'
-				},
-				{
-					title: 'The Rock Trading',
-					link: 'https://www.therocktrading.com/it/',
 					description: 'Exchange italiano',
 					location: 'IT',
 					autoDca: 'Sì'
@@ -249,6 +248,11 @@ export default {
 					title: 'TallyCoin',
 					link: 'https://tallyco.in/',
 					description: 'Piattaforma crowdfunding in Bitcoin *'
+				},
+				{
+					title: 'Mercatino Libertario',
+					link: 'https://t.me/subito_crypto',
+					description: 'Canale telegram per comprare o vendere prodotti e servizi in bitcoin'
 				}
 			],
 

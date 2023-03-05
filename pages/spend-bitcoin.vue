@@ -161,6 +161,11 @@ export default {
 					description: 'Acquista gift-card e ricariche telefoniche'
 				},
 				{
+					title: 'Mercatino Libertario',
+					link: 'https://t.me/subito_crypto',
+					description: 'Canale telegram per comprare o vendere prodotti e servizi in bitcoin'
+				},
+				{
 					title: 'Sms4Sats',
 					link: 'https://sms4sats.com/',
 					description: 'Inviare e ricevere SMS senza rivelare il proprio numero di telefono'
@@ -203,6 +208,11 @@ export default {
 					link: 'https://www.coinmap.it/',
 					description: 'Mappa mondiale di negozi fisici che accettano bitcoin'
 				},
+				{
+					title: 'BTCmap',
+					link: 'https://btcmap.org/',
+					description: 'Mappa mondiale di negozi fisici che accettano bitcoin'
+				}
 			],
 	
 			tools: [
