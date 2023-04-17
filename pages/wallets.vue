@@ -626,9 +626,9 @@ export default {
           platform: "Desktop",
         },
         {
-          title: "Specter<sup>[3]</sup>",
+          title: "Specter",
           link: "https://github.com/cryptoadvance/specter-desktop",
-          platform: "Desktop",
+          platform: "Desktop<sup>[3]</sup>",
           riproducibile: true,
           coincontrol: true,
           bech32: true,
