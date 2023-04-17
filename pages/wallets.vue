@@ -19,7 +19,7 @@
           </li>
           <li>
             Lightning:
-            <a href="https://muun.com/" target="_blank">Muun Wallet</a>
+            <a href="https://phoenix.acinq.co/" target="_blank">Phoenix Wallet</a>
           </li>
         </ul>
       </ul>
@@ -373,8 +373,18 @@
         <sup>[2]</sup>Questo wallet integra uno scambio KYC per acquistare
         bitcoin. Si sconsiglia di utilizzare gli exchange KYC a causa dei
         <a href="https://bitcoinqna.github.io/noKYConly1/" target="_blank"
-          >rischi</a
-        >.
+          >rischi</a>.
+      </p>
+			<p>
+        <sup>[3]</sup>Specter Wallet è specializzato nell'essere un front-end 
+				alternativo per Bitcoin Core, più che un vero e proprio wallet a sé 
+				stante. 
+				Si noterà di conseguenza che tutte le caratteristiche coincidono con 
+				quelle di core, appunto perché su esso si basa, ma non sono built-in.
+				Il modo migliore per usarlo è quindi quello di accoppiarlo a un nodo Core, 
+				per quanto non sia fondamentale. È studiato in particolare per semplificare
+				la gestione di Hardware wallet e Multisig, rispetto alla linea di comando.
+				di Core.
       </p>
     </div>
   </div>
@@ -469,9 +479,12 @@ export default {
           riproducibile: true,
           coincontrol: true,
           bech32: true,
+					tor: true,
           testnet: true,
+					multisig: true,
           taproot: true,
           rbf: true,
+          passphrase: true,
           bip32: true,
           bip44: true,
           bip49: true,
@@ -615,11 +628,22 @@ export default {
         {
           title: "Specter",
           link: "https://github.com/cryptoadvance/specter-desktop",
-          bech32: true,
+          platform: "Desktop<sup>[3]</sup>",
+          riproducibile: true,
           coincontrol: true,
+          bech32: true,
+					tor: true,
+          testnet: true,
+					multisig: true,
           taproot: true,
+          rbf: true,
+          passphrase: true,
+          bip32: true,
+          bip44: true,
           bip49: true,
-          platform: "Desktop",
+          nodo: true,
+          hardware: true,
+          miniscript: true,
         },
       ],
       lightningWallets: [
@@ -669,6 +693,8 @@ export default {
           link: "https://phoenix.acinq.co/",
           // Aggiungere caratteristiche wallet
           riproducibile: false,
+					swap: true,
+					tor: true,
           platform: "iOS, Android",
         },
         {
