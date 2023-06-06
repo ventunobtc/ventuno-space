@@ -104,7 +104,6 @@ export default {
 
 	data() {
 		return {
-
 			explorers: [
 				{
 					title: 'BTC RPC',
@@ -130,8 +129,13 @@ export default {
 					title: 'Yogh Explorer',
 					link: 'https://yogh.io/',
 					description: 'Bitcoin blockchain reader'
+				},
+				{
+					title: 'Preturnio',
+					link: 'https://preturnio.com',
+					description: 'Full-text search across Bitcoin blockchain'
 				}
-			],
+			],			
 			ln_explorers: [
 				{
 					title: '1ML',
@@ -148,8 +152,7 @@ export default {
 					link: 'https://explorer.acinq.co/',
 					description: 'LN explorer by Acinq'
 				},
-			],
-			
+			],			
 			feesMempool: [
 				{
 					title: 'Bitcoiner Live',
