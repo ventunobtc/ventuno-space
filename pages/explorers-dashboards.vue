@@ -199,7 +199,7 @@ export default {
 				{
 					title: 'Braiins Insights',
 					link: 'https://insights.braiins.com/en/',
-					description: 'Statistiche e grafiche su Bitcoin'
+					description: 'Statistiche e grafici su Bitcoin'
 				},
 				{
 					title: 'Clark Moody Dashboard',
@@ -210,6 +210,11 @@ export default {
 					title: 'Priced In Bitcoin',
 					link: 'https://www.pricedinbitcoin21.com/about',
 					description: 'Prezzo dei beni in BTC'
+				},
+				{
+					title: 'TimechainStats',
+					link: 'https://timechainstats.com',
+					description: 'Metriche e grafici su Bitcoin'
 				}
 			],
 		}
