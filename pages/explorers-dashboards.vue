@@ -134,6 +134,11 @@ export default {
 					title: 'Preturnio',
 					link: 'https://preturnio.com',
 					description: 'Full-text search across Bitcoin blockchain'
+				},
+				{
+					title: 'Fast Bitcoin Block Explorer',
+					link: 'http://fbbe.info',
+					description: 'Block explorer without address indexing: search for tx id, block height or hash'
 				}
 			],			
 			ln_explorers: [
