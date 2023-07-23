@@ -752,6 +752,12 @@ export default {
           platform: "Web",
         },
         {
+          title: "GetAlby",
+          link: "https://guides.getalby.com/italian-guides/",
+          description: "Your Bitcoin & Nostr companion for the web",
+          platform: "Web",
+        },
+        {
           title: "Opennode",
           link: "https://opennode.co/",
           description: "Accept Bitcoin & Lightning payments",
